@@ -15,6 +15,29 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("YOUR_PUBLIC_KEY");
+})();
+
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs.send("YOUR_SERVICE_ID", "template_sukuzif", {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value
+  })
+  .then(function(response) {
+     alert("Enquiry submitted successfully");
+  }, function(error) {
+     alert("Submission failed. Please try again.");
+  });
+}
+</script>
+  
 <body>
 
 <!-- HERO -->
@@ -172,17 +195,12 @@
           Provide your details below and we will review your requirement and advise on the most appropriate next steps.
         </p>
 
-        <form action="https://formsubmit.co/fiona.carolina09@gmail.com" method="POST">
-
-          <!-- Hidden settings -->
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="New Website Enquiry">
-          <input type="hidden" name="_next" value="https://fionacarolina09.github.io/fiona-portfolio/">
+        <form onsubmit="sendEmail(event)">
 
           <!-- Fields -->
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <textarea name="message" placeholder="Message" required></textarea>
+          <input id="name" type="text" placeholder="Name" required>
+          <input id="email" type="email" placeholder="Email" required>
+          <textarea id="message" placeholder="Message" required></textarea>
 
           <!-- Submit -->
           <button type="submit">Submit</button>
