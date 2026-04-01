@@ -309,3 +309,26 @@ footer {
   margin-top: 10px;
   line-height: 1.5;
 }
+
+.trust-strip {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.trust-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.trust-item h3 {
+  color: #800020;
+  margin-bottom: 5px;
+}
+
+.trust-item p {
+  font-size: 14px;
+  color: #666;
+}
