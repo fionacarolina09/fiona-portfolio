@@ -296,3 +296,16 @@ footer {
     padding: 20px 16px;
   }
 }
+
+.form-intro {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #2f3e5c;
+}
+
+.form-note {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 10px;
+  line-height: 1.5;
+}
