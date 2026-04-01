@@ -59,19 +59,23 @@ p {
 .btn-primary {
   background: white;
   color: #800020;
-  padding: 12px 22px;
+  padding: 12px 24px;
   border-radius: 6px;
-  text-decoration: none;
-  margin-right: 10px;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #f2eee8;
 }
 
 .btn-secondary {
   border: 1px solid white;
   color: white;
-  padding: 12px 22px;
+  padding: 12px 24px;
   border-radius: 6px;
-  text-decoration: none;
+  font-weight: 500;
 }
 
 /* Headings */
