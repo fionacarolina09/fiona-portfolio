@@ -166,12 +166,34 @@
 
       <!-- RIGHT -->
       <div class="contact-form-box">
-        <form>
-          <input type="text" placeholder="Name" required>
-          <input type="email" placeholder="Email" required>
-          <textarea placeholder="Message" required></textarea>
+
+        <!-- Intro text -->
+        <p class="form-intro">
+          Provide your details below and I will review your requirement and advise on the most appropriate next steps.
+        </p>
+
+        <form action="https://formsubmit.co/fiona.carolina09@gmail.com" method="POST">
+
+          <!-- Hidden settings -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Website Enquiry">
+          <input type="hidden" name="_next" value="https://fionacarolina09.github.io/fiona-portfolio/">
+
+          <!-- Fields -->
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Message" required></textarea>
+
+          <!-- Submit -->
           <button type="submit">Submit</button>
+
+          <!-- Remark -->
+          <p class="form-note">
+            By signing up, you agree to receive marketing emails. View our privacy policy and terms of service for more info.
+          </p>
+
         </form>
+
       </div>
 
     </div>
