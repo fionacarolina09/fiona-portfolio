@@ -126,7 +126,7 @@ button {
 
 /* FOOTER */
 footer {
-  background: #2f3e5c;
+  background: #800020;
   color: white;
   text-align: center;
   padding: 25px;
@@ -189,4 +189,34 @@ footer {
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+
+  .hero-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 140px;
+    height: 140px;
+    margin-top: 20px;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  .section {
+    padding: 40px 15px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }
