@@ -1,55 +1,132 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   background: #f7f3f0;
   color: #2f3e5c;
 }
 
-.hero {
-  background: #800020;
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-section {
-  padding: 50px 20px;
-  max-width: 1000px;
+/* Layout */
+.container {
+  max-width: 1100px;
   margin: auto;
 }
 
-.services {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+.section {
+  padding: 70px 20px;
 }
 
-.card {
-  background: white;
-  border: 1px solid #e5e7eb;
-  padding: 20px;
-  border-radius: 8px;
-  flex: 1;
-  min-width: 250px;
+/* HERO */
+.hero {
+  background: #800020;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero-name {
+  font-size: 18px;
+  margin: 10px 0;
+  opacity: 0.9;
+}
+
+.hero-sub {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Buttons */
+.cta {
+  margin-top: 25px;
 }
 
 .btn-primary {
   background: white;
   color: #800020;
-  padding: 10px 20px;
+  padding: 12px 22px;
+  border-radius: 6px;
   text-decoration: none;
+  margin-right: 10px;
+  font-weight: 500;
 }
 
 .btn-secondary {
   border: 1px solid white;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 22px;
+  border-radius: 6px;
   text-decoration: none;
 }
 
+/* Headings */
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* SERVICES */
+.services {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  flex: 1;
+  min-width: 260px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* LIST */
+ul {
+  padding-left: 18px;
+}
+
+/* CONTACT */
+form {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  background: #800020;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* FOOTER */
 footer {
   background: #2f3e5c;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
+  margin-top: 40px;
 }
