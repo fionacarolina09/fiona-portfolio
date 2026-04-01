@@ -337,13 +337,30 @@ footer {
   background: #800020;
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 20px; /* reduced from 60px */
 }
 
 .cta-section h2 {
-  margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .cta-section p {
-  margin-bottom: 20px;
+  font-size: 15px;
+  margin-bottom: 18px;
+  color: #f7f3f0;
+}
+
+.cta-section .btn-primary {
+  background: white;
+  color: #800020;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #800020, #5a0016);
 }
