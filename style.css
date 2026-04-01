@@ -332,3 +332,18 @@ footer {
   font-size: 14px;
   color: #666;
 }
+
+.cta-section {
+  background: #800020;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-section h2 {
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  margin-bottom: 20px;
+}
