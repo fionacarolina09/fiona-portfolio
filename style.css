@@ -121,6 +121,17 @@ h3 {
   transform: translateY(-5px);
 }
 
+.card h3 {
+  font-weight: 600;
+  color: #2f3e5c;
+}
+
+.card p,
+.card li {
+  font-size: 14px;
+  color: #6b7280;
+}
+
 /* LIST */
 ul {
   padding-left: 18px;
