@@ -59,17 +59,25 @@ body {
 }
 
 /* Headings */
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
 h1 {
   font-size: 36px;
-  margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 26px;
-  margin-bottom: 20px;
-  color: #800020;
-  font-weight: 600;
+  font-size: 24px;
   text-transform: uppercase;
+  color: #800020;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 /* SERVICES */
