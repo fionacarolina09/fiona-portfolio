@@ -222,6 +222,48 @@ h3 {
 }
 
 /* =========================
+   CARD ICON
+========================= */
+.card-icon {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+/* Improve spacing consistency */
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  margin-top: 0;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .card-icon {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .card-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 12px;
+  }
+}
+
+.card:hover .card-icon {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+/* =========================
    CTA SECTION
 ========================= */
 .cta-section {
