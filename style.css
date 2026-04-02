@@ -441,6 +441,10 @@ footer p:last-child {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+
+     .process-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Mobile */
