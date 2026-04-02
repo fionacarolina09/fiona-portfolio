@@ -354,7 +354,10 @@ h3 {
 
 .footer h3 {
   margin-bottom: 6px;
-   .footer p {
+  color: #ffffff;
+}
+
+.footer p {
   color: #ffffff;
 }
 
