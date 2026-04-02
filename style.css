@@ -291,7 +291,7 @@ footer {
 @media (max-width: 768px) {
 
   .hero {
-    padding: 50px 16px 60px;
+    padding: 50px 16px 70px;
   }
 
   .hero-content {
@@ -311,8 +311,9 @@ footer {
     width: 56px;
   }
 
-   .trust-strip {
-    padding: 40px 0 28px;
+  .trust-strip {
+    margin-top: -25px;
+    padding-bottom: 28px;
   }
 
   .trust-grid {
