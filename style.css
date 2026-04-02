@@ -343,6 +343,53 @@ h3 {
 }
 
 /* =========================
+   PROFESSIONAL CREDENTIALS
+========================= */
+.credentials-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.credentials-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.credentials-content h2 {
+  margin-bottom: 20px;
+}
+
+.credentials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.credential-item strong {
+  display: block;
+  font-size: 15px;
+  color: #2f3e5c;
+}
+
+.credential-item span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .credentials-container {
+    grid-template-columns: 1fr;
+  }
+
+  .credentials-content {
+    text-align: center;
+  }
+}
+
+/* =========================
    RESPONSIVE
 ========================= */
 @media (max-width: 900px) {
