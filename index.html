@@ -217,38 +217,33 @@
   </div>
 </footer>
   
- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
-  (function() {
-    emailjs.init("qFjnBR_4Gh6nCo3k");
-  })();
+  emailjs.init("qFjnBR_4Gh6nCo3k");
 
-  const form = document.getElementById('contact-form');
-  const status = document.getElementById('form-status');
-
-  form.addEventListener('submit', function(e) {
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
+    const status = document.getElementById("form-status");
     status.innerHTML = "Sending...";
-    status.className = "form-status";
 
     const params = {
-      name: form.name.value,
-      email: form.email.value,
-      message: form.message.value
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value
     };
 
-    emailjs.send('service_vp7lu0t', 'template_sukuzif', params)
-      .then(function() {
+    emailjs.send("service_vp7lu0t", "template_sukuzif", params)
+      .then(function(response) {
         status.innerHTML = "Thank you. Your enquiry has been submitted.";
-        status.classList.add("success");
-        form.reset();
+        status.style.color = "green";
+        document.getElementById("contact-form").reset();
       })
       .catch(function(error) {
         status.innerHTML = "Failed to send. Please try again.";
-        status.classList.add("error");
-        console.log("EmailJS Error:", error);
+        status.style.color = "red";
+        console.error("EmailJS Error:", error);
       });
   });
 </script>
