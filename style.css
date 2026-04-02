@@ -297,6 +297,20 @@ h3 {
   margin: 0;
 }
 
+.process-card::after {
+  content: "";
+  position: absolute;
+  top: 45px;
+  right: -12px;
+  width: 24px;
+  height: 2px;
+  background: #800020;
+}
+
+.process-card:last-child::after {
+  display: none;
+}
+
 /* =========================
    CTA SECTION
 ========================= */
