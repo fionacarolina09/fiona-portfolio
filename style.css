@@ -433,6 +433,7 @@ h3 {
   background: #800020;
   color: #ffffff;
   padding: 80px 0 40px;
+  opacity: 1; /* ensure full visibility */
 }
 
 /* GRID */
