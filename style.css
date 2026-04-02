@@ -407,14 +407,15 @@ footer p:last-child {
     padding: 36px 0;
   }
 
-  @media (max-width: 768px) {
-
 @media (max-width: 768px) {
 
   .trust-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* FORCE 2 columns */
+    gap: 16px;
   }
+
+}
 
   .trust-strip {
     padding: 28px 0;
