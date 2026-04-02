@@ -233,7 +233,12 @@
     status.innerHTML = "Sending...";
     status.className = "form-status";
 
-    eemailjs.sendForm('service_vp7lu0t', 'template_sukuzif', this)
+    emailjs.sendForm(
+  'service_vp7lu0t',
+  'template_sukuzif',
+  this,
+  'qFjnBR_4Gh6nCo3k'
+)
 .then(function() {
   status.innerHTML = "Thank you. Your enquiry has been submitted.";
   status.className = "form-status success";
