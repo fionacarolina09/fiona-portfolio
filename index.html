@@ -159,52 +159,35 @@
 </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
+<section id="contact" class="section">
+  <div class="container contact-container">
 
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p>For ISO audit, training or consultancy enquiries:</p>
+    <h2>Work With Me</h2>
 
-          <p>Email: <a href="mailto:fiona.carolina09@gmail.com">fiona.carolina09@gmail.com</a></p>
+    <p class="contact-sub">
+      Tell me about your requirements and I will advise on the most suitable approach.
+    </p>
 
-          <p>
-            WhatsApp:
-            <a href="https://www.wasap.my/60178966959" target="_blank" rel="noopener noreferrer">
-              +60178966959
-            </a>
-          </p>
+    <form id="contact-form" class="contact-form">
 
-          <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/fiona-carolina-43a294158/" target="_blank" rel="noopener noreferrer">
-              Fiona Carolina
-            </a>
-          </p>
-        </div>
-
-        <div class="contact-form-box">
-          <p class="form-intro">
-            Provide your details below and I will review your requirement and advise on the most appropriate next steps.
-          </p>
-
-          <form id="contact-form" onsubmit="sendEmail(event)">
-            <input id="name" type="text" name="name" placeholder="Name" required />
-            <input id="email" type="email" name="email" placeholder="Email" required />
-            <textarea id="message" name="message" placeholder="Message" required></textarea>
-
-            <button type="submit">Submit</button>
-
-            <p class="form-note">
-              By signing up, you agree to receive marketing emails. View our privacy policy and terms of service for more info.
-            </p>
-          </form>
-        </div>
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
       </div>
-    </div>
-  </section>
 
+      <textarea name="message" rows="4"
+        placeholder="Briefly describe your requirement (e.g. ISO standard, timeline, scope)"
+        required></textarea>
+
+      <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+
+      <p id="form-status" class="form-status"></p>
+
+    </form>
+
+  </div>
+</section>
+  
   <!-- FOOTER -->
   <footer>
     <p>ISO Consultant, Auditor &amp; Trainer</p>
