@@ -536,3 +536,21 @@ footer p:last-child {
     grid-template-columns: 1fr;
   }
 }
+
+/* Tablet */
+@media (max-width: 900px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .process-card {
+    padding: 20px;
+  }
+
+  .process-number {
+    font-size: 24px;
+  }
+}
