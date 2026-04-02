@@ -338,74 +338,68 @@ h3 {
 }
 
 /* =========================
-   CONTACT
+   CONTACT (FINAL)
 ========================= */
-.contact-grid {
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-sub {
+  max-width: 520px;
+  margin: 0 auto 24px;
+}
+
+/* FORM */
+.contact-form {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  align-items: start;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
-.contact-info p:last-child {
-  margin-bottom: 0;
-}
-
-.contact-form-box {
-  padding: 20px;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-}
-
-.form-intro {
-  margin-bottom: 15px;
-  font-size: 14px;
-  color: #2f3e5c;
-}
-
-.form-note {
-  margin-top: 10px;
-  margin-bottom: 0;
-  font-size: 12px;
-  line-height: 1.5;
-  color: #9ca3af;
-}
-
-form {
-  display: grid;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-input,
-textarea,
-button {
+.contact-form input,
+.contact-form textarea {
   width: 100%;
-  font: inherit;
-}
-
-input,
-textarea {
-  padding: 12px;
+  padding: 10px;
   border: 1px solid #d1d5db;
   border-radius: 6px;
-  background: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
 }
 
-textarea {
-  min-height: 140px;
+.contact-form textarea {
+  margin-bottom: 12px;
   resize: vertical;
 }
 
-button {
-  padding: 12px 20px;
-  border: none;
-  border-radius: 6px;
-  background: #800020;
-  color: #ffffff;
-  cursor: pointer;
-  font-weight: 600;
+.contact-form button {
+  width: 100%;
+}
+
+/* STATUS MESSAGE */
+.form-status {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* SUCCESS / ERROR STATES */
+.form-status.success {
+  color: green;
+}
+
+.form-status.error {
+  color: red;
 }
 
 /* =========================
@@ -523,6 +517,10 @@ footer p:last-child {
 
   .cta-section p {
     font-size: 14px;
+  }
+
+     .form-row {
+    grid-template-columns: 1fr;
   }
 }
 
