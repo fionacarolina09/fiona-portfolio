@@ -91,32 +91,38 @@ h3 {
 }
 
 /* =========================
-   BUTTONS
+   BUTTON SYSTEM (FINAL)
 ========================= */
+
+/* Base */
 .btn {
   display: inline-block;
   padding: 12px 24px;
   border-radius: 6px;
-  text-align: center;
   font-size: 14px;
   font-weight: 600;
-  transition: 0.3s ease;
+  text-align: center;
+  transition: all 0.3s ease;
   text-decoration: none !important;
 }
 
+/* PRIMARY (Burgundy) */
 .btn-primary {
-  background: #ffffff;
-  color: #800020;
+  background: #800020;
+  color: #ffffff;
+  border: 1px solid #800020;
 }
 
 .btn-primary:hover {
-  background: #f2eee8;
-  text-decoration: none;
+  background: #660018;
+  border-color: #660018;
 }
 
+/* SECONDARY (Outline for Hero) */
 .btn-secondary {
-  border: 1px solid #ffffff;
+  background: transparent;
   color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .btn-secondary:hover {
