@@ -248,6 +248,50 @@ h3 {
 }
 
 /* =========================
+   PROCESS SECTION
+========================= */
+.process-section {
+  background: #ffffff;
+}
+
+/* GRID */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CARD */
+.process-card {
+  position: relative;
+  padding: 24px;
+  background: #f7f3f0;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+/* NUMBER */
+.process-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #800020;
+  margin-bottom: 12px;
+}
+
+/* TITLE */
+.process-card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+/* TEXT */
+.process-card p {
+  font-size: 14px;
+  color: #4a5568;
+  margin: 0;
+}
+
+/* =========================
    CTA SECTION
 ========================= */
 .cta-section {
