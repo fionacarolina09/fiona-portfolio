@@ -124,7 +124,7 @@ h3 {
    HERO
 ========================= */
 .hero {
-  padding: 88px 0;
+  padding: 64px 0 40px; /* reduced bottom space */
   background: #800020;
   color: #ffffff;
 }
@@ -133,7 +133,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 32px;
 }
 
 .hero-text {
@@ -362,27 +362,24 @@ footer p:last-child {
 @media (max-width: 768px) {
 
   .hero {
-    padding: 50px 16px 30px;
+    padding: 40px 16px 24px; /* KEY FIX */
   }
 
   .hero-flex {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 12px; /* tighter */
-  }
-
-  .hero-text {
-    text-align: center;
+    gap: 10px; /* reduce vertical spacing */
   }
 
   .hero .cta {
-    margin-top: 10px;
+    margin-top: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
-  /* CRITICAL FIX */
   .hero-image {
-    margin-top: 0; /* remove push down */
+    margin-top: 6px;
   }
 
   .hero-image img {
