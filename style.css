@@ -170,27 +170,34 @@ h3 {
    TRUST STRIP
 ========================= */
 .trust-strip {
-  padding: 28px 0;
-  background: #ffffff;
-  border-bottom: 1px solid #eee;
+  background: transparent; /* a. transparent */
+  padding: 48px 0;
+  text-align: center;
+}
+
+.trust-strip h2 {
+  margin-bottom: 32px;
+  color: #800020;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .trust-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  text-align: center;
+  grid-template-columns: repeat(4, 1fr); /* c. 4 columns desktop */
+  gap: 24px;
 }
 
 .trust-item h3 {
-  margin-bottom: 5px;
   color: #800020;
+  font-size: 18px;
+  margin-bottom: 6px;
 }
 
 .trust-item p {
-  margin-bottom: 0;
   font-size: 14px;
-  color: #666666;
+  color: #4a5568;
 }
 
 /* =========================
@@ -406,10 +413,30 @@ footer p:last-child {
     padding: 36px 0;
   }
 
+  @media (max-width: 768px) {
+
   .trust-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr); /* d. 2 columns */
     gap: 16px;
   }
+
+  .trust-strip {
+    padding: 32px 0;
+  }
+
+  .trust-strip h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .trust-item h3 {
+    font-size: 16px;
+  }
+
+  .trust-item p {
+    font-size: 13px;
+  }
+}
 
   .card {
     padding: 20px;
