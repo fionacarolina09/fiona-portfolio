@@ -494,3 +494,43 @@ footer p:last-child {
     width: calc(100% - 24px);
   }
 }
+
+/* =========================
+   ISO STANDARDS GRID
+========================= */
+.standards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.standard-item {
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.standard-item:hover {
+  transform: translateY(-3px);
+}
+
+.standard-item h3 {
+  margin-bottom: 4px;
+  color: #800020;
+  font-size: 18px;
+}
+
+.standard-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .standards-grid {
+    grid-template-columns: 1fr;
+  }
+}
