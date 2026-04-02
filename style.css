@@ -362,56 +362,34 @@ footer p:last-child {
 @media (max-width: 768px) {
 
   .hero {
-    padding: 60px 16px 40px;
-    min-height: auto;
+    padding: 50px 16px 30px;
   }
 
   .hero-flex {
     flex-direction: column;
-    text-align: center;
-    gap: 18px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; /* tighter */
   }
 
   .hero-text {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 26px;
-    line-height: 1.25;
-    margin-bottom: 10px;
-  }
-
-  .hero-name {
-    font-size: 15px;
-    margin-bottom: 6px;
-  }
-
-  .hero-sub {
-    font-size: 13px;
-    margin-bottom: 14px;
+    text-align: center;
   }
 
   .hero .cta {
-    margin-top: 12px;
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn {
-    width: 100%;
-    max-width: 280px;
-  }
-
-  .hero-image {
     margin-top: 10px;
   }
 
-  .hero-image img {
-    width: 140px;
-    height: 140px;
+  /* CRITICAL FIX */
+  .hero-image {
+    margin-top: 0; /* remove push down */
   }
+
+  .hero-image img {
+    width: 120px;
+    height: 120px;
+  }
+}
 
   .section {
     padding: 36px 0;
