@@ -112,13 +112,13 @@ h3 {
 
 /* PRIMARY (Burgundy) */
 .btn-primary {
-  background: #800020;
-  color: #ffffff;
-  border: 1px solid #800020;
+  background-color: #800020 !important;
+  color: #ffffff !important;
+  border: none !important;
 }
 
 .btn-primary:hover {
-  background: #660018;
+  background: #660018; !important
   border-color: #660018;
 }
 
