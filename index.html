@@ -16,34 +16,6 @@
 
   <link rel="stylesheet" href="./style.css" />
 </head>
-
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-<script>
-  (function() {
-    emailjs.init("qFjnBR_4Gh6nCo3k");
-  })();
-
-  const form = document.getElementById('contact-form');
-  const status = document.getElementById('form-status');
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    status.innerHTML = "Sending...";
-    status.className = "form-status";
-
-    emailjs.sendForm('service_vp7lu0t', 'template_sukuzif', this)
-      .then(function() {
-        status.innerHTML = "Thank you. Your enquiry has been submitted.";
-        status.classList.add("success");
-        form.reset();
-      }, function(error) {
-        status.innerHTML = "Something went wrong. Please try again.";
-        status.classList.add("error");
-      });
-  });
-</script>
   
 <body>
 
@@ -209,7 +181,7 @@
         required></textarea>
 
       <div class="center-btn">
-  <button class="btn btn-accent">Submit Enquiry</button>
+  <button type="submit" class="btn btn-accent">Submit Enquiry</button>
 </div>
 
       <p id="form-status" class="form-status"></p>
@@ -245,28 +217,34 @@
   </div>
 </footer>
   
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 <script>
-(function () {
-  emailjs.init("-qFjnBR_4Gh6nCo3k");
-})();
+  (function() {
+    emailjs.init("qFjnBR_4Gh6nCo3k");
+  })();
 
-function sendEmail(e) {
-  e.preventDefault();
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
 
-  emailjs.send("service_vp7lu0t", "template_sukuzif", {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value
-  })
-  .then(function () {
-    alert("Thank you. Your enquiry has been received.");
-    document.getElementById("contact-form").reset();
-  })
-  .catch(function () {
-    alert("Submission failed. Please try again.");
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    status.innerHTML = "Sending...";
+    status.className = "form-status";
+
+    eemailjs.sendForm('service_vp7lu0t', 'template_sukuzif', this)
+.then(function() {
+  status.innerHTML = "Thank you. Your enquiry has been submitted.";
+  status.className = "form-status success";
+  form.reset();
+})
+.catch(function(error) {
+  status.innerHTML = "Failed to send. Please try again.";
+  status.className = "form-status error";
+  console.log("EmailJS Error:", error);
+});
   });
-}
 </script>
 
 </body>
