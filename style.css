@@ -149,10 +149,11 @@ h3 {
 }
 
 /* =========================
-   TRUST STRIP (CARD STYLE)
+   TRUST STRIP (FLOATING CARDS)
 ========================= */
 .trust-strip {
-  padding: 60px 0 40px;
+  margin-top: -40px; /* key: creates floating effect */
+  padding: 0 0 40px;
 }
 
 /* GRID */
@@ -172,24 +173,21 @@ h3 {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* HOVER EFFECT */
+/* HOVER */
 .trust-item:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
 }
 
-/* TITLE */
+/* TEXT */
 .trust-item h2 {
   color: #800020;
   font-size: 18px;
-  letter-spacing: 1px;
   margin-bottom: 6px;
 }
 
-/* TEXT */
 .trust-item p {
   font-size: 14px;
-  color: #4a5568;
   margin: 0;
 }
 
