@@ -233,22 +233,23 @@
     status.innerHTML = "Sending...";
     status.className = "form-status";
 
-    emailjs.sendForm(
-  'service_vp7lu0t',
-  'template_sukuzif',
-  this,
-  'qFjnBR_4Gh6nCo3k'
-)
-.then(function() {
-  status.innerHTML = "Thank you. Your enquiry has been submitted.";
-  status.className = "form-status success";
-  form.reset();
-})
-.catch(function(error) {
-  status.innerHTML = "Failed to send. Please try again.";
-  status.className = "form-status error";
-  console.log("EmailJS Error:", error);
-});
+    const params = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value
+    };
+
+    emailjs.send('service_vp7lu0t', 'template_sukuzif', params)
+      .then(function() {
+        status.innerHTML = "Thank you. Your enquiry has been submitted.";
+        status.classList.add("success");
+        form.reset();
+      })
+      .catch(function(error) {
+        status.innerHTML = "Failed to send. Please try again.";
+        status.classList.add("error");
+        console.log("EmailJS Error:", error);
+      });
   });
 </script>
 
