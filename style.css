@@ -62,10 +62,15 @@ h3 {
 /* =========================
    HERO
 ========================= */
+
+.hero p {
+  color: #ffffff;
+}
+
 .hero {
   background: #800020;
-  color: #fff;
-  padding: 80px 0 100px;
+  color: #ffffff;
+  padding: 80px 0 60px;
 }
 
 .hero-content {
@@ -84,9 +89,9 @@ h3 {
 /* =========================
    TRUST STRIP (FIXED)
 ========================= */
+
 .trust-strip {
-  margin-top: -50px;
-  padding-bottom: 50px;
+  padding: 40px 0 50px;
 }
 
 .trust-grid {
@@ -96,12 +101,11 @@ h3 {
 }
 
 .trust-item {
-  background: #fff;
+  background: #ffffff;
   padding: 20px;
   border-radius: 10px;
-  text-align: center;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
 }
 
 .trust-item h2 {
@@ -111,6 +115,7 @@ h3 {
 }
 
 .trust-item p {
+  color: #4a5568;
   font-size: 14px;
 }
 
@@ -148,11 +153,19 @@ h3 {
 /* =========================
    CTA
 ========================= */
+.cta-section p {
+  color: #ffffff;
+}
+
 .cta-section {
   background: #800020;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   padding: 50px 0;
+}
+
+.cta-section p {
+  color: #ffffff; /* FIX text turning grey */
 }
 
 /* =========================
@@ -203,7 +216,7 @@ footer {
 @media (max-width: 768px) {
 
   .hero {
-    padding: 50px 16px 90px;
+    padding: 50px 16px 50px;
   }
 
   h1 {
@@ -211,7 +224,7 @@ footer {
   }
 
   .trust-strip {
-    margin-top: -35px;
+    padding: 30px 0 40px;
   }
 
   .trust-grid {
