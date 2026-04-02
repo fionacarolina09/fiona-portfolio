@@ -512,6 +512,18 @@ footer p:last-child {
   textarea {
     min-height: 120px;
   }
+
+     .cta-section {
+    padding: 50px 0;
+  }
+
+  .cta-section h2 {
+    font-size: 22px;
+  }
+
+  .cta-section p {
+    font-size: 14px;
+  }
 }
 
 /* Small mobile */
