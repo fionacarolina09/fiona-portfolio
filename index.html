@@ -17,6 +17,34 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function() {
+    emailjs.init("qFjnBR_4Gh6nCo3k");
+  })();
+
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    status.innerHTML = "Sending...";
+    status.className = "form-status";
+
+    emailjs.sendForm('service_vp7lu0t', 'template_sukuzif', this)
+      .then(function() {
+        status.innerHTML = "Thank you. Your enquiry has been submitted.";
+        status.classList.add("success");
+        form.reset();
+      }, function(error) {
+        status.innerHTML = "Something went wrong. Please try again.";
+        status.classList.add("error");
+      });
+  });
+</script>
+  
 <body>
 
 <!-- HERO -->
