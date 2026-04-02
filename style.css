@@ -251,7 +251,7 @@ h3 {
    PROCESS SECTION
 ========================= */
 .process-section {
-  background: #ffffff;
+  background: transparent;
 }
 
 /* GRID */
@@ -265,9 +265,9 @@ h3 {
 /* CARD */
 .process-card {
   position: relative;
-  padding: 28px;
-  background: #f7f3f0;
-  border-radius: 12px;
+  padding: 24px;
+  background: #ffffff; /* match services */
+  border-radius: 10px;
   border: 1px solid #e5e7eb;
   transition: 0.25s ease;
 }
@@ -297,18 +297,17 @@ h3 {
   margin: 0;
 }
 
-.process-card::after {
-  content: "";
-  position: absolute;
-  top: 45px;
-  right: -12px;
-  width: 24px;
-  height: 2px;
-  background: #800020;
+.process-card {
+  position: relative;
+  padding: 24px;
+  background: #ffffff; /* match services */
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  transition: 0.25s ease;
 }
 
-.process-card:last-child::after {
-  display: none;
+.process-card:hover {
+  transform: translateY(-4px);
 }
 
 /* =========================
