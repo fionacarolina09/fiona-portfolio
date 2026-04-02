@@ -149,29 +149,48 @@ h3 {
 }
 
 /* =========================
-   TRUST STRIP
+   TRUST STRIP (CARD STYLE)
 ========================= */
 .trust-strip {
   padding: 60px 0 40px;
 }
 
+/* GRID */
 .trust-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
-  text-align: center;
 }
 
+/* CARD */
 .trust-item {
   padding: 20px;
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
-  transition: transform 0.2s ease;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* HOVER EFFECT */
 .trust-item:hover {
   transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* TITLE */
+.trust-item h2 {
+  color: #800020;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+/* TEXT */
+.trust-item p {
+  font-size: 14px;
+  color: #4a5568;
+  margin: 0;
 }
 
 /* =========================
@@ -255,12 +274,17 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .trust-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+     .trust-strip {
+    padding: 50px 0 32px;
+  }
+
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 
@@ -280,20 +304,33 @@ footer {
     font-size: 26px;
   }
 
-  .trust-strip {
-    padding: 40px 0 28px;
-  }
-
-  .trust-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .standards-grid {
     grid-template-columns: 1fr;
   }
 
   .card-icon {
     width: 56px;
+  }
+
+   .trust-strip {
+    padding: 40px 0 28px;
+  }
+
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .trust-item {
+    padding: 16px;
+  }
+
+  .trust-item h2 {
+    font-size: 16px;
+  }
+
+  .trust-item p {
+    font-size: 13px;
   }
 }
 
