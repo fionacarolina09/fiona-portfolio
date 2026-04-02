@@ -24,27 +24,6 @@ img {
   max-width: 100%;
 }
 
-a {
-  color: #800020;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-p {
-  margin: 0 0 1rem;
-  font-size: 15px;
-  color: #4a5568;
-}
-
-ul {
-  margin: 0;
-  padding-left: 18px;
-}
-
 /* =========================
    LAYOUT
 ========================= */
@@ -54,7 +33,7 @@ ul {
 }
 
 .section {
-  padding: 44px 0;
+  padding: 50px 0;
 }
 
 /* =========================
@@ -62,51 +41,22 @@ ul {
 ========================= */
 h1, h2, h3 {
   margin-top: 0;
-  letter-spacing: -0.3px;
   font-weight: 600;
 }
 
 h1 {
   font-size: 40px;
-  line-height: 1.15;
-  color: #ffffff;
+  color: #fff;
 }
 
 h2 {
-  margin-bottom: 20px;
-  font-size: 30px;
-  text-transform: uppercase;
+  font-size: 28px;
   color: #800020;
+  margin-bottom: 20px;
 }
 
 h3 {
-  margin-bottom: 10px;
   font-size: 18px;
-}
-
-/* =========================
-   BUTTONS
-========================= */
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.btn-primary {
-  background: #ffffff;
-  color: #800020;
-}
-
-.btn-primary:hover {
-  background: #f2eee8;
-}
-
-.btn-secondary {
-  border: 1px solid #ffffff;
-  color: #ffffff;
 }
 
 /* =========================
@@ -114,32 +64,15 @@ h3 {
 ========================= */
 .hero {
   background: #800020;
-  color: #ffffff;
-  padding: 80px 0 60px;
+  color: #fff;
+  padding: 80px 0 100px;
 }
 
 .hero-content {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
   align-items: center;
-}
-
-.hero-text {
-  max-width: 520px;
-}
-
-.hero-name {
-  margin: 8px 0;
-}
-
-.hero-sub {
-  margin-bottom: 16px;
-}
-
-.hero .cta {
-  display: flex;
-  gap: 12px;
+  gap: 40px;
 }
 
 .hero-image img {
@@ -149,37 +82,28 @@ h3 {
 }
 
 /* =========================
-   TRUST STRIP (FLOATING CARDS)
+   TRUST STRIP (FIXED)
 ========================= */
 .trust-strip {
-  margin-top: -40px; /* key: creates floating effect */
-  padding: 0 0 40px;
+  margin-top: -50px;
+  padding-bottom: 50px;
 }
 
-/* GRID */
 .trust-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
-/* CARD */
 .trust-item {
+  background: #fff;
   padding: 20px;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
   border-radius: 10px;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* HOVER */
-.trust-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
-}
-
-/* TEXT */
 .trust-item h2 {
   color: #800020;
   font-size: 18px;
@@ -188,7 +112,6 @@ h3 {
 
 .trust-item p {
   font-size: 14px;
-  margin: 0;
 }
 
 /* =========================
@@ -201,18 +124,14 @@ h3 {
 }
 
 .card {
+  background: #fff;
   padding: 24px;
-  background: #ffffff;
   border-radius: 10px;
-}
-
-.card-icon {
-  width: 72px;
-  margin-bottom: 16px;
+  border: 1px solid #e5e7eb;
 }
 
 /* =========================
-   ISO STANDARDS
+   STANDARDS
 ========================= */
 .standards-grid {
   display: grid;
@@ -221,8 +140,8 @@ h3 {
 }
 
 .standard-item {
+  background: #fff;
   padding: 20px;
-  background: #ffffff;
   border-radius: 10px;
 }
 
@@ -230,10 +149,10 @@ h3 {
    CTA
 ========================= */
 .cta-section {
-  padding: 40px 0;
   background: #800020;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
+  padding: 50px 0;
 }
 
 /* =========================
@@ -245,19 +164,13 @@ h3 {
   gap: 32px;
 }
 
-.contact-form-box {
-  padding: 20px;
-  background: #ffffff;
-}
-
 /* =========================
    FOOTER
 ========================= */
 footer {
-  margin-top: 40px;
-  padding: 25px;
   background: #800020;
-  color: #ffffff;
+  color: #fff;
+  padding: 30px;
   text-align: center;
 }
 
@@ -268,22 +181,21 @@ footer {
 /* Tablet */
 @media (max-width: 900px) {
 
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .services {
     grid-template-columns: 1fr;
   }
 
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .trust-strip {
-    margin-top: -30px;
-    padding-bottom: 32px;
-  }
-
   .trust-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -291,29 +203,15 @@ footer {
 @media (max-width: 768px) {
 
   .hero {
-    padding: 50px 16px 70px;
-  }
-
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
+    padding: 50px 16px 90px;
   }
 
   h1 {
     font-size: 26px;
   }
 
-  .standards-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .card-icon {
-    width: 56px;
-  }
-
   .trust-strip {
-    margin-top: -25px;
-    padding-bottom: 28px;
+    margin-top: -35px;
   }
 
   .trust-grid {
@@ -321,16 +219,8 @@ footer {
     gap: 16px;
   }
 
-  .trust-item {
-    padding: 16px;
-  }
-
-  .trust-item h2 {
-    font-size: 16px;
-  }
-
-  .trust-item p {
-    font-size: 13px;
+  .standards-grid {
+    grid-template-columns: 1fr;
   }
 }
 
