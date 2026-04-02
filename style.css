@@ -176,7 +176,7 @@ h3 {
 
 .trust-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 24px;
   text-align: center;
 }
@@ -535,16 +535,3 @@ footer p:last-child {
   }
 }
 
-/* Tablet */
-@media (max-width: 900px) {
-  .trust-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile */
-@media (max-width: 520px) {
-  .trust-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
