@@ -668,11 +668,6 @@ h3 {
   color: #800020;
 }
 
-.fc-nav a.active {
-  color: #800020;
-  font-weight: 600;
-}
-
 /* MOBILE */
 @media (max-width: 768px) {
   .fc-nav {
