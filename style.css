@@ -904,7 +904,7 @@ h3 {
   background: #ffffff;
   border: 1px solid #eee;
   border-radius: 10px;
-  padding: 24px;
+  padding: 20px 18px;
   text-align: center;
   transition: 0.2s ease;
 }
@@ -931,7 +931,12 @@ h3 {
 }
 
 .fc-diff-card strong {
-  color: #800020;
+   color: inherit;
+  font-weight: 600;
+}
+
+.fc-diff-card img {
+  margin-bottom: 12px;
 }
 
 /* MOBILE */
