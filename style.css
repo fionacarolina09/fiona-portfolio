@@ -888,8 +888,15 @@ h3 {
 /* ===== WHAT'S INCLUDED ===== */
 
 .fc-included-section {
-  background: #ffffff;
+  background: transparent;
   padding: 70px 20px;
+}
+
+/* TITLE */
+.fc-included-section h2 {
+  font-size: 28px;
+  color: #800020;
+  margin-bottom: 30px;
 }
 
 .fc-included-container {
