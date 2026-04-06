@@ -896,7 +896,8 @@ h3 {
 
 .fc-diff-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+  justify-content: center;
   gap: 16px;
 }
 
@@ -913,6 +914,11 @@ h3 {
 .fc-diff-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.fc-diff-card {
+  width: 100%;
+  max-width: 260px;
 }
 
 /* ICON */
@@ -955,7 +961,7 @@ h3 {
   }
 
   .fc-diff-card {
-    padding: 14px;
+    max-width: 100%;
   }
 
   .fc-diff-card img {
