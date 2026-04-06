@@ -895,6 +895,7 @@ h3 {
 }
 
 /* ===== WHY THIS DOCUMENT KIT ===== */
+/* ===== DIFFERENTIATION TABLE ===== */
 
 .fc-diff-section {
   background: transparent;
@@ -914,7 +915,7 @@ h3 {
 
 /* TABLE */
 .fc-diff-table {
-  border: 1px solid #eee;
+  border: 1px solid #e5e7eb;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -926,51 +927,49 @@ h3 {
 }
 
 /* HEADER */
-.fc-diff-header {
-  font-weight: 600;
-  font-size: 14px;
-}
-
 .fc-diff-header .fc-diff-left {
-  background: #e5e7eb;
-  color: #2f3e5c;
+  background: #800020;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .fc-diff-header .fc-diff-right {
-  background: #f3e8ea;
-  color: #800020;
+  background: #800020;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 /* CELLS */
 .fc-diff-row div {
-  padding: 18px 20px;
+  padding: 20px;
   font-size: 14px;
   line-height: 1.6;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-/* LEFT COLUMN */
+/* LEFT COLUMN (WEAKER / PROBLEM) */
 .fc-diff-left {
-  background: #f9fafb;
+  background: #f3f4f6;
   color: #6b7280;
-  border-right: 1px solid #eee;
+  border-right: 1px solid #e5e7eb;
 }
 
-/* RIGHT COLUMN */
+/* RIGHT COLUMN (STRONG / SOLUTION) */
 .fc-diff-right {
-  background: #fff1f2;
+  background: #fde8ea; /* stronger burgundy tint */
   color: #2f3e5c;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* ICONS */
 .fc-icon {
   margin-right: 10px;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .fc-icon.bad {
-  color: #e11d48;
+  color: #dc2626;
 }
 
 .fc-icon.good {
@@ -987,9 +986,8 @@ h3 {
   border-bottom: none;
 }
 
-/* ===== MOBILE ===== */
+/* MOBILE */
 @media (max-width: 768px) {
-
   .fc-diff-row {
     grid-template-columns: 1fr;
   }
@@ -999,8 +997,6 @@ h3 {
   }
 
   .fc-diff-right {
-    background: #fff1f2;
     font-weight: 600;
   }
-
 }
