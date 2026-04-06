@@ -887,18 +887,18 @@ h3 {
 }
 
 @media (max-width: 768px) {
-
-  .fc-templates-grid {
+  .fc-included-grid {
     grid-template-columns: 1fr;
   }
+}
 
 }
 
-/* ===== DIFFERENTIATION ===== */
+/* ===== WHY THIS DOCUMENT KIT ===== */
 
 .fc-diff-section {
-  background: #ffffff;
-  padding: 70px 20px;
+  background: transparent;
+  padding: 60px 20px;
 }
 
 .fc-diff-container {
@@ -912,10 +912,10 @@ h3 {
   margin-bottom: 30px;
 }
 
-/* TABLE */
+/* TABLE WRAPPER */
 .fc-diff-table {
   border: 1px solid #eee;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
 }
 
@@ -927,43 +927,71 @@ h3 {
 
 /* HEADER */
 .fc-diff-header {
-  background: #f7f3f0;
+  background: #f5f5f5;
   font-weight: 600;
+  font-size: 14px;
   color: #2f3e5c;
 }
 
 /* CELLS */
 .fc-diff-row div {
-  padding: 16px 18px;
+  padding: 18px 20px;
   font-size: 14px;
+  line-height: 1.6;
   border-bottom: 1px solid #eee;
 }
 
 /* LEFT COLUMN */
 .fc-diff-left {
+  background: #fafafa;
   color: #6b7280;
+  border-right: 1px solid #eee;
 }
 
-/* RIGHT COLUMN (HIGHLIGHT) */
+/* RIGHT COLUMN (KEY SELLING SIDE) */
 .fc-diff-right {
-  background: rgba(128, 0, 32, 0.05);
+  background: #fff7f7;
   font-weight: 500;
   color: #2f3e5c;
 }
 
-/* LAST ROW REMOVE BORDER */
+/* ICONS */
+.fc-icon {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.fc-icon.bad {
+  color: #e11d48;
+}
+
+.fc-icon.good {
+  color: #16a34a;
+}
+
+/* HOVER EFFECT */
+.fc-diff-row:not(.fc-diff-header):hover {
+  background: #f9fafb;
+}
+
+/* REMOVE LAST BORDER */
 .fc-diff-row:last-child div {
   border-bottom: none;
 }
 
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
 
   .fc-diff-row {
     grid-template-columns: 1fr;
   }
 
+  .fc-diff-left {
+    border-right: none;
+  }
+
   .fc-diff-right {
-    background: transparent;
+    background: #fff7f7;
     font-weight: 600;
   }
 
