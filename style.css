@@ -674,3 +674,50 @@ h3 {
     display: none;
   }
 }
+
+/* ===== TEMPLATES HERO ===== */
+
+.fc-templates-hero {
+  background: #f7f3f0;
+  padding: 70px 20px 50px;
+  text-align: center;
+}
+
+.fc-templates-hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fc-templates-hero h1 {
+  font-size: 36px;
+  color: #2f3e5c;
+  margin-bottom: 16px;
+}
+
+.fc-templates-hero-sub {
+  font-size: 15px;
+  color: #4a5568;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.fc-templates-hero-cta {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+  .fc-templates-hero {
+    padding: 60px 16px 40px;
+  }
+
+  .fc-templates-hero h1 {
+    font-size: 26px;
+  }
+
+  .fc-templates-hero-sub {
+    font-size: 14px;
+  }
+
+}
