@@ -678,9 +678,18 @@ h3 {
 /* ===== TEMPLATES HERO ===== */
 
 .fc-templates-hero {
-  background: #f7f3f0;
-  padding: 70px 20px 50px;
+  background: #800020;
+  padding: 80px 20px 60px;
   text-align: center;
+  color: #ffffff;
+}
+
+.fc-templates-hero h1 {
+  color: #ffffff;
+}
+
+.fc-templates-hero-sub {
+  color: #f3eaea;
 }
 
 .fc-templates-hero-container {
@@ -704,6 +713,16 @@ h3 {
 .fc-templates-hero-cta {
   display: flex;
   justify-content: center;
+}
+
+.fc-templates-hero .btn-accent {
+  background: #ffffff;
+  color: #800020;
+  border: none;
+}
+
+.fc-templates-hero .btn-accent:hover {
+  background: #f3eaea;
 }
 
 @media (max-width: 768px) {
