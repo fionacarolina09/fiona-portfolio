@@ -685,11 +685,11 @@ h3 {
 }
 
 .fc-templates-hero h1 {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .fc-templates-hero-sub {
-  color: #f3eaea;
+  color: #f8dede !important;
 }
 
 .fc-templates-hero-container {
