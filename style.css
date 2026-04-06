@@ -892,13 +892,87 @@ h3 {
   }
 }
 
+/* ===== WHY THIS DOCUMENT KIT ===== */
+
+.fc-diff-section {
+  padding: 60px 20px;
 }
 
-/* ===== WHY THIS DOCUMENT KIT ===== */
+.fc-diff-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.fc-diff-section h2 {
+  font-size: 28px;
+  color: #800020;
+  margin-bottom: 30px;
+}
+
+/* TABLE */
+.fc-diff-table {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ROW */
+.fc-diff-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* HEADER */
+.fc-diff-header div {
+  background: #800020;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* CELLS */
+.fc-diff-row div {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* LEFT COLUMN */
+.fc-diff-left {
+  color: #6b7280;
+  border-right: 1px solid #e5e7eb;
+}
+
+/* RIGHT COLUMN */
+.fc-diff-right {
+  color: #2f3e5c;
+  font-weight: 600;
+}
+
+/* ICONS */
+.fc-icon {
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.fc-icon.bad { color: #dc2626; }
+.fc-icon.good { color: #16a34a; }
+
+/* HOVER */
+.fc-diff-row:not(.fc-diff-header):hover {
+  background: #f9fafb;
+}
+
+/* REMOVE LAST BORDER */
+.fc-diff-row:last-child div {
+  border-bottom: none;
+}
+
+/* ===== COMPARISON CARDS ===== */
 
 .fc-compare-section {
   padding: 50px 20px;
-  background: transparent;
 }
 
 .fc-compare-container {
@@ -947,24 +1021,16 @@ h3 {
 /* ICON */
 .fc-compare-item .icon {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
   margin-top: 2px;
 }
 
 /* NEGATIVE */
-.fc-compare-item.negative .icon {
-  color: #9ca3af;
-}
-
-.fc-compare-item.negative p {
-  color: #6b7280;
-}
+.fc-compare-item.negative .icon { color: #9ca3af; }
+.fc-compare-item.negative p { color: #6b7280; }
 
 /* POSITIVE */
-.fc-compare-item.positive .icon {
-  color: #800020;
-}
-
+.fc-compare-item.positive .icon { color: #800020; }
 .fc-compare-item.positive p {
   color: #2f3e5c;
   font-weight: 500;
@@ -977,8 +1043,18 @@ h3 {
   margin: 0;
 }
 
-/* MOBILE */
+/* ===== RESPONSIVE ===== */
+
 @media (max-width: 768px) {
+
+  .fc-diff-row {
+    grid-template-columns: 1fr;
+  }
+
+  .fc-diff-left {
+    border-right: none;
+  }
+
   .fc-compare-section {
     padding: 40px 16px;
   }
