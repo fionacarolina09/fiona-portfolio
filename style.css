@@ -893,3 +893,78 @@ h3 {
   }
 
 }
+
+/* ===== DIFFERENTIATION ===== */
+
+.fc-diff-section {
+  background: #ffffff;
+  padding: 70px 20px;
+}
+
+.fc-diff-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.fc-diff-section h2 {
+  font-size: 28px;
+  color: #800020;
+  margin-bottom: 30px;
+}
+
+/* TABLE */
+.fc-diff-table {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ROW */
+.fc-diff-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* HEADER */
+.fc-diff-header {
+  background: #f7f3f0;
+  font-weight: 600;
+  color: #2f3e5c;
+}
+
+/* CELLS */
+.fc-diff-row div {
+  padding: 16px 18px;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+/* LEFT COLUMN */
+.fc-diff-left {
+  color: #6b7280;
+}
+
+/* RIGHT COLUMN (HIGHLIGHT) */
+.fc-diff-right {
+  background: rgba(128, 0, 32, 0.05);
+  font-weight: 500;
+  color: #2f3e5c;
+}
+
+/* LAST ROW REMOVE BORDER */
+.fc-diff-row:last-child div {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+
+  .fc-diff-row {
+    grid-template-columns: 1fr;
+  }
+
+  .fc-diff-right {
+    background: transparent;
+    font-weight: 600;
+  }
+
+}
