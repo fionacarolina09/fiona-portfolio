@@ -828,7 +828,7 @@ h3 {
 
 .fc-included-section {
   background: transparent;
-  padding: 70px 20px;
+  padding: 40px 20px 70px;
 }
 
 .fc-included-container {
@@ -884,4 +884,12 @@ h3 {
   font-size: 13px;
   color: #4a5568;
   line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+
+  .fc-templates-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
