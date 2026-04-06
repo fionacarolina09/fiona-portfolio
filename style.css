@@ -942,6 +942,11 @@ h3 {
   font-weight: 600;
 }
 
+.fc-diff-section h2 {
+  margin-top: 40px;     /* separation from above section */
+  margin-bottom: 24px;  /* breathing space before cards */
+}
+
 /* ===== RESPONSIVE ===== */
 
 /* Tablet */
@@ -957,11 +962,15 @@ h3 {
 
   .fc-diff-grid {
     grid-template-columns: 1fr;
+    justify-content: stretch;
     gap: 12px;
   }
 
   .fc-diff-card {
     max-width: 100%;
+    width: 100%;
+    padding: 14px 16px;
+    text-align: center;
   }
 
   .fc-diff-card img {
@@ -975,4 +984,10 @@ h3 {
     line-height: 1.4;
   }
 
+     .fc-diff-section h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+  }
+   
 }
