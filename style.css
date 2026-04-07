@@ -1002,3 +1002,83 @@ h3 {
   }
 
 }
+
+/* ===== FINAL CTA ===== */
+
+.fc-final-cta {
+  background: #800020;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.fc-final-cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fc-final-cta h2 {
+  color: #ffffff;
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+.fc-final-cta-sub {
+  color: #f3eaea;
+  font-size: 15px;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+.fc-final-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* PRIMARY (matches your system) */
+.fc-final-cta .btn-primary {
+  background: #ffffff;
+  color: #800020;
+}
+
+.fc-final-cta .btn-primary:hover {
+  background: #f3eaea;
+}
+
+/* SECONDARY */
+.btn-outline {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.btn-outline:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .fc-final-cta {
+    padding: 50px 16px;
+  }
+
+  .fc-final-cta h2 {
+    font-size: 24px;
+  }
+
+  .fc-final-cta-sub {
+    font-size: 14px;
+  }
+
+  .fc-final-cta-buttons {
+    flex-direction: column;
+  }
+
+  .fc-final-cta-buttons a {
+    width: 100%;
+  }
+
+}
