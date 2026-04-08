@@ -350,6 +350,24 @@
       });
   });
 </script>
+
+<script>
+  const faqItems = document.querySelectorAll(".dk-faq-item");
+
+  faqItems.forEach(item => {
+    const btn = item.querySelector(".dk-faq-question");
+
+    btn.addEventListener("click", () => {
+
+      // close others (accordion behavior)
+      faqItems.forEach(i => {
+        if (i !== item) i.classList.remove("active");
+      });
+
+      item.classList.toggle("active");
+    });
+  });
+</script>
   
 </body>
 </html>
