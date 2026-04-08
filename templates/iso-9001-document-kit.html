@@ -196,24 +196,18 @@
     const form = this;
     const status = document.getElementById("dk-form-status");
 
-    status.innerText = "Sending your access details...";
+    status.innerText = "Submitting your request...";
 
-    // 1. SEND TO CUSTOMER
-    emailjs.sendForm("service_vp7lu0t", "template_n45jy3l", form)
+    emailjs.sendForm("service_vp7lu0t", "template_mjbeyvy", form)
       .then(function() {
 
-        // 2. SEND TO YOU (ADMIN NOTIFICATION)
-        emailjs.sendForm("service_vp7lu0t", "template_admin_notification", form);
+        status.innerText = "Request received. Access will be shared with you via email shortly.";
 
-        // SUCCESS MESSAGE
-        status.innerText = "Access sent. Please check your email for the download links (check spam folder if not received).";
-
-        // RESET FORM
         form.reset();
 
       }, function(error) {
 
-        status.innerText = "Unable to send at the moment. Please try again.";
+        status.innerText = "Submission failed. Please try again.";
 
       });
   });
