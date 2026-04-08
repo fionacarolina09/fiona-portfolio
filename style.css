@@ -1345,9 +1345,13 @@ h3 {
   background: #ffffff;
 }
 
-/* BUTTON (FULL WIDTH FIX) */
+/* BUTTON RESPONSIVE FIX */
 .dk-form button {
   width: 100%;
+  max-width: 320px;   /* control desktop width */
+  margin: 10px auto 0;
+  display: block;
+
   padding: 14px;
   background: #800020;
   color: #ffffff;
