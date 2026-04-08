@@ -31,6 +31,40 @@
   </div>
 </header>
 
+<!-- HERO -->
+<section class="dk-hero">
+  <div class="dk-container">
+
+    <!-- LEFT: PRODUCT IMAGE -->
+    <div class="dk-hero-image">
+      <img src="product cover/ISO 9001 cover.png" alt="ISO 9001 Document Kit">
+    </div>
+
+    <!-- RIGHT: CONTENT -->
+    <div class="dk-hero-content">
+
+      <h1>ISO 9001:2015 Document Kit</h1>
+
+      <p class="dk-sub">
+        Fully structured, clause-mapped Level 1–4 documentation system for implementation and certification.
+      </p>
+
+      <ul class="dk-points">
+        <li>Clause-mapped to ISO requirements</li>
+        <li>Ready-to-use and fully editable</li>
+        <li>Structured for audit readiness</li>
+      </ul>
+
+      <div class="dk-cta">
+        <a href="#lead-form" class="btn-primary">Get Full Index & Preview</a>
+        <a href="#" class="btn-secondary">Buy Now</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container footer-center">
