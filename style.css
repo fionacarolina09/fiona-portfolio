@@ -1623,7 +1623,7 @@ h3 {
 
 }
 
-/* ===== FAQ ===== */
+/* ===== FAQ SECTION ===== */
 
 .dk-faq {
   padding: 70px 20px;
@@ -1633,19 +1633,19 @@ h3 {
 .dk-faq h2 {
   text-align: center;
   color: #800020;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* LIST */
 .dk-faq-list {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
 /* ITEM */
-
 .dk-faq-item {
   border-bottom: 1px solid #edf0f3;
+  transition: 0.2s ease;
 }
 
 /* QUESTION */
@@ -1654,7 +1654,7 @@ h3 {
   background: none;
   border: none;
   text-align: left;
-  padding: 16px 0;
+  padding: 18px 0;
   font-size: 16px;
   font-weight: 600;
   color: #2f3e5c;
@@ -1664,11 +1664,14 @@ h3 {
   cursor: pointer;
 }
 
-.dk-faq-question:hover {
-  color: #800020;
+/* REMOVE TEXT "+" */
+.dk-faq-question span {
+  display: inline-block;
+  width: 20px;
+  text-align: right;
 }
 
-/* PLUS ICON */
+/* ICON CONTROL (FIXED) */
 .dk-faq-question span::before {
   content: "+";
   color: #800020;
@@ -1680,8 +1683,9 @@ h3 {
   content: "−";
 }
 
-.dk-faq-item.active {
-  background: rgba(128, 0, 32, 0.03);
+/* HOVER */
+.dk-faq-question:hover {
+  color: #800020;
 }
 
 /* ANSWER */
@@ -1699,22 +1703,59 @@ h3 {
   line-height: 1.6;
 }
 
-/* ACTIVE */
+/* ACTIVE STATE */
+.dk-faq-item.active {
+  background: rgba(128, 0, 32, 0.03);
+}
+
 .dk-faq-item.active .dk-faq-answer {
   max-height: 200px;
 }
 
-.dk-faq-item.active .dk-faq-question span {
-  content: "-";
-}
-
 /* ===== CTA ===== */
+
 .dk-faq-cta {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
+.dk-faq-cta p {
+  margin-bottom: 12px;
+  color: #4a5568;
+  font-size: 14px;
+}
+
+/* BUTTON STYLE (FIXED — STRONG CTA) */
 .dk-faq-cta .btn-primary {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 12px 26px;
+  background: #800020;
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.dk-faq-cta .btn-primary:hover {
+  background: #5c0017;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  .dk-faq {
+    padding: 50px 16px;
+  }
+
+  .dk-faq-question {
+    font-size: 15px;
+    padding: 16px 0;
+  }
+
+  .dk-faq-answer p {
+    font-size: 14px;
+  }
+
 }
