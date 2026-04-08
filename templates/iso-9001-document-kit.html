@@ -118,11 +118,20 @@
     <form id="dk-form" class="dk-form">
 
       <div class="dk-form-row">
-        <input type="text" name="user_name" placeholder="Name" required>
-        <input type="email" name="user_email" placeholder="Email" required>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
       </div>
 
-      <button type="submit" class="btn-accent">Download Now</button>
+      <div class="dk-form-row-single">
+        <select name="request_type" required>
+          <option value="" disabled selected>Select Request Type</option>
+          <option value="Starter Pack">Starter Pack</option>
+          <option value="Document Index & Samples Preview">Document Index & Samples Preview</option>
+          <option value="Document Index & Samples Preview">Both</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn-accent">Request Access</button>
 
       <p id="dk-form-status" class="dk-form-status"></p>
 
@@ -184,13 +193,23 @@
   document.getElementById("dk-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
+    const form = this;
     const status = document.getElementById("dk-form-status");
+
     status.innerText = "Sending your access details...";
 
-    emailjs.sendForm("service_vp7lu0t", "template_n45jy3l", this)
+    // 1. SEND TO CUSTOMER
+    emailjs.sendForm("service_vp7lu0t", "template_n45jy3l", form)
       .then(function() {
 
+        // 2. SEND TO YOU (ADMIN NOTIFICATION)
+        emailjs.sendForm("service_vp7lu0t", "template_admin_notification", form);
+
+        // SUCCESS MESSAGE
         status.innerText = "Access sent. Please check your email for the download links (check spam folder if not received).";
+
+        // RESET FORM
+        form.reset();
 
       }, function(error) {
 
