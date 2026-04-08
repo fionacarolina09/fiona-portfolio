@@ -1346,7 +1346,7 @@ h3 {
 }
 
 /* BUTTON RESPONSIVE FIX */
-.dk-form button {
+.dk-form button[type="submit"] {
   width: 100%;
   max-width: 320px;   /* control desktop width */
   margin: 10px auto 0;
@@ -1363,8 +1363,24 @@ h3 {
   transition: 0.2s ease;
 }
 
-.dk-form button:hover {
+.dk-form button[type="submit"]:hover {
   background: #660018;
+}
+
+.dk-lead .dk-form button[type="submit"] {
+  width: 100%;
+  max-width: 320px;
+  margin: 10px auto 0;
+  display: block;
+
+  padding: 14px;
+  background: #800020;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 /* STATUS */
