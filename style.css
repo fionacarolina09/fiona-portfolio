@@ -1709,6 +1709,10 @@ h3 {
 }
 
 /* ===== CTA ===== */
+.dk-faq-cta {
+  text-align: center;
+  margin-top: 30px;
+}
 
 .dk-faq-cta .btn-primary {
   display: inline-block;
