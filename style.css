@@ -1432,3 +1432,75 @@ h3 {
   }
 
 }
+
+/* ===== KEY ADVANTAGES ===== */
+
+.dk-advantages {
+  padding: 70px 20px;
+  background: #ffffff;
+}
+
+.dk-advantages h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #800020;
+}
+
+/* GRID */
+.dk-adv-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.dk-adv-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 22px;
+  background: #fff;
+  transition: 0.2s ease;
+}
+
+.dk-adv-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* TEXT */
+.dk-adv-card h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #2f3e5c;
+}
+
+.dk-adv-card p {
+  font-size: 13px;
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .dk-adv-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  .dk-advantages {
+    padding: 50px 16px;
+  }
+
+  .dk-adv-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .dk-adv-card {
+    padding: 18px;
+  }
+
+}
