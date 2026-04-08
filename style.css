@@ -1216,3 +1216,83 @@ h3 {
   }
 
 }
+
+/* ===== WHAT YOU GET ===== */
+
+.dk-included {
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.dk-included h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.dk-included-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.dk-included-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fff;
+  transition: 0.2s ease;
+}
+
+.dk-included-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* LEVEL */
+.dk-level {
+  font-size: 13px;
+  font-weight: 700;
+  color: #800020;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* TEXT */
+.dk-included-card h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #2f3e5c;
+}
+
+.dk-included-card p {
+  font-size: 13px;
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .dk-included-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  .dk-included {
+    padding: 40px 16px;
+  }
+
+  .dk-included-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .dk-included-card {
+    padding: 16px;
+  }
+
+}
