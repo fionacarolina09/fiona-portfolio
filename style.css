@@ -1499,18 +1499,36 @@ h3 {
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
 
+  /* SECTION — TRANSPARENT */
   .dk-advantages {
     padding: 50px 16px;
-     background: transparent;
+    background: transparent;
   }
 
+  /* GRID */
   .dk-adv-grid {
     grid-template-columns: 1fr;
     gap: 14px;
   }
 
+  /* CARD — KEEP WHITE BUT SOFT */
   .dk-adv-card {
     padding: 18px;
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+  }
+
+  /* TITLE */
+  .dk-adv-card h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  /* TEXT */
+  .dk-adv-card p {
+    font-size: 14px;
+    line-height: 1.5;
   }
 
 }
