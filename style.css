@@ -1548,7 +1548,7 @@ h3 {
 
 /* LIST */
 .dk-flow-list {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -1557,19 +1557,41 @@ h3 {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  padding: 16px 0;
-  border-bottom: 1px solid #eee;
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .dk-flow-step:last-child {
   border-bottom: none;
 }
 
+.dk-flow-step p {
+  font-size: 16px;
+  color: #2f3e5c;
+}
+
+.dk-flow-step {
+  position: relative;
+  padding-left: 10px;
+}
+
+.dk-flow-step::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 3px;
+  height: 20px;
+  background: #800020;
+  border-radius: 2px;
+}
+
 /* NUMBER */
 .dk-flow-number {
-  font-weight: 600;
+  font-weight: 700;
   color: #800020;
-  min-width: 40px;
+  min-width: 50px;
+  font-size: 18px;
 }
 
 /* TEXT */
