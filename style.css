@@ -53,7 +53,7 @@ ul {
 }
 
 .section {
-  padding: 44px 0;
+  padding: 48px 20px;
 }
 
 /* =========================
@@ -745,7 +745,7 @@ h3 {
 
 .fc-templates-section {
   background: #f7f3f0;
-  padding: 70px 20px;
+  padding: 48px 20px;
 }
 
 .fc-templates-container {
@@ -820,6 +820,7 @@ h3 {
 
   .fc-templates-grid {
     grid-template-columns: 1fr;
+     padding: 36px 16px;
   }
 
 }
@@ -828,7 +829,7 @@ h3 {
 
 .fc-included-section {
   background: transparent;
-  padding: 30px 20px 60px;
+  padding: 48px 20px;
 }
 
 .fc-included-container {
@@ -889,13 +890,14 @@ h3 {
 @media (max-width: 768px) {
   .fc-included-grid {
     grid-template-columns: 1fr;
+     padding: 36px 16px;
   }
 }
 
 /* ===== KEY ADVANTAGES (FINAL REFINED) ===== */
 
 .fc-diff-section {
-  padding: 30px 20px 60px;
+  padding: 48px 20px;
 }
 
 .fc-diff-container {
@@ -972,7 +974,7 @@ h3 {
 @media (max-width: 768px) {
 
   .fc-diff-section {
-    padding: 40px 16px 50px;
+    padding: 36px 16px;
   }
 
   .fc-diff-section h2 {
