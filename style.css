@@ -1180,7 +1180,6 @@ h3 {
 }
 
 /* ===== MOBILE ===== */
-@media (max-width: 768px) {
 
 @media (max-width: 768px) {
 
@@ -1209,6 +1208,7 @@ h3 {
     position: absolute;
     left: 0;
     top: 1px;
+     color: #800020;
   }
 
   .dk-cta {
