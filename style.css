@@ -1154,21 +1154,19 @@ h3 {
   flex-wrap: wrap;
 }
 
-.btn-primary {
+.dk-hero .btn-primary {
   background: #800020;
   color: #fff;
   padding: 12px 18px;
   border-radius: 6px;
-  text-decoration: none;
   font-size: 14px;
 }
 
-.btn-secondary {
+.dk-hero .btn-secondary {
   border: 1px solid #800020;
   color: #800020;
   padding: 12px 18px;
   border-radius: 6px;
-  text-decoration: none;
   font-size: 14px;
 }
 
@@ -1367,7 +1365,7 @@ h3 {
   background: #660018;
 }
 
-.dk-lead .dk-form button[type="submit"] {
+.dk-form button[type="submit"] {
   width: 100%;
   max-width: 320px;
   margin: 10px auto 0;
