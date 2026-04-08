@@ -1532,3 +1532,71 @@ h3 {
   }
 
 }
+
+/* ===== IMPLEMENTATION FLOW ===== */
+
+.dk-flow {
+  padding: 70px 20px;
+  background: transparent;
+}
+
+.dk-flow h2 {
+  text-align: center;
+  color: #800020;
+  margin-bottom: 30px;
+}
+
+/* LIST */
+.dk-flow-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* STEP */
+.dk-flow-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.dk-flow-step:last-child {
+  border-bottom: none;
+}
+
+/* NUMBER */
+.dk-flow-number {
+  font-weight: 600;
+  color: #800020;
+  min-width: 40px;
+}
+
+/* TEXT */
+.dk-flow-step p {
+  margin: 0;
+  color: #2f3e5c;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+
+  .dk-flow {
+    padding: 50px 16px;
+  }
+
+  .dk-flow-step {
+    gap: 12px;
+  }
+
+  .dk-flow-number {
+    min-width: 34px;
+    font-size: 14px;
+  }
+
+  .dk-flow-step p {
+    font-size: 14px;
+  }
+
+}
