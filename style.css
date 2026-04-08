@@ -1296,3 +1296,56 @@ h3 {
   }
 
 }
+
+/* ===== LEAD FORM ===== */
+
+.dk-lead {
+  background: #f7f3f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.dk-lead h2 {
+  margin-bottom: 10px;
+}
+
+.dk-lead-sub {
+  font-size: 14px;
+  color: #4a5568;
+  margin-bottom: 24px;
+}
+
+/* FORM */
+.dk-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.dk-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.dk-form input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* STATUS */
+.dk-form-status {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  .dk-form-row {
+    grid-template-columns: 1fr;
+  }
+
+}
