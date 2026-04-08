@@ -173,5 +173,32 @@
   </div>
 </footer>
 
+<!-- INLINE FORM -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("-qFjnBR_4Gh6nCo3k");
+  })();
+
+  document.getElementById("dk-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const status = document.getElementById("dk-form-status");
+    status.innerText = "Sending your access details...";
+
+    emailjs.sendForm("service_vp7lu0t", "template_n45jy3l", this)
+      .then(function() {
+
+        status.innerText = "Access sent. Please check your email for the download links (check spam folder if not received).";
+
+      }, function(error) {
+
+        status.innerText = "Unable to send at the moment. Please try again.";
+
+      });
+  });
+</script>
+  
 </body>
 </html>
