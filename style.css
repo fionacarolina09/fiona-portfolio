@@ -1863,7 +1863,7 @@ h3 {
 /* ===== RESOURCES SECTION ===== */
 
 .fc-res-section {
-  background: #ffffff;
+  background: transparent;
   padding: 70px 20px;
 }
 
@@ -1934,6 +1934,22 @@ h3 {
   background: #faf6f4;
 }
 
+/* CARD LAYOUT FIX */
+.fc-res-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* PUSH BUTTON TO BOTTOM PROPERLY */
+.fc-res-card .fc-btn-primary {
+  margin-top: auto;
+}
+
+/* ADD SPACING BEFORE BUTTON */
+.fc-res-card ul {
+  margin-bottom: 20px;
+}
+
 /* COMING SOON */
 .fc-coming {
   margin-top: auto;
@@ -1967,4 +1983,28 @@ h3 {
   .fc-res-intro {
     font-size: 14px;
   }
+
+     .fc-res-card {
+    padding: 20px;
+  }
+
+  .fc-res-card h3 {
+    font-size: 15px;
+  }
+
+  .fc-res-card p {
+    font-size: 14px;
+  }
+
+  .fc-res-card li {
+    font-size: 13px;
+  }
+
+  .fc-btn-primary {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
 }
+
