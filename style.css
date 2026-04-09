@@ -2270,4 +2270,18 @@ h3 {
     padding: 18px;
   }
 
+  .fc-res-hero .fc-btn-primary {
+    width: auto;
+    max-width: 260px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+  }
+
+     .fc-res-hero-sub {
+    margin-bottom: 20px;
+  }
+
 }
