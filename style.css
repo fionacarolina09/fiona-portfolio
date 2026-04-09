@@ -1360,64 +1360,46 @@ h3 {
 
 }
 
-/* =========================
-   LEAD FORM (SCOPED ONLY)
-========================= */
-.dk-lead-iso9001 {
+/* ===== LEAD FORM ===== */
+.dk-lead {
   background: #f7f3f0;
   padding: 70px 20px;
   text-align: center;
 }
 
-.dk-lead-iso9001 h2 {
+.dk-lead h2 {
   font-size: 30px;
   color: #800020;
   margin-bottom: 12px;
 }
 
-.dk-lead-iso9001 .dk-lead-sub {
+.dk-lead-sub {
   font-size: 15px;
   color: #4a5568;
   margin-bottom: 28px;
 }
 
-/* =========================
-   FORM
-========================= */
-.dk-lead-iso9001 .dk-form {
+/* FORM */
+.dk-form {
   max-width: 600px;
   margin: 0 auto;
-  text-align: center;
 }
 
-/* =========================
-   LAYOUT
-========================= */
-.dk-lead-iso9001 .dk-form-row {
+/* ROW */
+.dk-form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
   margin-bottom: 12px;
 }
 
-.dk-lead-iso9001 .dk-form-row-single {
+.dk-form-row-single {
   margin-bottom: 14px;
 }
 
-/* width control (scoped only) */
-.dk-lead-iso9001 .dk-form-row,
-.dk-lead-iso9001 .dk-form-row-single,
-.dk-lead-iso9001 .dk-consent {
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* =========================
-   INPUTS
-========================= */
-.dk-lead-iso9001 .dk-form input,
-.dk-lead-iso9001 .dk-form select {
+/* INPUTS */
+.dk-form input,
+.dk-form select {
   width: 100%;
   padding: 14px;
   border: 1px solid #ddd;
@@ -1426,12 +1408,10 @@ h3 {
   background: #ffffff;
 }
 
-/* =========================
-   BUTTON
-========================= */
-.dk-lead-iso9001 .dk-form button[type="submit"] {
+/* BUTTON RESPONSIVE FIX */
+.dk-form button[type="submit"] {
   width: 100%;
-  max-width: 320px;
+  max-width: 320px;   /* control desktop width */
   margin: 10px auto 0;
   display: block;
 
@@ -1446,79 +1426,55 @@ h3 {
   transition: 0.2s ease;
 }
 
-.dk-lead-iso9001 .dk-form button[type="submit"]:hover {
+.dk-form button[type="submit"]:hover {
   background: #660018;
 }
 
-/* =========================
-   STATUS
-========================= */
-.dk-lead-iso9001 .dk-form-status {
+.dk-form button[type="submit"] {
+  width: 100%;
+  max-width: 320px;
+  margin: 10px auto 0;
+  display: block;
+
+  padding: 14px;
+  background: #800020;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* STATUS */
+.dk-form-status {
   margin-top: 10px;
   font-size: 13px;
   color: #2f3e5c;
 }
 
-/* =========================
-   CONSENT
-========================= */
-.dk-lead-iso9001 .dk-consent {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-
-  margin: 16px auto;
-
-  font-size: 11.5px;
-  color: #4b5563;
-  line-height: 1.4;
-  text-align: left;
-}
-
-.dk-lead-iso9001 .dk-consent input[type="checkbox"] {
-  flex-shrink: 0;
-  margin-top: 3px;
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-}
-
-.dk-lead-iso9001 .dk-consent label {
-  flex: 1;
-}
-
-/* =========================
-   MOBILE
-========================= */
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
 
-  .dk-lead-iso9001 {
+  .dk-lead {
     padding: 50px 16px;
   }
 
-  .dk-lead-iso9001 h2 {
+  .dk-lead h2 {
     font-size: 24px;
     line-height: 1.3;
   }
 
-  .dk-lead-iso9001 .dk-lead-sub {
+  .dk-lead-sub {
     font-size: 14px;
   }
 
-  .dk-lead-iso9001 .dk-form-row {
+  .dk-form-row {
     grid-template-columns: 1fr;
   }
 
-  .dk-lead-iso9001 .dk-consent {
-    font-size: 11px;
-    margin: 14px 0;
-  }
-
-  .dk-lead-iso9001 .dk-consent input[type="checkbox"] {
-    width: 13px;
-    height: 13px;
-  }
 }
+
    
 /* ===== KEY ADVANTAGES ===== */
 
