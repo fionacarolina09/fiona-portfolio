@@ -2259,3 +2259,91 @@ h3 {
   }
 
 }
+
+/* ===== SOFT CTA ===== */
+
+.fc-soft-cta {
+  background: #f7f3f0; /* ivory */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.fc-soft-cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fc-soft-cta h2 {
+  font-size: 26px;
+  color: #800020;
+  margin-bottom: 12px;
+}
+
+.fc-soft-cta-sub {
+  font-size: 15px;
+  color: #2f3e5c;
+  margin-bottom: 25px;
+}
+
+/* POINTS */
+.fc-soft-cta-points {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.fc-soft-cta-points li {
+  font-size: 14px;
+  color: #2f3e5c;
+  margin-bottom: 8px;
+}
+
+/* BUTTON */
+.fc-soft-cta .fc-btn-secondary {
+  border: 1px solid #800020;
+  color: #800020;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.fc-soft-cta .fc-btn-secondary:hover {
+  background: #800020;
+  color: #ffffff;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .fc-soft-cta h2 {
+    font-size: 22px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .fc-soft-cta {
+    padding: 50px 16px;
+  }
+
+  .fc-soft-cta h2 {
+    font-size: 20px;
+  }
+
+  .fc-soft-cta-sub {
+    font-size: 14px;
+  }
+
+  .fc-soft-cta-points li {
+    font-size: 13px;
+  }
+
+  .fc-soft-cta .fc-btn-secondary {
+    width: auto;
+    max-width: 260px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+}
