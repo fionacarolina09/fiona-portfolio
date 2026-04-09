@@ -114,8 +114,8 @@
   </div>
 </section>
 
-<!-- VIEW FULL DOCUMENT -->
-<section class="dk-lead dk-lead-iso9001" id="lead-form">
+ <!-- VIEW FULL DOCUMENT -->
+<section class="dk-lead" id="lead-form">
   <div class="container">
 
     <h2>View Full Document Structure Before You Buy</h2>
@@ -126,13 +126,11 @@
 
     <form id="dk-form" class="dk-form">
 
-      <!-- ROW -->
       <div class="dk-form-row">
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="Email" required>
       </div>
 
-      <!-- SELECT -->
       <div class="dk-form-row-single">
         <select name="request_type" required>
           <option value="" disabled selected>Select Request Type</option>
@@ -141,26 +139,15 @@
         </select>
       </div>
 
-      <!-- CONSENT -->
-      <div class="dk-consent">
-        <input type="checkbox" id="dk-consent" name="consent" required>
-        <label for="dk-consent">
-          By submitting this form, I consent to the collection and use of my personal data for the purpose of delivering requested materials and related communications, including marketing emails. I may withdraw consent at any time.
-        </label>
-      </div>
+      <button type="submit" class="btn-accent">Request Access</button>
 
-      <!-- BUTTON -->
-      <div class="dk-form-row-single">
-        <button type="submit" class="btn-accent">Request Access</button>
-      </div>
-
-      <!-- STATUS -->
       <p id="dk-form-status" class="dk-form-status"></p>
 
     </form>
 
   </div>
 </section>
+
 
  <!-- KEY ADVANTAGES -->
 <section class="dk-advantages">
