@@ -2120,12 +2120,12 @@ h3 {
 }
 
 /* BUTTON */
-.fc-iso-hero .fc-btn-secondary {
-  display: inline-block;
+.fc-iso-hero .fc-btn-accent {
+  display: flex;
   padding: 12px 24px;
-     background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+     background: #ffffff;
+  color: #800020;
+  border: none;
 }
 
 /* ===== TABLET ===== */
