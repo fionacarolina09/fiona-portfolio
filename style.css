@@ -353,9 +353,10 @@ h3 {
 
 /* MOBILE */
 @media (max-width: 768px) {
-  .form-consent {
-    font-size: 11px;
-    gap: 8px;
+  .form-consent input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    transform: scale(0.9);
   }
 }
 
