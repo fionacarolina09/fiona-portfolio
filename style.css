@@ -2084,43 +2084,44 @@ h3 {
 
 /* ===== ISO 9001 STARTER PACK ===== */
 
-/* ===== ISO 9001 HERO ===== */
+/* ===== HERO ===== */
 
 .fc-iso-hero {
-  background: #800020; 
-  padding: 80px 20px 70px;
+  background: #800020;
+  padding: 70px 20px 60px;
   text-align: center;
 }
 
 .fc-iso-hero-container {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 /* H1 */
 .fc-iso-hero h1 {
-  font-size: 40px;
+  font-size: 32px;
   color: #f7f3f0;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  line-height: 1.3;
 }
 
 /* HEADLINE */
 .fc-iso-hero-headline {
-  font-size: 30px;
+  font-size: 20px;
   color: #f7f3f0;
-  font-weight: 600;
-  margin-bottom: 15px;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
 
 /* SUBTEXT */
 .fc-iso-hero-sub {
-  font-size: 18px;
+  font-size: 15px;
   color: #f7f3f0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
-/* HERO BUTTON - ACCENT */
-.fc-res-hero .fc-btn-primary {
+/* HERO BUTTON */
+.fc-iso-hero .fc-btn-primary {
   background: #ffffff;
   color: #800020;
   padding: 12px 22px;
@@ -2128,12 +2129,12 @@ h3 {
   text-decoration: none;
   font-size: 14px;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: 500;
   transition: 0.3s;
 }
 
-.fc-res-hero .fc-btn-primary:hover {
+.fc-iso-hero .fc-btn-primary:hover {
   background: #f7f3f0;
 }
 
@@ -2141,24 +2142,23 @@ h3 {
 @media (max-width: 1024px) {
 
   .fc-iso-hero h1 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .fc-iso-hero-headline {
     font-size: 18px;
   }
-
 }
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
 
   .fc-iso-hero {
-    padding: 60px 16px 50px;
+    padding: 55px 16px 45px;
   }
 
   .fc-iso-hero h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .fc-iso-hero-headline {
@@ -2169,21 +2169,19 @@ h3 {
     font-size: 14px;
   }
 
-  .fc-res-hero .fc-btn-primary {
+  .fc-iso-hero .fc-btn-primary {
     width: auto;
     max-width: 260px;
-    margin: 20px auto 0;
+    margin: 15px auto 0;
     display: block;
     text-align: center;
   }
-
 }
 
-/* ===== WHAT'S INCLUDED (CARDS) ===== */
+/* ===== WHAT'S INCLUDED ===== */
 
 .fc-iso-included {
-  background: transparent; /* as requested */
-  padding: 70px 20px;
+  padding: 60px 20px;
 }
 
 .fc-iso-container {
@@ -2192,10 +2190,10 @@ h3 {
 }
 
 .fc-iso-included h2 {
-  font-size: 28px;
+  font-size: 26px;
   color: #800020;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 /* GRID */
@@ -2210,14 +2208,14 @@ h3 {
   background: #ffffff;
   border: 1px solid #eee;
   border-radius: 10px;
-  padding: 22px;
+  padding: 20px;
   transition: 0.2s ease;
 }
 
 .fc-iso-card h3 {
   font-size: 15px;
   color: #800020;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .fc-iso-card p {
@@ -2225,24 +2223,24 @@ h3 {
   color: #2f3e5c;
 }
 
-/* HOVER (SUBTLE PREMIUM) */
+/* HOVER */
 .fc-iso-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 
-/* ===== TABLET ===== */
+/* ===== RESPONSIVE GRID ===== */
+
 @media (max-width: 1024px) {
   .fc-iso-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* ===== MOBILE ===== */
 @media (max-width: 768px) {
 
   .fc-iso-included {
-    padding: 60px 16px;
+    padding: 50px 16px;
   }
 
   .fc-iso-grid {
@@ -2251,34 +2249,19 @@ h3 {
   }
 
   .fc-iso-included h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .fc-iso-card {
     padding: 18px;
   }
-
-  .fc-res-hero .fc-btn-primary {
-    width: auto;
-    max-width: 260px;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    padding: 12px 16px;
-    border-radius: 8px;
-  }
-
-     .fc-res-hero-sub {
-    margin-bottom: 20px;
-  }
-
 }
 
 /* ===== SOFT CTA ===== */
 
 .fc-soft-cta {
-  background: #f7f3f0; /* ivory */
-  padding: 60px 20px;
+  background: #f7f3f0;
+  padding: 55px 20px;
   text-align: center;
 }
 
@@ -2288,31 +2271,29 @@ h3 {
 }
 
 .fc-soft-cta h2 {
-  font-size: 30px;
+  font-size: 24px;
   color: #800020;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .fc-soft-cta-sub {
   font-size: 15px;
   color: #2f3e5c;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-/* POINTS */
 .fc-soft-cta-points {
   list-style: none;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .fc-soft-cta-points li {
   font-size: 14px;
   color: #2f3e5c;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
-/* BUTTON */
 .fc-soft-cta .fc-btn-secondary {
   border: 1px solid #800020;
   color: #800020;
@@ -2328,32 +2309,67 @@ h3 {
   color: #ffffff;
 }
 
-/* ===== TABLET ===== */
-@media (max-width: 1024px) {
-  .fc-soft-cta h2 {
-    font-size: 22px;
-  }
+/* ===== CTA (FINAL) ===== */
+
+.fc-res-cta {
+  background: #800020;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 1px solid #ffffff20; /* subtle separator */
 }
 
-/* ===== MOBILE ===== */
+.fc-res-cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fc-res-cta h2 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.fc-res-cta-sub {
+  font-size: 15px;
+  color: #f7f3f0;
+  margin-bottom: 25px;
+}
+
+.fc-res-cta .fc-btn-primary {
+  background: #ffffff;
+  color: #800020;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.fc-res-cta .fc-btn-primary:hover {
+  background: #f7f3f0;
+}
+
+/* ===== MOBILE CTA ===== */
+
 @media (max-width: 768px) {
+
   .fc-soft-cta {
-    padding: 50px 16px;
+    padding: 45px 16px;
   }
 
   .fc-soft-cta h2 {
     font-size: 20px;
   }
 
-  .fc-soft-cta-sub {
-    font-size: 14px;
+  .fc-res-cta {
+    padding: 50px 16px;
   }
 
-  .fc-soft-cta-points li {
-    font-size: 13px;
+  .fc-res-cta h2 {
+    font-size: 20px;
   }
 
-  .fc-soft-cta .fc-btn-primary {
+  .fc-res-cta .fc-btn-primary {
     width: auto;
     max-width: 260px;
     margin: 0 auto;
