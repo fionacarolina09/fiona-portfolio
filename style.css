@@ -2119,13 +2119,22 @@ h3 {
   margin-bottom: 30px;
 }
 
-/* BUTTON */
-.fc-iso-hero .fc-btn-accent {
-  display: flex;
-  padding: 12px 24px;
-     background: #ffffff;
+/* HERO BUTTON - ACCENT */
+.fc-res-hero .fc-btn-primary {
+  background: #ffffff;
   color: #800020;
-  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.fc-res-hero .fc-btn-primary:hover {
+  background: #f7f3f0;
 }
 
 /* ===== TABLET ===== */
@@ -2160,14 +2169,12 @@ h3 {
     font-size: 14px;
   }
 
-  .fc-iso-hero .fc-btn-secondary {
+  .fc-res-hero .fc-btn-primary {
     width: auto;
-    max-width: 280px;
-    margin: 0 auto;
+    max-width: 260px;
+    margin: 20px auto 0;
     display: block;
     text-align: center;
-       background: transparent;
-  color: #ffffff;
   }
 
 }
