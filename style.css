@@ -1950,6 +1950,12 @@ h3 {
   margin-bottom: 20px;
 }
 
+.fc-res-card .fc-btn-primary {
+  margin-top: auto;
+  align-self: center;   /* center horizontally */
+  display: inline-block;
+}
+
 /* COMING SOON */
 .fc-coming {
   margin-top: auto;
