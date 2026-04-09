@@ -2099,14 +2099,14 @@ h3 {
 
 /* H1 */
 .fc-iso-hero h1 {
-  font-size: 34px;
+  font-size: 40px;
   color: #f7f3f0;
   margin-bottom: 12px;
 }
 
 /* HEADLINE */
 .fc-iso-hero-headline {
-  font-size: 20px;
+  font-size: 30px;
   color: #f7f3f0;
   font-weight: 600;
   margin-bottom: 15px;
@@ -2114,7 +2114,7 @@ h3 {
 
 /* SUBTEXT */
 .fc-iso-hero-sub {
-  font-size: 15px;
+  font-size: 18px;
   color: #f7f3f0;
   margin-bottom: 30px;
 }
@@ -2123,6 +2123,9 @@ h3 {
 .fc-iso-hero .fc-btn-secondary {
   display: inline-block;
   padding: 12px 24px;
+     background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 /* ===== TABLET ===== */
@@ -2163,6 +2166,8 @@ h3 {
     margin: 0 auto;
     display: block;
     text-align: center;
+       background: transparent;
+  color: #ffffff;
   }
 
 }
