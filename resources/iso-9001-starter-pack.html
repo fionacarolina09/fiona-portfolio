@@ -176,5 +176,52 @@
   </div>
 </footer>
 
+<!-- INLINE FORM -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function () {
+  emailjs.init("-qFjnBR_4Gh6nCo3k"); // replace with your actual key
+
+  const forms = document.querySelectorAll(".js-email-form");
+
+  forms.forEach(function(form) {
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const btn = form.querySelector(".dk-submit-btn");
+      const originalText = btn.innerText;
+
+      btn.innerText = "Submitting...";
+      btn.disabled = true;
+
+      emailjs.sendForm(
+        "service_vp7lu0t",     // your service ID
+        "template_mjbeyvy",    // your template ID
+        form
+      )
+      .then(function() {
+        btn.innerText = "Request Submitted ✓";
+
+        setTimeout(() => {
+          btn.innerText = originalText;
+          btn.disabled = false;
+          form.reset();
+        }, 3000);
+      })
+      .catch(function() {
+        btn.innerText = "Failed. Try again";
+
+        setTimeout(() => {
+          btn.innerText = originalText;
+          btn.disabled = false;
+        }, 3000);
+      });
+
+    });
+  });
+})();
+</script>
+  
 </body>
 </html>
