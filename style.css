@@ -2191,10 +2191,10 @@ h3 {
 
 }
 
-/* ===== WHAT'S INCLUDED ===== */
+/* ===== WHAT'S INCLUDED (CARDS) ===== */
 
 .fc-iso-included {
-  background: #ffffff;
+  background: transparent; /* as requested */
   padding: 70px 20px;
 }
 
@@ -2207,51 +2207,46 @@ h3 {
   font-size: 28px;
   color: #800020;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-/* TABLE */
-.fc-iso-table-wrapper {
-  overflow-x: auto;
+/* GRID */
+.fc-iso-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
-.fc-iso-table {
-  width: 100%;
-  border-collapse: collapse;
+/* CARD */
+.fc-iso-card {
   background: #ffffff;
-  border-radius: 8px;
-  overflow: hidden;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 22px;
+  transition: 0.2s ease;
 }
 
-/* HEADER */
-.fc-iso-table thead {
-  background: #800020;
-  color: #ffffff;
+.fc-iso-card h3 {
+  font-size: 15px;
+  color: #800020;
+  margin-bottom: 10px;
 }
 
-.fc-iso-table th {
-  text-align: left;
-  padding: 14px;
-  font-size: 14px;
-}
-
-/* BODY */
-.fc-iso-table td {
-  padding: 14px;
+.fc-iso-card p {
   font-size: 14px;
   color: #2f3e5c;
-  border-bottom: 1px solid #eee;
 }
 
-/* ROW HOVER (SUBTLE) */
-.fc-iso-table tr:hover {
-  background: #f7f3f0;
+/* HOVER (SUBTLE PREMIUM) */
+.fc-iso-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 
 /* ===== TABLET ===== */
 @media (max-width: 1024px) {
-  .fc-iso-included h2 {
-    font-size: 24px;
+  .fc-iso-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -2262,10 +2257,17 @@ h3 {
     padding: 60px 16px;
   }
 
-  .fc-iso-table th,
-  .fc-iso-table td {
-    font-size: 13px;
-    padding: 12px;
+  .fc-iso-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .fc-iso-included h2 {
+    font-size: 24px;
+  }
+
+  .fc-iso-card {
+    padding: 18px;
   }
 
 }
