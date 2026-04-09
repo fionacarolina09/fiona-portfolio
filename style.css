@@ -1361,52 +1361,53 @@ h3 {
 }
 
 /* =========================
-   LEAD FORM SECTION
+   LEAD FORM (SCOPED ONLY)
 ========================= */
-.dk-lead {
+.dk-lead-iso9001 {
   background: #f7f3f0;
   padding: 70px 20px;
   text-align: center;
 }
 
-.dk-lead h2 {
+.dk-lead-iso9001 h2 {
   font-size: 30px;
   color: #800020;
   margin-bottom: 12px;
 }
 
-.dk-lead-sub {
+.dk-lead-iso9001 .dk-lead-sub {
   font-size: 15px;
   color: #4a5568;
   margin-bottom: 28px;
 }
 
 /* =========================
-   FORM WRAPPER
+   FORM
 ========================= */
-.dk-form {
+.dk-lead-iso9001 .dk-form {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
 
 /* =========================
-   FORM LAYOUT
+   LAYOUT
 ========================= */
-.dk-form-row {
+.dk-lead-iso9001 .dk-form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
   margin-bottom: 12px;
 }
 
-.dk-form-row-single {
+.dk-lead-iso9001 .dk-form-row-single {
   margin-bottom: 14px;
 }
 
-/* Standard width alignment */
-.dk-form-row,
-.dk-form-row-single {
+/* width control (scoped only) */
+.dk-lead-iso9001 .dk-form-row,
+.dk-lead-iso9001 .dk-form-row-single,
+.dk-lead-iso9001 .dk-consent {
   max-width: 520px;
   margin-left: auto;
   margin-right: auto;
@@ -1415,8 +1416,8 @@ h3 {
 /* =========================
    INPUTS
 ========================= */
-.dk-form input,
-.dk-form select {
+.dk-lead-iso9001 .dk-form input,
+.dk-lead-iso9001 .dk-form select {
   width: 100%;
   padding: 14px;
   border: 1px solid #ddd;
@@ -1428,7 +1429,7 @@ h3 {
 /* =========================
    BUTTON
 ========================= */
-.dk-form button[type="submit"] {
+.dk-lead-iso9001 .dk-form button[type="submit"] {
   width: 100%;
   max-width: 320px;
   margin: 10px auto 0;
@@ -1445,14 +1446,14 @@ h3 {
   transition: 0.2s ease;
 }
 
-.dk-form button[type="submit"]:hover {
+.dk-lead-iso9001 .dk-form button[type="submit"]:hover {
   background: #660018;
 }
 
 /* =========================
    STATUS
 ========================= */
-.dk-form-status {
+.dk-lead-iso9001 .dk-form-status {
   margin-top: 10px;
   font-size: 13px;
   color: #2f3e5c;
@@ -1461,12 +1462,11 @@ h3 {
 /* =========================
    CONSENT
 ========================= */
-.dk-consent {
+.dk-lead-iso9001 .dk-consent {
   display: flex;
   align-items: flex-start;
   gap: 10px;
 
-  max-width: 520px;
   margin: 16px auto;
 
   font-size: 11.5px;
@@ -1475,7 +1475,7 @@ h3 {
   text-align: left;
 }
 
-.dk-consent input[type="checkbox"] {
+.dk-lead-iso9001 .dk-consent input[type="checkbox"] {
   flex-shrink: 0;
   margin-top: 3px;
   width: 16px;
@@ -1483,7 +1483,7 @@ h3 {
   cursor: pointer;
 }
 
-.dk-consent label {
+.dk-lead-iso9001 .dk-consent label {
   flex: 1;
 }
 
@@ -1492,30 +1492,29 @@ h3 {
 ========================= */
 @media (max-width: 768px) {
 
-  .dk-lead {
+  .dk-lead-iso9001 {
     padding: 50px 16px;
   }
 
-  .dk-lead h2 {
+  .dk-lead-iso9001 h2 {
     font-size: 24px;
     line-height: 1.3;
   }
 
-  .dk-lead-sub {
+  .dk-lead-iso9001 .dk-lead-sub {
     font-size: 14px;
   }
 
-  .dk-form-row {
+  .dk-lead-iso9001 .dk-form-row {
     grid-template-columns: 1fr;
   }
 
-  .dk-consent {
+  .dk-lead-iso9001 .dk-consent {
     font-size: 11px;
-    max-width: 100%;
     margin: 14px 0;
   }
 
-  .dk-consent input[type="checkbox"] {
+  .dk-lead-iso9001 .dk-consent input[type="checkbox"] {
     width: 13px;
     height: 13px;
   }
