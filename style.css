@@ -2014,3 +2014,90 @@ h3 {
 
 }
 
+/* ===== CTA SECTION ===== */
+
+.fc-res-cta {
+  background: #800020; /* burgundy */
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.fc-res-cta-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.fc-res-cta h2 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.fc-res-cta-sub {
+  font-size: 15px;
+  color: #f7f3f0;
+  margin-bottom: 30px;
+}
+
+/* VALUE POINTS */
+.fc-res-cta-points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 20px;
+  margin-bottom: 30px;
+}
+
+.fc-res-cta-points div {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* BUTTON */
+.fc-res-cta .fc-btn-primary {
+  background: #ffffff;
+  color: #800020;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.fc-res-cta .fc-btn-primary:hover {
+  background: #f7f3f0;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .fc-res-cta h2 {
+    font-size: 24px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .fc-res-cta {
+    padding: 60px 16px;
+  }
+
+  .fc-res-cta h2 {
+    font-size: 22px;
+  }
+
+  .fc-res-cta-sub {
+    font-size: 14px;
+  }
+
+  .fc-res-cta-points {
+    grid-template-columns: 1fr;
+  }
+
+  .fc-res-cta-points div {
+    text-align: center;
+  }
+
+  .fc-res-cta .fc-btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+}
