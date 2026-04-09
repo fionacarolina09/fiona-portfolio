@@ -325,47 +325,6 @@ h3 {
   text-align: center;
 }
 
-/* =========================
-   CONSENT (FINAL FIX)
-========================= */
-.form-consent {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin: 16px 0;
-  font-size: 11.5px;
-  color: #4b5563;
-  line-height: 1.4;
-}
-
-.form-consent input[type="checkbox"] {
-  flex-shrink: 0;
-  margin-top: 3px;
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-}
-
-.form-consent label {
-  flex: 1;
-  text-align: left;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .form-consent input[type="checkbox"] {
-    width: 14px;
-    height: 14px;
-    transform: scale(0.9);
-  }
-
-   @media (max-width: 768px) {
-  .form-consent input[type="checkbox"] {
-    width: 13px;
-    height: 13px;
-    transform: none; /* override iOS scaling */
-  }
-}
 
 /* =========================
    STANDARDS
