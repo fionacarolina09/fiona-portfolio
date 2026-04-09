@@ -1453,6 +1453,42 @@ h3 {
   color: #2f3e5c;
 }
 
+   /* ===== CONSENT ===== */
+.dk-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 16px 0;
+  font-size: 11.5px;
+  color: #4b5563;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.dk-consent input[type="checkbox"] {
+  flex-shrink: 0;
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.dk-consent label {
+  flex: 1;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .dk-consent {
+    font-size: 11px;
+  }
+
+  .dk-consent input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+  }
+}
+   
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
 
