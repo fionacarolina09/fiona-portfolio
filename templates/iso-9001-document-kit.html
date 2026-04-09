@@ -130,13 +130,6 @@
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="Email" required>
       </div>
-
-<div class="dk-consent">
-  <input type="checkbox" id="dk-consent" name="consent" required>
-  <label for="dk-consent">
-    By submitting this form, I consent to the collection and use of my personal data for the purpose of delivering requested materials and related communications, including marketing emails. I may withdraw consent at any time.
-  </label>
-</div>
       
       <div class="dk-form-row-single">
         <select name="request_type" required>
@@ -146,6 +139,13 @@
         </select>
       </div>
 
+<div class="dk-consent">
+  <input type="checkbox" id="dk-consent" name="consent" required>
+  <label for="dk-consent">
+    By submitting this form, I consent to the collection and use of my personal data for the purpose of delivering requested materials and related communications, including marketing emails. I may withdraw consent at any time.
+  </label>
+</div>
+      
       <button type="submit" class="btn-accent">Request Access</button>
 
       <p id="dk-form-status" class="dk-form-status"></p>
