@@ -1859,3 +1859,112 @@ h3 {
     text-align: center;
   }
 }
+
+/* ===== RESOURCES SECTION ===== */
+
+.fc-res-section {
+  background: #ffffff;
+  padding: 70px 20px;
+}
+
+.fc-res-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.fc-res-section h2 {
+  font-size: 28px;
+  color: #800020;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.fc-res-intro {
+  text-align: center;
+  font-size: 15px;
+  color: #2f3e5c;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.fc-res-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.fc-res-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 22px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fc-res-card h3 {
+  font-size: 16px;
+  color: #800020;
+  margin-bottom: 10px;
+}
+
+.fc-res-card p {
+  font-size: 14px;
+  color: #2f3e5c;
+  margin-bottom: 15px;
+}
+
+/* LIST */
+.fc-res-card ul {
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+
+.fc-res-card li {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #2f3e5c;
+}
+
+/* HIGHLIGHT CARD */
+.fc-res-card.highlight {
+  border: 1.5px solid #800020;
+  background: #faf6f4;
+}
+
+/* COMING SOON */
+.fc-coming {
+  margin-top: auto;
+  font-size: 13px;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .fc-res-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .fc-res-section {
+    padding: 60px 16px;
+  }
+
+  .fc-res-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .fc-res-section h2 {
+    font-size: 24px;
+  }
+
+  .fc-res-intro {
+    font-size: 14px;
+  }
+}
