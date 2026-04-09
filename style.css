@@ -2107,3 +2107,86 @@ h3 {
   }
 
 }
+
+/* ===== ISO 9001 HERO ===== */
+
+.fc-iso-hero {
+  background: #f7f3f0; /* ivory */
+  padding: 80px 20px 70px;
+  text-align: center;
+}
+
+.fc-iso-hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* H1 */
+.fc-iso-hero h1 {
+  font-size: 34px;
+  color: #800020;
+  margin-bottom: 12px;
+}
+
+/* HEADLINE */
+.fc-iso-hero-headline {
+  font-size: 20px;
+  color: #2f3e5c;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* SUBTEXT */
+.fc-iso-hero-sub {
+  font-size: 15px;
+  color: #2f3e5c;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.fc-iso-hero .fc-btn-primary {
+  display: inline-block;
+  padding: 12px 24px;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+
+  .fc-iso-hero h1 {
+    font-size: 28px;
+  }
+
+  .fc-iso-hero-headline {
+    font-size: 18px;
+  }
+
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  .fc-iso-hero {
+    padding: 60px 16px 50px;
+  }
+
+  .fc-iso-hero h1 {
+    font-size: 24px;
+  }
+
+  .fc-iso-hero-headline {
+    font-size: 16px;
+  }
+
+  .fc-iso-hero-sub {
+    font-size: 14px;
+  }
+
+  .fc-iso-hero .fc-btn-primary {
+    width: auto;
+    max-width: 280px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+}
