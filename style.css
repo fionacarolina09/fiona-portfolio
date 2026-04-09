@@ -326,32 +326,35 @@ h3 {
 }
 
 /* =========================
-   CONSENT CHECKBOX
+   CONSENT (REFINED)
 ========================= */
 .form-consent {
   margin-bottom: 14px;
-  font-size: 12px;
-  color: #374151;
-  line-height: 1.5;
+  font-size: 11.5px; /* reduced */
+  color: #4b5563; /* softer grey */
+  line-height: 1.4;
+  max-width: 520px; /* prevent full width stretching */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 .form-consent label {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  cursor: pointer;
 }
 
 .form-consent input[type="checkbox"] {
   margin-top: 3px;
-  transform: scale(1.1);
-  cursor: pointer;
+  transform: scale(1);
 }
 
-/* MOBILE ADJUSTMENT */
+/* MOBILE */
 @media (max-width: 768px) {
   .form-consent {
-    font-size: 11.5px;
+    font-size: 11px;
+    max-width: 100%;
   }
 }
 
