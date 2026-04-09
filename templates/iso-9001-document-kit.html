@@ -115,50 +115,53 @@
 </section>
 
  <!-- VIEW FULL DOCUMENT -->
-<section class="dk-lead" id="lead-form">
-  <div class="container">
+<section class="dk-lead-section" id="lead-form">
+  <div class="dk-lead-container">
 
-    <h2>View Full Document Structure Before You Buy</h2>
+    <h2>VIEW FULL DOCUMENT STRUCTURE BEFORE YOU BUY</h2>
 
     <p class="dk-lead-sub">
       Get the full Document Master Index and sample previews (Manual, Procedure, Forms)
     </p>
 
-    <form id="dk-form" class="dk-form">
+    <!-- FORM -->
+    <form class="dk-form js-email-form">
 
+      <!-- ROW 1 -->
       <div class="dk-form-row">
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="Email" required>
       </div>
 
-<!-- ISO STANDARD -->
-<div class="dk-form-row-single">
-  <select name="iso_standard" required>
-    <option value="">Select ISO Standard</option>
-    <option value="ISO 9001">ISO 9001</option>
-    <option value="ISO 14001">ISO 14001</option>
-    <option value="ISO 45001">ISO 45001</option>
-    <option value="ISO 21101">ISO 21101</option>
-  </select>
-</div>
-      
+      <!-- ISO STANDARD -->
+      <div class="dk-form-row-single">
+        <select name="iso_standard" required>
+          <option value="">Select ISO Standard</option>
+          <option value="ISO 9001">ISO 9001</option>
+          <option value="ISO 14001">ISO 14001</option>
+          <option value="ISO 45001">ISO 45001</option>
+          <option value="ISO 21101">ISO 21101</option>
+        </select>
+      </div>
+
+      <!-- REQUEST TYPE -->
       <div class="dk-form-row-single">
         <select name="request_type" required>
-          <option value="" disabled selected>Select Request Type</option>
+          <option value="">Select Request Type</option>
           <option value="Starter Pack">Starter Pack</option>
           <option value="Document Index & Samples Preview">Document Index & Samples Preview</option>
         </select>
       </div>
 
-      <button type="submit" class="btn-accent">Request Access</button>
-
-      <p id="dk-form-status" class="dk-form-status"></p>
+      <!-- BUTTON -->
+      <button type="submit" class="dk-submit-btn">
+        Request Access
+      </button>
 
     </form>
 
   </div>
 </section>
-
 
  <!-- KEY ADVANTAGES -->
 <section class="dk-advantages">
@@ -336,49 +339,58 @@
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
-  (function(){
-    emailjs.init("-qFjnBR_4Gh6nCo3k");
-  })();
+(function () {
+  emailjs.init("-qFjnBR_4Gh6nCo3k"); // replace with your actual key
 
-  document.getElementById("dk-form").addEventListener("submit", function(e) {
-    e.preventDefault();
+  const forms = document.querySelectorAll(".js-email-form");
 
-    const form = this;
-    const status = document.getElementById("dk-form-status");
+  forms.forEach(function(form) {
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
 
-    status.innerText = "Submitting your request...";
+      const btn = form.querySelector(".dk-submit-btn");
+      const originalText = btn.innerText;
 
-    emailjs.sendForm("service_vp7lu0t", "template_mjbeyvy", form)
+      btn.innerText = "Submitting...";
+      btn.disabled = true;
+
+      emailjs.sendForm(
+        "service_vp7lu0t",     // your service ID
+        "template_mjbeyvy",    // your template ID
+        form
+      )
       .then(function() {
+        btn.innerText = "Request Submitted ✓";
 
-        status.innerText = "Request received. Access will be shared with you via email shortly.";
+        setTimeout(() => {
+          btn.innerText = originalText;
+          btn.disabled = false;
+          form.reset();
+        }, 3000);
+      })
+      .catch(function() {
+        btn.innerText = "Failed. Try again";
 
-        form.reset();
-
-      }, function(error) {
-
-        status.innerText = "Submission failed. Please try again.";
-
-      });
-  });
-</script>
-
-<script>
-  const faqItems = document.querySelectorAll(".dk-faq-item");
-
-  faqItems.forEach(item => {
-    const btn = item.querySelector(".dk-faq-question");
-
-    btn.addEventListener("click", () => {
-
-      // close others (accordion behavior)
-      faqItems.forEach(i => {
-        if (i !== item) i.classList.remove("active");
+        setTimeout(() => {
+          btn.innerText = originalText;
+          btn.disabled = false;
+        }, 3000);
       });
 
-      item.classList.toggle("active");
     });
   });
+})();
+</script>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const isoField = document.querySelector('select[name="iso_standard"]');
+
+  if (isoField) {
+    // Change per page
+    isoField.value = "ISO 9001"; 
+  }
+});
 </script>
   
 </body>
