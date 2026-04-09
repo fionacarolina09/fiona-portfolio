@@ -2190,3 +2190,82 @@ h3 {
   }
 
 }
+
+/* ===== WHAT'S INCLUDED ===== */
+
+.fc-iso-included {
+  background: #ffffff;
+  padding: 70px 20px;
+}
+
+.fc-iso-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.fc-iso-included h2 {
+  font-size: 28px;
+  color: #800020;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* TABLE */
+.fc-iso-table-wrapper {
+  overflow-x: auto;
+}
+
+.fc-iso-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* HEADER */
+.fc-iso-table thead {
+  background: #800020;
+  color: #ffffff;
+}
+
+.fc-iso-table th {
+  text-align: left;
+  padding: 14px;
+  font-size: 14px;
+}
+
+/* BODY */
+.fc-iso-table td {
+  padding: 14px;
+  font-size: 14px;
+  color: #2f3e5c;
+  border-bottom: 1px solid #eee;
+}
+
+/* ROW HOVER (SUBTLE) */
+.fc-iso-table tr:hover {
+  background: #f7f3f0;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .fc-iso-included h2 {
+    font-size: 24px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  .fc-iso-included {
+    padding: 60px 16px;
+  }
+
+  .fc-iso-table th,
+  .fc-iso-table td {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+}
