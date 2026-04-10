@@ -2797,3 +2797,75 @@ h3 {
     max-width: 260px;
   }
 }
+
+/* =========================
+   BLOG - ISO 9001 GUIDE
+========================= */
+
+/* ===== BLOG ARTICLE HERO ===== */
+
+.fc-blog-hero-article {
+  background: #ffffff;
+  padding: 50px 20px 30px;
+}
+
+.fc-blog-hero-article-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* CATEGORY */
+.fc-blog-category {
+  display: inline-block;
+  font-size: 12px;
+  color: #800020;
+  background: #fce8ec;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+/* TITLE */
+.fc-blog-hero-article h1 {
+  font-size: 34px;
+  color: #800020;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+/* IMAGE */
+.fc-blog-hero-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* INTRO */
+.fc-blog-intro {
+  font-size: 15px;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .fc-blog-hero-article h1 {
+    font-size: 30px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .fc-blog-hero-article {
+    padding: 40px 15px 20px;
+  }
+
+  .fc-blog-hero-article h1 {
+    font-size: 24px;
+  }
+
+  .fc-blog-intro {
+    font-size: 14px;
+  }
+}
