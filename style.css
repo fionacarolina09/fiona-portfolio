@@ -2559,7 +2559,7 @@ h3 {
 /* ===== ALL ARTICLES ===== */
 
 .fc-blog-all {
-  background: #ffffff;
+  background: transparent;
   padding: 50px 20px 70px;
 }
 
@@ -2661,7 +2661,7 @@ h3 {
 /* ===== BLOG INTERNAL LINKS ===== */
 
 .fc-blog-links {
-  background: #ffffff;
+  background: #800020;
   padding: 60px 20px;
 }
 
@@ -2674,7 +2674,7 @@ h3 {
 /* TITLE */
 .fc-blog-links h2 {
   font-size: 26px;
-  color: #800020;
+  color: #f7f3f0;
   margin-bottom: 35px;
 }
 
