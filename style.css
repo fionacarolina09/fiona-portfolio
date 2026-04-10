@@ -2682,4 +2682,13 @@ h3 {
      background: #800020;
   color: #ffffff;
   }
+
+     .fc-blog-card img {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover; /* fill nicely */
+    padding: 0; /* remove inner spacing */
+  }
+
 }
