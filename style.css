@@ -2657,16 +2657,17 @@ h3 {
 }
 
 /* BUTTON */
-.fc-blog-lead .fc-btn-accent {
+.fc-blog-lead .fc-btn-primary {
   display: inline-block;
   padding: 12px 24px;
-     background: #800020;
+  background: #800020;
   color: #ffffff;
-  border: none;
+  border: 1px solid #800020;
 }
 
-.fc-blog-lead .fc-btn-accent:hover {
-  background: #660018;
+.fc-blog-lead .fc-btn-primary:hover {
+  background: #5e0018;
+  border-color: #5e0018;
 }
 
 /* ===== MOBILE ===== */
