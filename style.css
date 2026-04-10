@@ -1872,7 +1872,7 @@ h3 {
   border: 1px solid #eee;
   border-radius: 10px;
   padding: 22px;
-  background: #ffffff;
+  background: #ffffff !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1914,8 +1914,14 @@ h3 {
   flex-direction: column;
 }
 
-/* PUSH BUTTON TO BOTTOM PROPERLY */
-.fc-btn-resource {
+.fc-res-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+/* ===== RESOURCE BUTTON (FINAL) ===== */
+.fc-res-card .fc-btn-resource {
   background: #800020;
   color: #ffffff;
   padding: 12px 22px;
@@ -1924,9 +1930,12 @@ h3 {
   display: inline-block;
   margin-top: auto;
   align-self: center;
+  font-size: 14px;
+  border: none;
+  transition: 0.3s;
 }
 
-.fc-btn-resource:hover {
+.fc-res-card .fc-btn-resource:hover {
   background: #5e0018;
 }
 
