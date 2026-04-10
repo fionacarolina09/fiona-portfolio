@@ -2486,10 +2486,14 @@ h3 {
   text-align: center;
 }
 
+.fc-blog-card h3 {
+  font-size: 15px;
+}
+
 /* GRID */
 .fc-blog-featured-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
