@@ -2628,3 +2628,48 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== BLOG LEAD (CTA) ===== */
+
+.fc-blog-lead {
+  background: #f7f3f0; /* ivory */
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.fc-blog-lead-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* TITLE */
+.fc-blog-lead h2 {
+  font-size: 28px;
+  color: #800020;
+  margin-bottom: 12px;
+}
+
+/* SUBTEXT */
+.fc-blog-lead-sub {
+  font-size: 15px;
+  color: #4a5568;
+  margin-bottom: 24px;
+}
+
+/* BUTTON */
+.fc-blog-lead .fc-btn-primary {
+  display: inline-block;
+  padding: 12px 24px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .fc-blog-lead {
+    padding: 50px 15px;
+  }
+
+  .fc-blog-lead .fc-btn-primary {
+    width: 100%;
+    max-width: 260px;
+  }
+}
