@@ -2583,3 +2583,48 @@ h3 {
     height: 160px;
   }
 }
+
+/* ===== ALL ARTICLES ===== */
+
+.fc-blog-all {
+  background: #ffffff;
+  padding: 50px 20px 70px;
+}
+
+.fc-blog-all-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* TITLE */
+.fc-blog-all h2 {
+  font-size: 26px;
+  color: #800020;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* GRID */
+.fc-blog-all-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .fc-blog-all-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .fc-blog-all {
+    padding: 40px 15px;
+  }
+
+  .fc-blog-all-grid {
+    grid-template-columns: 1fr;
+  }
+}
