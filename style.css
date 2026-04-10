@@ -1915,8 +1915,19 @@ h3 {
 }
 
 /* PUSH BUTTON TO BOTTOM PROPERLY */
-.fc-res-card .fc-btn-primary {
+.fc-btn-resource {
+  background: #800020;
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
   margin-top: auto;
+  align-self: center;
+}
+
+.fc-btn-resource:hover {
+  background: #5e0018;
 }
 
 /* ADD SPACING BEFORE BUTTON */
