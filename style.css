@@ -2590,7 +2590,7 @@ h3 {
 /* ===== ALL ARTICLES ===== */
 
 .fc-blog-all {
-  background: transparent;
+  background: #ffffff;
   padding: 50px 20px 70px;
 }
 
@@ -2610,7 +2610,7 @@ h3 {
 /* GRID */
 .fc-blog-all-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
 
