@@ -2384,3 +2384,62 @@ h3 {
     text-align: center;
   }
 }
+
+/* ===== BLOG FILTER ===== */
+
+.fc-blog-filter {
+  background: #f7f3f0; /* ivory */
+  padding: 30px 20px 10px;
+}
+
+.fc-blog-filter-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* BUTTON WRAPPER */
+.fc-blog-filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* BUTTON */
+.fc-filter-btn {
+  padding: 8px 16px;
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  color: #2f3e5c;
+  background: #ffffff;
+  transition: all 0.2s ease;
+}
+
+/* ACTIVE */
+.fc-filter-btn.active {
+  background: #800020;
+  color: #ffffff;
+  border-color: #800020;
+}
+
+/* HOVER */
+.fc-filter-btn:hover {
+  background: #800020;
+  color: #ffffff;
+  border-color: #800020;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .fc-blog-filter {
+    padding: 20px 15px 5px;
+  }
+
+  .fc-filter-btn {
+    font-size: 12px;
+    padding: 7px 14px;
+  }
+}
