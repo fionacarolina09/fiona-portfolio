@@ -3006,7 +3006,7 @@ h3 {
   }
 }
 
-/* ===== ROADMAP ===== */
+/* ===== ROADMAP (REFINED) ===== */
 
 .fc-roadmap {
   margin-top: 15px;
@@ -3015,30 +3015,42 @@ h3 {
 /* PHASE BLOCK */
 .fc-phase {
   border-left: 3px solid #800020;
-  padding-left: 16px;
-  margin-bottom: 20px;
+  padding-left: 14px;
+  margin-bottom: 18px;
 }
 
 /* TITLE */
 .fc-phase h3 {
-  font-size: 17px;
+  font-size: 16px;
   color: #2f3e5c;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 /* LIST */
 .fc-phase ul {
   padding-left: 18px;
+  margin-top: 4px;
 }
 
 .fc-phase li {
   font-size: 15px;
   color: #2f3e5c;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
+  line-height: 1.6;
+}
+
+/* ===== DESKTOP ALIGNMENT FIX ===== */
+.fc-blog-container {
+  max-width: 800px; /* tighten from 850px */
 }
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
+  .fc-phase {
+    padding-left: 12px;
+    margin-bottom: 16px;
+  }
+
   .fc-phase h3 {
     font-size: 15px;
   }
