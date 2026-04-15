@@ -3227,3 +3227,39 @@ h3 {
   }
 
 }
+
+/* ===== FAQ ===== */
+
+.fc-faq {
+  margin-top: 15px;
+}
+
+/* ITEM */
+.fc-faq-item {
+  margin-bottom: 18px;
+}
+
+/* QUESTION */
+.fc-faq-item h3 {
+  font-size: 16px;
+  color: #2f3e5c;
+  margin-bottom: 6px;
+}
+
+/* ANSWER */
+.fc-faq-item p {
+  font-size: 15px;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .fc-faq-item h3 {
+    font-size: 15px;
+  }
+
+  .fc-faq-item p {
+    font-size: 14px;
+  }
+}
