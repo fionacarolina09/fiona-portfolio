@@ -2407,7 +2407,7 @@ h3 {
   }
 }
 
-/* ===== BLOG FILTER (REFINED) ===== */
+/* ===== BLOG FILTER ===== */
 
 .fc-blog-filter {
   background: #f7f3f0; /* ivory */
@@ -2415,27 +2415,83 @@ h3 {
 }
 
 .fc-blog-filter-container {
-  max-width: 680px;   /* align with blog width */
+  max-width: 680px;
   margin: 0 auto;
-  text-align: center; /* center buttons */
+  text-align: center;
 }
 
 .fc-blog-filter-buttons {
   display: flex;
-  justify-content: center; /* center horizontally */
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
+/* BUTTON */
+.fc-filter-btn {
+  display: inline-block;
+  font-size: 13px;
+  color: #800020;
+  background: #fce8ec;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  line-height: 1.2;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
 
-  .fc-blog-filter-buttons {
-    justify-content: flex-start; /* better UX for scroll */
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-bottom: 5px;
+/* HOVER */
+.fc-filter-btn:hover {
+  background: #800020;
+  color: #ffffff;
+}
+
+/* ACTIVE */
+.fc-filter-btn.active {
+  background: #800020;
+  color: #ffffff;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .fc-blog-filter {
+    padding: 18px 20px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .fc-blog-filter {
+    padding: 16px 15px;
   }
 
+  .fc-blog-filter-container {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .fc-blog-filter-buttons {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 6px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .fc-blog-filter-buttons::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fc-filter-btn {
+    font-size: 13px;
+    padding: 8px 14px;
+    flex: 0 0 auto;
+  }
 }
 
 /* ===== FEATURED BLOG ===== */
