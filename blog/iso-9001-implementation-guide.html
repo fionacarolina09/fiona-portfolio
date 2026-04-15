@@ -13,26 +13,51 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body data-page="blog"> <!-- change per page -->
 
-<!-- NAVBAR -->
-<header class="fc-navbar">
+<!-- ===== NAVBAR ===== -->
+<nav class="fc-nav">
   <div class="fc-nav-container">
 
+    <!-- LOGO -->
     <div class="fc-logo">
-      <a href="index.html">Fiona Carolina</a>
+      <a href="/">
+        <span class="fc-logo-name">Fiona Carolina</span>
+        <!-- Optional tagline (uncomment if needed) -->
+        <!-- <span class="fc-logo-tag">Practical ISO Systems.</span> -->
+      </a>
     </div>
 
-    <nav class="fc-nav">
-      <a href="../index.html">Home</a>
-      <a href="../templates.html">Templates</a>
-      <a href="../resources.html">Resources</a>
-      <a href="../blog.html">Blog</a>
-      <a href="../index.html#contact">Contact</a>
-    </nav>
+    <!-- DESKTOP MENU -->
+    <ul class="fc-nav-menu">
+      <li><a href="/templates.html">Templates</a></li>
+      <li><a href="/resources.html">Resources</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/index.html#contact">Contact</a></li>
+    </ul>
+
+    <!-- CTA -->
+    <a href="/index.html#contact" class="fc-nav-cta">Work With Me</a>
+
+    <!-- MOBILE TOGGLE -->
+    <div class="fc-nav-toggle" id="fcNavToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
   </div>
-</header>
+
+  <!-- MOBILE MENU -->
+  <div class="fc-mobile-menu" id="fcMobileMenu">
+    <a href="/">Home</a>
+    <a href="/templates.html">Templates</a>
+    <a href="/resources.html">Resources</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/index.html#contact">Contact</a>
+    <a href="/index.html#contact" class="fc-mobile-cta">Work With Me</a>
+  </div>
+</nav>
 
   <!-- BLOG CONTENT STARTS -->
 <section class="fc-blog-hero-article">
