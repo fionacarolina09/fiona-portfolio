@@ -3155,3 +3155,75 @@ h3 {
   }
 
 }
+
+/* ===== SECONDARY CTA ===== */
+
+.fc-blog-cta-secondary {
+  background: #ffffff;
+  padding: 40px 20px 70px;
+}
+
+/* CTA BOX */
+.fc-cta-box-secondary {
+  background: #ffffff;
+  border: 1px solid #800020;
+  border-radius: 10px;
+  padding: 30px 25px;
+  text-align: center;
+}
+
+/* TITLE */
+.fc-cta-box-secondary h3 {
+  font-size: 22px;
+  color: #800020;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.fc-cta-box-secondary p {
+  font-size: 15px;
+  color: #4a5568;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.fc-btn-secondary-cta {
+  display: inline-block;
+  background: #800020;
+  color: #ffffff;
+  padding: 12px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.fc-btn-secondary-cta:hover {
+  background: #5e0018;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  .fc-blog-cta-secondary {
+    padding: 30px 15px 60px;
+  }
+
+  .fc-cta-box-secondary {
+    padding: 22px 18px;
+  }
+
+  .fc-cta-box-secondary h3 {
+    font-size: 18px;
+  }
+
+  .fc-cta-box-secondary p {
+    font-size: 14px;
+  }
+
+  .fc-btn-secondary-cta {
+    width: 100%;
+    max-width: 260px;
+  }
+
+}
