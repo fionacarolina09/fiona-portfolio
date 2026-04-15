@@ -807,6 +807,7 @@ h3 {
   font-size: 20px;
   font-weight: 600;
   color: #ffffff;
+   margin-bottom: 8px;
 }
 
 .fc-footer-tagline {
@@ -819,6 +820,7 @@ h3 {
   font-size: 13px;
   line-height: 1.6;
   color: #f0dede;
+   max-width: 240px;
 }
 
 .fc-footer-col h4 {
@@ -857,18 +859,11 @@ h3 {
 }
 
 .fc-footer-btn {
-  display: inline-block;
   background: #f7f3f0;
   color: #800020;
-   opacity: 1 !important;
-   pointer-events: auto;
-   filter: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  font-size: 13.5px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.2s;
+  opacity: 1 !important;
+  pointer-events: auto;
+  filter: none;
 }
 
 .fc-footer-btn:hover {
@@ -888,21 +883,14 @@ h3 {
 }
 
 .fc-footer-social a {
-  display: inline-flex;
   width: 32px;
   height: 32px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
   background: rgba(255,255,255,0.12);
-  color: #ffffff;
-  transition: 0.2s;
 }
 
 .fc-footer-social a:hover {
   background: #ffffff;
   color: #800020;
-  transform: translateY(-2px);
 }
 
 .fc-footer-social svg {
@@ -968,7 +956,7 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-     .fc-footer-col:not(:last-child)::after {
+  .fc-footer-col:not(:last-child)::after {
     background: rgba(255,255,255,0.08); /* softer */
     width: 1px;
   }
