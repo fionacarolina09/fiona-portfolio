@@ -13,26 +13,51 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body data-page="resources"> <!-- change per page -->
 
-<!-- NAVBAR -->
-<header class="fc-navbar">
+<!-- ===== NAVBAR ===== -->
+<nav class="fc-nav">
   <div class="fc-nav-container">
 
+    <!-- LOGO -->
     <div class="fc-logo">
-      <a href="index.html">Fiona Carolina</a>
+      <a href="/">
+        <span class="fc-logo-name">Fiona Carolina</span>
+        <!-- Optional tagline (uncomment if needed) -->
+        <!-- <span class="fc-logo-tag">Practical ISO Systems.</span> -->
+      </a>
     </div>
 
-    <nav class="fc-nav">
-      <a href="../index.html">Home</a>
-      <a href="../templates.html">Templates</a>
-      <a href="../resources.html">Resources</a>
-      <a href="../blog.html">Blog</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
+    <!-- DESKTOP MENU -->
+    <ul class="fc-nav-menu">
+      <li><a href="/templates.html">Templates</a></li>
+      <li><a href="/resources.html">Resources</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/index.html#contact">Contact</a></li>
+    </ul>
+
+    <!-- CTA -->
+    <a href="/index.html#contact" class="fc-nav-cta">Work With Me</a>
+
+    <!-- MOBILE TOGGLE -->
+    <div class="fc-nav-toggle" id="fcNavToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
   </div>
-</header>
+
+  <!-- MOBILE MENU -->
+  <div class="fc-mobile-menu" id="fcMobileMenu">
+    <a href="/">Home</a>
+    <a href="/templates.html">Templates</a>
+    <a href="/resources.html">Resources</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/index.html#contact">Contact</a>
+    <a href="/index.html#contact" class="fc-mobile-cta">Work With Me</a>
+  </div>
+</nav>
 
 <!-- HERO -->
 <section class="fc-sp-hero">
@@ -234,6 +259,63 @@
     });
   });
 })();
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const toggle = document.getElementById('fcNavToggle');
+  const menu = document.getElementById('fcMobileMenu');
+  const nav = document.querySelector('.fc-nav');
+
+  /* ===== MOBILE TOGGLE (WITH ANIMATION) ===== */
+  if (toggle && menu) {
+    toggle.addEventListener('click', function () {
+      menu.classList.toggle('active');
+      toggle.classList.toggle('active'); // hamburger animation
+    });
+  }
+
+  /* ===== CLOSE MENU ON LINK CLICK ===== */
+  document.querySelectorAll('.fc-mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    });
+  });
+
+  /* ===== CLOSE MENU WHEN CLICK OUTSIDE ===== */
+  document.addEventListener('click', function (e) {
+    if (!nav.contains(e.target)) {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    }
+  });
+
+  /* ===== SCROLL EFFECT ===== */
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 30) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  /* ===== ACTIVE STATE ===== */
+  const page = document.body.getAttribute('data-page');
+  const links = document.querySelectorAll('.fc-nav-menu a');
+
+  links.forEach(link => {
+    const href = link.getAttribute('href');
+
+    if (page === "home" && href === "/") {
+      link.classList.add('active');
+    } else if (page && href.includes(page)) {
+      link.classList.add('active');
+    }
+  });
+
+});
 </script>
   
 </body>
