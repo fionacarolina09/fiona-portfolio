@@ -3338,6 +3338,7 @@ h3 {
 .fc-blog-section {
   background: #ffffff;
   padding: 30px 20px;
+   border-bottom: 1px solid #f0e6e8;
 }
 
 .fc-blog-section-final {
@@ -3352,6 +3353,7 @@ h3 {
 .fc-blog-section h2 {
   font-size: 26px;
   color: #800020;
+   margin-top: 30px;
   margin-bottom: 16px;
 }
 
@@ -3379,10 +3381,11 @@ h3 {
 
 .fc-clause-box {
   background: #f7f3f0;
-  border-left: 3px solid #800020;
-  border-radius: 6px;
-  padding: 20px 20px 16px;
-  margin-bottom: 28px;
+  border-left: 4px solid #800020;
+  border-radius: 8px;
+  padding: 22px 22px 18px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
 }
 
 .fc-clause-label {
@@ -3390,12 +3393,12 @@ h3 {
 }
 
 .fc-audit-issue {
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid #e8d8dc;
-  font-size: 15px;
-  color: #2f3e5c;
-  line-height: 1.6;
+  margin-top: 14px;
+  padding: 10px 12px;
+  background: #fff5f5;
+  border-left: 3px solid #800020;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 /* ===== TABLE ===== */
@@ -3416,12 +3419,12 @@ h3 {
   background: #800020;
   color: #ffffff;
   text-align: left;
-  padding: 12px;
+  padding: 14px;
   font-weight: 600;
 }
 
 .fc-blog-table td {
-  padding: 12px;
+  padding: 14px;
   border: 1px solid #eee;
   color: #2f3e5c;
 }
@@ -3435,6 +3438,7 @@ h3 {
 .fc-blog-cta-primary {
   padding: 40px 20px;
   background: #ffffff;
+   margin-top: 20px;
 }
 
 .fc-cta-box {
@@ -3609,11 +3613,12 @@ h3 {
 
   .fc-blog-section h2 {
     font-size: 22px;
+     margin-top: 24px;
   }
 
   .fc-clause-box {
     padding: 16px 16px 14px;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   .fc-blog-table {
