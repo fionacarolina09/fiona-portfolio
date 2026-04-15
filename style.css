@@ -2930,3 +2930,30 @@ h3 {
     font-size: 14px;
   }
 }
+
+/* ===== BLOG BENEFITS ===== */
+
+.fc-blog-benefits {
+  margin-top: 10px;
+}
+
+/* ITEM */
+.fc-benefit-item {
+  font-size: 15px;
+  color: #2f3e5c;
+  margin-bottom: 10px;
+  padding-left: 2px;
+}
+
+/* OPTIONAL HIGHLIGHT */
+.fc-benefit-item::before {
+  content: "";
+  margin-right: 6px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .fc-benefit-item {
+    font-size: 14px;
+  }
+}
