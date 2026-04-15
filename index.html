@@ -28,7 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="./style.css">
 </head>
   
-<body>
+<body data-page="home"> <!-- change per page -->
 
 <!-- ===== NAVBAR ===== -->
 <nav class="fc-nav">
@@ -48,11 +48,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <li><a href="/templates.html">Templates</a></li>
       <li><a href="/resources.html">Resources</a></li>
       <li><a href="/blog.html">Blog</a></li>
-      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/index.html#contact">Contact</a></li>
     </ul>
 
     <!-- CTA -->
-    <a href="/contact.html" class="fc-nav-cta">Work With Me</a>
+    <a href="/index.html#contact" class="fc-nav-cta">Work With Me</a>
 
     <!-- MOBILE TOGGLE -->
     <div class="fc-nav-toggle" id="fcNavToggle">
@@ -69,8 +69,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <a href="/templates.html">Templates</a>
     <a href="/resources.html">Resources</a>
     <a href="/blog.html">Blog</a>
-    <a href="/contact.html">Contact</a>
-    <a href="/contact.html" class="fc-mobile-cta">Work With Me</a>
+    <a href="/index.html#contact">Contact</a>
+    <a href="/index.html#contact" class="fc-mobile-cta">Work With Me</a>
   </div>
 </nav>
   
@@ -397,5 +397,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const toggle = document.getElementById('fcNavToggle');
+  const menu = document.getElementById('fcMobileMenu');
+  const nav = document.querySelector('.fc-nav');
+
+  /* ===== MOBILE TOGGLE FIX ===== */
+  if (toggle && menu) {
+    toggle.addEventListener('click', function () {
+      menu.classList.toggle('active');
+    });
+  }
+
+  /* ===== CLOSE MENU ON CLICK ===== */
+  document.querySelectorAll('.fc-mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+    });
+  });
+
+  /* ===== SCROLL EFFECT ===== */
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 30) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  /* ===== ACTIVE STATE ===== */
+  const page = document.body.getAttribute('data-page');
+
+  const links = document.querySelectorAll('.fc-nav-menu a');
+
+  links.forEach(link => {
+    if (page && link.getAttribute('href').includes(page)) {
+      link.classList.add('active');
+    }
+  });
+
+});
+</script>
+  
 </body>
 </html>
