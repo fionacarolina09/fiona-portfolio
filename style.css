@@ -3005,3 +3005,45 @@ h3 {
     padding: 10px;
   }
 }
+
+/* ===== ROADMAP ===== */
+
+.fc-roadmap {
+  margin-top: 15px;
+}
+
+/* PHASE BLOCK */
+.fc-phase {
+  border-left: 3px solid #800020;
+  padding-left: 16px;
+  margin-bottom: 20px;
+}
+
+/* TITLE */
+.fc-phase h3 {
+  font-size: 17px;
+  color: #2f3e5c;
+  margin-bottom: 8px;
+}
+
+/* LIST */
+.fc-phase ul {
+  padding-left: 18px;
+}
+
+.fc-phase li {
+  font-size: 15px;
+  color: #2f3e5c;
+  margin-bottom: 6px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .fc-phase h3 {
+    font-size: 15px;
+  }
+
+  .fc-phase li {
+    font-size: 14px;
+  }
+}
