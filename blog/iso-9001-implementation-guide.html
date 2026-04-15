@@ -458,6 +458,63 @@ document.querySelectorAll(".fc-faq-question").forEach((btn) => {
 
   </div>
 </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const toggle = document.getElementById('fcNavToggle');
+  const menu = document.getElementById('fcMobileMenu');
+  const nav = document.querySelector('.fc-nav');
+
+  /* ===== MOBILE TOGGLE (WITH ANIMATION) ===== */
+  if (toggle && menu) {
+    toggle.addEventListener('click', function () {
+      menu.classList.toggle('active');
+      toggle.classList.toggle('active'); // hamburger animation
+    });
+  }
+
+  /* ===== CLOSE MENU ON LINK CLICK ===== */
+  document.querySelectorAll('.fc-mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    });
+  });
+
+  /* ===== CLOSE MENU WHEN CLICK OUTSIDE ===== */
+  document.addEventListener('click', function (e) {
+    if (!nav.contains(e.target)) {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    }
+  });
+
+  /* ===== SCROLL EFFECT ===== */
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 30) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  /* ===== ACTIVE STATE ===== */
+  const page = document.body.getAttribute('data-page');
+  const links = document.querySelectorAll('.fc-nav-menu a');
+
+  links.forEach(link => {
+    const href = link.getAttribute('href');
+
+    if (page === "home" && href === "/") {
+      link.classList.add('active');
+    } else if (page && href.includes(page)) {
+      link.classList.add('active');
+    }
+  });
+
+});
+</script>
   
 </body>
 </html>
