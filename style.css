@@ -786,6 +786,7 @@ h3 {
 /* COLUMN */
 .fc-footer-col {
   position: relative;
+   padding-right: 10px;
 }
 
 /* DIVIDERS (DESKTOP ONLY) */
@@ -859,6 +860,9 @@ h3 {
   display: inline-block;
   background: #f7f3f0;
   color: #800020;
+   opacity: 1 !important;
+   pointer-events: auto;
+   filter: none;
   padding: 10px 16px;
   border-radius: 6px;
   font-size: 13.5px;
@@ -880,17 +884,17 @@ h3 {
 
 /* LINKEDIN */
 .fc-footer-social {
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 .fc-footer-social a {
   display: inline-flex;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.12);
   color: #ffffff;
   transition: 0.2s;
 }
@@ -962,6 +966,11 @@ h3 {
 @media (max-width: 900px) {
   .fc-footer-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+     .fc-footer-col:not(:last-child)::after {
+    background: rgba(255,255,255,0.08); /* softer */
+    width: 1px;
   }
 }
 
