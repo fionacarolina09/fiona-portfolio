@@ -15,6 +15,7 @@
 
   <url>
     <loc>https://www.fionacarolina.com/blog.html</loc>
+    <lastmod>2026-04-10</lastmod>
     <priority>0.8</priority>
   </url>
 
@@ -36,5 +37,30 @@
     <lastmod>2026-04-08</lastmod>
     <priority>0.9</priority>
   </url>
+  
+  <!-- Blog Cluster: ISO 9001 -->
+  <url>
+    <loc>https://www.fionacarolina.com/blog/iso-9001-guide.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+  </url>
 
+  <url>
+    <loc>https://www.fionacarolina.com/blog/iso-9001-clauses-explained.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fionacarolina.com/blog/iso-9001-implementation-guide.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fionacarolina.com/blog/iso-9001-2026-whats-changing.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
 </urlset>
