@@ -404,18 +404,28 @@ document.addEventListener("DOMContentLoaded", function () {
   const menu = document.getElementById('fcMobileMenu');
   const nav = document.querySelector('.fc-nav');
 
-  /* ===== MOBILE TOGGLE FIX ===== */
+  /* ===== MOBILE TOGGLE (WITH ANIMATION) ===== */
   if (toggle && menu) {
     toggle.addEventListener('click', function () {
       menu.classList.toggle('active');
+      toggle.classList.toggle('active'); // hamburger animation
     });
   }
 
-  /* ===== CLOSE MENU ON CLICK ===== */
+  /* ===== CLOSE MENU ON LINK CLICK ===== */
   document.querySelectorAll('.fc-mobile-menu a').forEach(link => {
     link.addEventListener('click', () => {
       menu.classList.remove('active');
+      toggle.classList.remove('active');
     });
+  });
+
+  /* ===== CLOSE MENU WHEN CLICK OUTSIDE ===== */
+  document.addEventListener('click', function (e) {
+    if (!nav.contains(e.target)) {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    }
   });
 
   /* ===== SCROLL EFFECT ===== */
@@ -429,11 +439,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* ===== ACTIVE STATE ===== */
   const page = document.body.getAttribute('data-page');
-
   const links = document.querySelectorAll('.fc-nav-menu a');
 
   links.forEach(link => {
-    if (page && link.getAttribute('href').includes(page)) {
+    const href = link.getAttribute('href');
+
+    if (page === "home" && href === "/") {
+      link.classList.add('active');
+    } else if (page && href.includes(page)) {
       link.classList.add('active');
     }
   });
