@@ -2407,60 +2407,33 @@ h3 {
   }
 }
 
-/* ===== BLOG FILTER ===== */
-
-/* ===== BLOG FILTER ===== */
+/* ===== BLOG FILTER (REFINED) ===== */
 
 .fc-blog-filter {
-  padding: 20px 20px 10px;
-  background: #ffffff;
+  background: #f7f3f0; /* ivory */
+  padding: 20px 20px;
 }
 
 .fc-blog-filter-container {
-  max-width: 680px; /* match blog width */
+  max-width: 680px;   /* align with blog width */
   margin: 0 auto;
+  text-align: center; /* center buttons */
 }
 
 .fc-blog-filter-buttons {
   display: flex;
+  justify-content: center; /* center horizontally */
   gap: 10px;
   flex-wrap: wrap;
-}
-
-/* BUTTON */
-.fc-filter-btn {
-  font-size: 13px;
-  color: #800020;
-  background: #fce8ec;
-  padding: 6px 12px;
-  border-radius: 20px;
-  text-decoration: none;
-  border: 1px solid transparent;
-  transition: all 0.2s ease;
-}
-
-/* HOVER */
-.fc-filter-btn:hover {
-  background: #800020;
-  color: #ffffff;
-}
-
-/* ACTIVE */
-.fc-filter-btn.active {
-  background: #800020;
-  color: #ffffff;
 }
 
 @media (max-width: 768px) {
 
   .fc-blog-filter-buttons {
+    justify-content: flex-start; /* better UX for scroll */
     overflow-x: auto;
     flex-wrap: nowrap;
     padding-bottom: 5px;
-  }
-
-  .fc-filter-btn {
-    white-space: nowrap;
   }
 
 }
