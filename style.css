@@ -918,6 +918,18 @@ h3 {
   margin: 0 8px;
 }
 
+/* FORCE BUTTON CONTRAST IN FOOTER */
+.fc-footer .btn-primary {
+  background: #f7f3f0;
+  color: #800020;
+  border: none;
+}
+
+.fc-footer .btn-primary:hover {
+  background: #ffffff;
+  color: #800020;
+}
+
 /* ===== RESPONSIVE ===== */
 
 @media (max-width: 900px) {
