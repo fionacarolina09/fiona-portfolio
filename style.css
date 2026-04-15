@@ -3059,3 +3059,72 @@ h3 {
     font-size: 14px;
   }
 }
+
+/* ===== PRIMARY CTA ===== */
+
+.fc-blog-cta-primary {
+  padding: 40px 20px;
+  background: #ffffff;
+}
+
+/* CTA BOX */
+.fc-cta-box {
+  background: #f7f3f0; /* ivory */
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 30px 25px;
+  text-align: center;
+}
+
+/* TITLE */
+.fc-cta-box h3 {
+  font-size: 22px;
+  color: #800020;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.fc-cta-box p {
+  font-size: 15px;
+  color: #4a5568;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.fc-cta-box .fc-btn-primary {
+  background: #800020;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.fc-cta-box .fc-btn-primary:hover {
+  background: #5e0018;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .fc-blog-cta-primary {
+    padding: 30px 15px;
+  }
+
+  .fc-cta-box {
+    padding: 22px 18px;
+  }
+
+  .fc-cta-box h3 {
+    font-size: 18px;
+  }
+
+  .fc-cta-box p {
+    font-size: 14px;
+  }
+
+  .fc-cta-box .fc-btn-primary {
+    width: 100%;
+    max-width: 260px;
+  }
+}
