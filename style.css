@@ -3699,7 +3699,7 @@ h3 {
 /* ===== GENERAL CONTENT ===== */
 
 .fc-blog-section {
-  background: #f7f3f0;
+  background: #ffffff;
   padding: 30px 20px;
 }
 
@@ -3736,6 +3736,12 @@ h3 {
   color: #2f3e5c;
   margin-bottom: 7px;
   line-height: 1.6;
+}
+
+.fc-no-break {
+  background: #ffffff;
+  margin-bottom: 0;
+  padding-bottom: 20px;
 }
 
 /* ===== STEP BOX ===== */
