@@ -3128,3 +3128,20 @@ h3 {
     max-width: 260px;
   }
 }
+
+/* ===== WARNING BOX ===== */
+
+.fc-warning-box {
+  background: #fff5f5; /* light red */
+  border-left: 3px solid #800020;
+  padding: 18px 18px 14px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .fc-warning-box {
+    padding: 14px;
+  }
+}
