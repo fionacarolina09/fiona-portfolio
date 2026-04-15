@@ -3139,9 +3139,19 @@ h3 {
   margin-top: 10px;
 }
 
+/* ===== FINAL CONTENT SPACING ===== */
+.fc-blog-section-final {
+  padding-bottom: 40px;
+}
+
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
   .fc-warning-box {
     padding: 14px;
   }
+
+     .fc-blog-section:last-of-type {
+    margin-bottom: 30px;
+  }
+
 }
