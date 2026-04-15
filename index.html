@@ -30,24 +30,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
 <body>
 
-<!-- NAVBAR -->
-<header class="fc-navbar">
+<!-- ===== NAVBAR ===== -->
+<nav class="fc-nav">
   <div class="fc-nav-container">
 
+    <!-- LOGO -->
     <div class="fc-logo">
-      <a href="index.html">Fiona Carolina</a>
+      <a href="/">
+        <span class="fc-logo-name">Fiona Carolina</span>
+        <!-- Optional tagline (uncomment if needed) -->
+        <!-- <span class="fc-logo-tag">Practical ISO Systems.</span> -->
+      </a>
     </div>
 
-    <nav class="fc-nav">
-      <a href="index.html">Home</a>
-      <a href="templates.html">Templates</a>
-      <a href="resources.html">Resources</a>
-      <a href="blog.html">Blog</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <!-- DESKTOP MENU -->
+    <ul class="fc-nav-menu">
+      <li><a href="/templates.html">Templates</a></li>
+      <li><a href="/resources.html">Resources</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+
+    <!-- CTA -->
+    <a href="/contact.html" class="fc-nav-cta">Work With Me</a>
+
+    <!-- MOBILE TOGGLE -->
+    <div class="fc-nav-toggle" id="fcNavToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
   </div>
-</header>
+
+  <!-- MOBILE MENU -->
+  <div class="fc-mobile-menu" id="fcMobileMenu">
+    <a href="/">Home</a>
+    <a href="/templates.html">Templates</a>
+    <a href="/resources.html">Resources</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/contact.html" class="fc-mobile-cta">Work With Me</a>
+  </div>
+</nav>
   
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFKRGLF7"
