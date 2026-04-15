@@ -3338,6 +3338,7 @@ h3 {
 .fc-blog-section {
   background: #ffffff;
   padding: 30px 20px;
+  border-bottom: none;
 }
 
 .fc-blog-section-final {
