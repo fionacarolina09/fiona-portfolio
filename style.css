@@ -813,6 +813,7 @@ h3 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 8px;
+   color: #ffffff !important;
 }
 
 .fc-footer-tagline {
@@ -899,6 +900,7 @@ h3 {
 .fc-footer-cta p {
   margin-bottom: 10px;
   font-size: 13.5px;
+   color: #f7f3f0 !important;
 }
 
 /* BOTTOM */
@@ -908,6 +910,10 @@ h3 {
   text-align: center;
   font-size: 12.5px;
   color: #e5d6d6;
+}
+
+.fc-footer-bottom p {
+  color: #f7f3f0;
 }
 
 .fc-footer-legal {
