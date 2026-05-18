@@ -466,6 +466,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const faqItems = document.querySelectorAll(".dk-faq-item");
+
+  faqItems.forEach(item => {
+    const question = item.querySelector(".dk-faq-question");
+
+    question.addEventListener("click", function () {
+      item.classList.toggle("active");
+    });
+  });
+});
+</script>
   
 </body>
 </html>
