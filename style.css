@@ -4960,3 +4960,68 @@ h3 {
   }
 
 }
+
+/* ====================================
+   BLOG - LIFECYCLE PERSPECTIVE ISO 14001:2026
+==================================== */
+
+.fc-lifecycle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.fc-lifecycle-card {
+  background: #f7f3f0;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 22px;
+}
+
+.fc-lifecycle-card h3 {
+  font-size: 17px;
+  color: #800020;
+  margin-bottom: 12px;
+}
+
+.fc-lifecycle-card .fc-blog-list {
+  margin-bottom: 0;
+}
+
+.fc-lifecycle-card .fc-blog-list li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.fc-audit-question-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.fc-audit-question-list div {
+  background: #f7f3f0;
+  border-left: 3px solid #800020;
+  border-radius: 6px;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #2f3e5c;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+
+  .fc-lifecycle-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .fc-lifecycle-card {
+    padding: 18px;
+  }
+
+  .fc-lifecycle-card h3 {
+    font-size: 16px;
+  }
+
+}
