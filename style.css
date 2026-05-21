@@ -4815,3 +4815,52 @@ h3 {
   }
 
 }
+
+/* ====================================
+   BLOG - CLIMATE CHANGE ISO 14001:2026
+==================================== */
+
+.fc-climate-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.fc-climate-card {
+  background: #f7f3f0;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 22px;
+}
+
+.fc-climate-card h3 {
+  font-size: 17px;
+  color: #800020;
+  margin-bottom: 12px;
+}
+
+.fc-climate-card .fc-blog-list {
+  margin-bottom: 0;
+}
+
+.fc-climate-card .fc-blog-list li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+
+  .fc-climate-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .fc-climate-card {
+    padding: 18px;
+  }
+
+  .fc-climate-card h3 {
+    font-size: 16px;
+  }
+
+}
