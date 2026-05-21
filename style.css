@@ -4584,3 +4584,119 @@ h3 {
     font-size: 15px;
   }
 }
+
+/* ====================================
+   BLOG - ISO 14001:2026 CHANGES
+==================================== */
+
+.fc-blog-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.fc-blog-meta span {
+  font-size: 12px;
+  color: #800020;
+  background: #fce8ec;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+.fc-key-takeaways {
+  background: #f7f3f0;
+  border-left: 4px solid #800020;
+  border-radius: 10px;
+  padding: 24px 24px 18px;
+}
+
+.fc-key-takeaways h2 {
+  margin-top: 0;
+}
+
+.fc-compact-section {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.fc-article-toc {
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 22px;
+}
+
+.fc-article-toc h2 {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.fc-article-toc a {
+  display: block;
+  color: #2f3e5c;
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0e6e8;
+}
+
+.fc-article-toc a:last-child {
+  border-bottom: none;
+}
+
+.fc-article-toc a:hover {
+  color: #800020;
+}
+
+.fc-change-card {
+  background: #f7f3f0;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 22px;
+}
+
+.fc-change-card span {
+  display: inline-block;
+  background: #800020;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 9px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.fc-change-card h3 {
+  font-size: 18px;
+  color: #800020;
+  margin-bottom: 10px;
+}
+
+.fc-change-card strong {
+  display: block;
+  font-size: 14px;
+  color: #800020;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.fc-change-card p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .fc-blog-meta {
+    gap: 8px;
+  }
+
+  .fc-key-takeaways,
+  .fc-article-toc,
+  .fc-change-card {
+    padding: 18px;
+  }
+
+  .fc-change-card h3 {
+    font-size: 16px;
+  }
+}
