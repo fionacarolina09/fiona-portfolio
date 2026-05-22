@@ -5026,6 +5026,10 @@ h3 {
 
 }
 
+/* ===============
+   PRODUCT INDEX
+================== */
+
 .product-index-section {
   padding: 80px 20px;
   background: #f7f3f0;
@@ -5053,7 +5057,8 @@ h3 {
 
 .product-index-header h2 {
   margin: 0 0 14px;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  line-height: 1.15;
   color: #2f3e5c;
 }
 
