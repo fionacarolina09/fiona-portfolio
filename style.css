@@ -5216,3 +5216,81 @@ h3 {
     margin-right: 20px;
   }
 }
+
+/* ====================================
+   BLOG - ISO 9001 DOCUMENTATION
+==================================== */
+
+.fc-doc-level-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.fc-doc-level {
+  background: #f7f3f0;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 22px;
+}
+
+.fc-doc-level span {
+  display: inline-block;
+  background: #800020;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.fc-doc-level h3 {
+  font-size: 17px;
+  color: #800020;
+  margin-bottom: 12px;
+}
+
+.fc-doc-level .fc-blog-list {
+  margin-bottom: 0;
+}
+
+.fc-doc-level .fc-blog-list li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.fc-audit-focus-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.fc-audit-focus-list div {
+  background: #f7f3f0;
+  border-left: 3px solid #800020;
+  border-radius: 6px;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #2f3e5c;
+  line-height: 1.5;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  .fc-doc-level-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .fc-doc-level {
+    padding: 18px;
+  }
+
+  .fc-doc-level h3 {
+    font-size: 16px;
+  }
+
+}
