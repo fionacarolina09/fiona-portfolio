@@ -5294,3 +5294,81 @@ h3 {
   }
 
 }
+
+/* ====================================
+   BLOG - ISO 21101
+==================================== */
+
+.fc-ats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.fc-ats-card {
+  background: #f7f3f0;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 22px;
+}
+
+.fc-ats-card h3 {
+  font-size: 17px;
+  color: #800020;
+  margin-bottom: 12px;
+}
+
+.fc-ats-card .fc-blog-list {
+  margin-bottom: 0;
+}
+
+.fc-ats-card .fc-blog-list li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.fc-benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.fc-benefit-card {
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.fc-benefit-card h3 {
+  font-size: 16px;
+  color: #800020;
+  margin-bottom: 10px;
+}
+
+.fc-benefit-card p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  .fc-ats-grid,
+  .fc-benefit-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .fc-ats-card,
+  .fc-benefit-card {
+    padding: 18px;
+  }
+
+  .fc-ats-card h3,
+  .fc-benefit-card h3 {
+    font-size: 16px;
+  }
+
+}
