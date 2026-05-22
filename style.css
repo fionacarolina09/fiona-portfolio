@@ -5372,3 +5372,52 @@ h3 {
   }
 
 }
+
+/* ====================================
+   BLOG - ISO 21101 CLAUSES
+==================================== */
+
+.fc-clause-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.fc-clause-card {
+  background: #f7f3f0;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 22px;
+}
+
+.fc-clause-card h3 {
+  font-size: 17px;
+  color: #800020;
+  margin-bottom: 12px;
+}
+
+.fc-clause-card .fc-blog-list {
+  margin-bottom: 0;
+}
+
+.fc-clause-card .fc-blog-list li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+
+  .fc-clause-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .fc-clause-card {
+    padding: 18px;
+  }
+
+  .fc-clause-card h3 {
+    font-size: 16px;
+  }
+
+}
