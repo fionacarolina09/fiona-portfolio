@@ -352,8 +352,9 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
 </div>
 
-  <script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
+
     const cookieBanner = document.getElementById("cookie-banner");
     const acceptButton = document.getElementById("accept-cookies");
 
@@ -362,9 +363,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     acceptButton.addEventListener("click", function () {
+
       localStorage.setItem("cookieConsent", "accepted");
+
       cookieBanner.style.display = "none";
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "cookie_consent_accepted"
+      });
+
     });
+
   });
 </script>
   
