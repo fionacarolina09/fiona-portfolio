@@ -1487,37 +1487,6 @@ h3 {
   line-height: 1.5;
 }
 
-.dk-consent {
-  display: flex;
-  gap: 12px;
-  margin-top: 18px;
-  margin-bottom: 22px;
-  font-size: 0.92rem;
-  line-height: 1.7;
-  color: #5b6475;
-  text-align: left;
-  align-items: flex-start;
-}
-
-.dk-consent input[type="checkbox"] {
-  margin-top: 5px;
-  flex-shrink: 0;
-  accent-color: #800020;
-}
-
-.dk-consent span {
-  flex: 1;
-}
-
-.dk-consent a {
-  color: #800020;
-  font-weight: 500;
-  text-decoration: underline;
-}
-
-.dk-consent a:hover {
-  opacity: 0.8;
-}
 
 /* ===== TABLET ===== */
 @media (max-width: 1024px) {
@@ -1546,55 +1515,101 @@ h3 {
 
 /* ===== LEAD SECTION CONTAINER ===== */
 .dk-lead-container {
-  max-width: 720px;   /* CONTROL WIDTH */
+  max-width: 920px;
   margin: 0 auto;
+  padding: 0 20px;
   text-align: center;
 }
 
 /* ===== FORM ===== */
 .dk-form {
-  max-width: 560px;   /* tighter form */
+  max-width: 760px;
   margin: 0 auto;
 }
 
-/* ===== ROW (NAME + EMAIL) ===== */
+/* ===== ROW: NAME + EMAIL ===== */
 .dk-form-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  margin-bottom: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 18px;
 }
 
 /* ===== SINGLE ROW ===== */
 .dk-form-row-single {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
-/* ===== INPUTS ===== */
+/* ===== INPUTS + SELECT ===== */
 .dk-form input,
 .dk-form select {
   width: 100%;
-  padding: 14px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 14px;
+  box-sizing: border-box;
+  padding: 16px 18px;
+  border: 1px solid #d8dce6;
+  border-radius: 10px;
+  font-size: 1rem;
   background: #ffffff;
+  color: #2f3e5c;
 }
 
-/* ===== BUTTON (DESKTOP FIX) ===== */
+.dk-form input:focus,
+.dk-form select:focus {
+  outline: none;
+  border-color: #800020;
+  box-shadow: 0 0 0 3px rgba(128, 0, 32, 0.12);
+}
+
+/* ===== CONSENT ===== */
+.dk-consent {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 12px;
+  margin: 18px 0 24px;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: #5b6475;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.dk-consent input[type="checkbox"] {
+  width: auto;
+  margin-top: 5px;
+  flex: 0 0 auto;
+  accent-color: #800020;
+}
+
+.dk-consent span {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.dk-consent a {
+  color: #800020;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.dk-consent a:hover {
+  opacity: 0.8;
+}
+
+/* ===== BUTTON ===== */
 .dk-submit-btn {
   display: block;
   width: 100%;
-  max-width: 260px;   /* key fix */
-  margin: 16px auto 0;
-
-  padding: 14px;
+  max-width: 300px;
+  margin: 18px auto 0;
+  padding: 15px 20px;
   background: #800020;
   color: #ffffff;
   border: none;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 600;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -1604,7 +1619,6 @@ h3 {
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
-
   .dk-lead-container {
     max-width: 100%;
     padding: 0 16px;
@@ -1616,17 +1630,27 @@ h3 {
 
   .dk-form-row {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .dk-form-row-single {
+    margin-bottom: 14px;
   }
 
   .dk-form input,
   .dk-form select {
-    padding: 13px;
-    font-size: 14px;
+    padding: 14px 16px;
+    font-size: 0.95rem;
+  }
+
+  .dk-consent {
+    font-size: 0.85rem;
+    line-height: 1.6;
   }
 
   .dk-submit-btn {
-    max-width: 100%;   /* full width on mobile */
+    max-width: 100%;
     margin-top: 14px;
   }
 
