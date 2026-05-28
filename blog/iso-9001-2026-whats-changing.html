@@ -460,6 +460,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+
+  <!-- COOKIE BANNER -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-banner-content">
+    <p>
+      This website uses cookies and analytics technologies to improve website performance and user experience.
+      By clicking “Accept”, you consent to the use of cookies.
+      <a href="/privacy-policy.html">Privacy Policy</a>
+    </p>
+
+    <button id="accept-cookies" class="cookie-btn">
+      Accept
+    </button>
+  </div>
+</div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cookieBanner = document.getElementById("cookie-banner");
+    const acceptButton = document.getElementById("accept-cookies");
+
+    if (!localStorage.getItem("cookieConsent")) {
+      cookieBanner.style.display = "block";
+    }
+
+    acceptButton.addEventListener("click", function () {
+      localStorage.setItem("cookieConsent", "accepted");
+      cookieBanner.style.display = "none";
+    });
+  });
+</script>
   
 </body>
 </html>
