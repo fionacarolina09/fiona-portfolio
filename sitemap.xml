@@ -147,4 +147,15 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://www.fionacarolina.com/terms-and-conditions.html</loc>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fionacarolina.com/privacy-policy.html</loc>
+    <priority>0.4</priority>
+  </url>
+  
 </urlset>
