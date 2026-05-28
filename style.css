@@ -1505,6 +1505,10 @@ h3 {
   accent-color: #800020;
 }
 
+.dk-consent span {
+  flex: 1;
+}
+
 .dk-consent a {
   color: #800020;
   font-weight: 500;
