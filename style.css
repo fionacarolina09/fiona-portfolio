@@ -1487,6 +1487,32 @@ h3 {
   line-height: 1.5;
 }
 
+.dk-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 18px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #d8dce6;
+  text-align: left;
+}
+
+.dk-consent input[type="checkbox"] {
+  margin-top: 4px;
+  accent-color: #800020;
+}
+
+.dk-consent a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.dk-consent a:hover {
+  opacity: 0.8;
+}
+
 /* ===== TABLET ===== */
 @media (max-width: 1024px) {
   .dk-included-grid {
