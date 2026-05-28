@@ -5537,3 +5537,115 @@ h3 {
   }
 
 }
+
+/* =========================
+   LEGAL PAGE
+========================= */
+
+.legal-page {
+  background: #ffffff;
+}
+
+/* ===== HERO ===== */
+
+.legal-hero {
+  background: #f7f3f0;
+  padding: 80px 20px 60px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.legal-hero h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  color: #800020;
+  line-height: 1.2;
+}
+
+.legal-hero p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* ===== CONTENT ===== */
+
+.legal-content {
+  padding: 70px 20px;
+}
+
+.legal-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.legal-container h2 {
+  margin-top: 42px;
+  margin-bottom: 14px;
+  font-size: 1.35rem;
+  color: #2f3e5c;
+  line-height: 1.4;
+}
+
+.legal-container h2:first-child {
+  margin-top: 0;
+}
+
+.legal-container p {
+  margin-bottom: 18px;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.legal-container strong {
+  color: #2f3e5c;
+}
+
+.legal-container a {
+  color: #800020;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.legal-container a:hover {
+  opacity: 0.8;
+}
+
+/* ===== LISTS ===== */
+
+.legal-container ul,
+.legal-container ol {
+  margin: 0 0 20px 22px;
+  color: #4b5563;
+  line-height: 1.9;
+}
+
+.legal-container li {
+  margin-bottom: 10px;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  .legal-hero {
+    padding: 70px 20px 50px;
+  }
+
+  .legal-content {
+    padding: 55px 20px;
+  }
+
+  .legal-container h2 {
+    font-size: 1.2rem;
+    margin-top: 36px;
+  }
+
+  .legal-container p,
+  .legal-container li {
+    font-size: 0.96rem;
+    line-height: 1.8;
+  }
+
+}
