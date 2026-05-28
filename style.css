@@ -5649,3 +5649,77 @@ h3 {
   }
 
 }
+
+/* =========================
+   COOKIE BANNER
+========================= */
+
+.cookie-banner {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  display: none;
+}
+
+.cookie-banner-content {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #2f3e5c;
+  color: #ffffff;
+  padding: 18px 20px;
+  border-radius: 12px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.cookie-banner p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.cookie-banner a {
+  color: #f7f3f0;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.cookie-btn {
+  background: #800020;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.cookie-btn:hover {
+  opacity: 0.9;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+  .cookie-banner {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .cookie-banner-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cookie-btn {
+    width: 100%;
+  }
+}
