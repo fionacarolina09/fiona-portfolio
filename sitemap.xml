@@ -142,8 +142,33 @@
     <priority>0.8</priority>
   </url>
 
-    <url>
+        <url>
     <loc>https://www.fionacarolina.com/blog/iso-21101-documentation-requirements.html</loc>
+    <priority>0.8</priority>
+  </url>
+  
+    <url>
+    <loc>https://www.fionacarolina.com/blog/iso-19011-2026-vs-2018.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+      <url>
+    <loc>https://www.fionacarolina.com/blog/hybrid-audits-iso-19011-2026.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+      <url>
+    <loc>https://www.fionacarolina.com/blog/digital-evidence-verification-iso-19011-2026.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+      <url>
+    <loc>https://www.fionacarolina.com/blog/risk-based-auditing-iso-19011-2026.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+      <url>
+    <loc>https://www.fionacarolina.com/blog/internal-audit-programme-iso-19011-2026.html</loc>
     <priority>0.8</priority>
   </url>
 
