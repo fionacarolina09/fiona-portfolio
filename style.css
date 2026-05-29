@@ -900,7 +900,7 @@ h3 {
 }
 
 /* =========================
-   TEMPLATES
+   TEMPLATES - UPDATED
 ========================= */
 
 /* ===== TEMPLATES HERO ===== */
@@ -912,30 +912,29 @@ h3 {
   color: #ffffff;
 }
 
-.fc-templates-hero h1 {
-  color: #ffffff !important;
-}
-
-.fc-templates-hero-sub {
-  color: #f8dede !important;
-}
-
 .fc-templates-hero-container {
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
 .fc-templates-hero h1 {
   font-size: 36px;
-  color: #2f3e5c;
+  color: #ffffff !important;
   margin-bottom: 16px;
 }
 
 .fc-templates-hero-sub {
   font-size: 15px;
-  color: #4a5568;
-  margin-bottom: 24px;
+  color: #f8dede !important;
+  margin-bottom: 14px;
+  line-height: 1.7;
+}
+
+.fc-templates-hero-note {
+  font-size: 14px;
+  color: #f3eaea;
   line-height: 1.6;
+  margin-bottom: 26px;
 }
 
 .fc-templates-hero-cta {
@@ -953,33 +952,102 @@ h3 {
   background: #f3eaea;
 }
 
-@media (max-width: 768px) {
+/* ===== TRUST BAR ===== */
 
-  .fc-templates-hero {
-    padding: 60px 16px 40px;
-  }
-
-  .fc-templates-hero h1 {
-    font-size: 26px;
-  }
-
-  .fc-templates-hero-sub {
-    font-size: 14px;
-  }
-
+.fc-trust-bar {
+  background: #f7f3f0;
+  padding: 22px 20px;
+  border-bottom: 1px solid #eadfdd;
 }
 
-/* ===== TEMPLATE GRID ===== */
+.fc-trust-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.fc-trust-item {
+  background: #ffffff;
+  border: 1px solid #eadfdd;
+  border-radius: 8px;
+  padding: 12px 14px;
+  text-align: center;
+  font-size: 13px;
+  color: #2f3e5c;
+  font-weight: 600;
+}
+
+/* ===== INTRODUCTION ===== */
+
+.fc-templates-intro {
+  background: #ffffff;
+  padding: 46px 20px 36px;
+}
+
+.fc-templates-intro h2 {
+  font-size: 28px;
+  color: #800020;
+  margin-bottom: 14px;
+}
+
+.fc-templates-intro p {
+  font-size: 15px;
+  color: #4a5568;
+  line-height: 1.7;
+  max-width: 900px;
+}
+
+/* ===== TEMPLATE SECTION ===== */
 
 .fc-templates-section {
   background: #f7f3f0;
-  padding: 48px 20px;
+  padding: 52px 20px;
 }
 
 .fc-templates-container {
   max-width: 1100px;
   margin: 0 auto;
 }
+
+/* CATEGORY HEADER */
+
+.fc-category-header {
+  margin-bottom: 26px;
+  max-width: 850px;
+}
+
+.fc-category-second {
+  margin-top: 56px;
+}
+
+.fc-category-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #800020;
+  background: #ffffff;
+  border: 1px solid #eadfdd;
+  padding: 5px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.fc-category-header h2 {
+  font-size: 28px;
+  color: #800020;
+  margin-bottom: 12px;
+}
+
+.fc-category-header p {
+  font-size: 15px;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+/* GRID */
 
 .fc-templates-grid {
   display: grid;
@@ -988,6 +1056,7 @@ h3 {
 }
 
 /* CARD */
+
 .fc-template-card {
   background: #ffffff;
   padding: 28px;
@@ -1004,7 +1073,7 @@ h3 {
 .fc-template-card h3 {
   font-size: 18px;
   color: #2f3e5c;
-  margin-bottom: 10px;
+  margin: 12px 0 10px;
 }
 
 .fc-template-card p {
@@ -1014,7 +1083,38 @@ h3 {
   line-height: 1.6;
 }
 
+/* PRODUCT TYPE */
+
+.fc-product-type {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #800020;
+  background: #f7f3f0;
+  border: 1px solid #eadfdd;
+  padding: 5px 8px;
+  border-radius: 999px;
+  margin-right: 6px;
+}
+
+/* CARD LIST */
+
+.fc-card-list {
+  margin: 0 0 20px 18px;
+  padding: 0;
+}
+
+.fc-card-list li {
+  font-size: 13.5px;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
 /* BUTTON */
+
 .fc-template-btn {
   display: inline-block;
   padding: 10px 16px;
@@ -1022,6 +1122,7 @@ h3 {
   color: #ffffff;
   border-radius: 6px;
   font-size: 13px;
+  text-decoration: none;
 }
 
 .fc-template-btn:hover {
@@ -1029,35 +1130,51 @@ h3 {
 }
 
 /* COMING SOON */
+
 .fc-coming-soon {
-  opacity: 0.7;
   position: relative;
+  border-color: #eadfdd;
 }
 
 .fc-badge {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 0;
   font-size: 12px;
+  font-weight: 600;
   background: #eee;
   color: #555;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 5px 9px;
+  border-radius: 999px;
 }
 
-@media (max-width: 768px) {
-
-  .fc-templates-grid {
-    grid-template-columns: 1fr;
-     padding: 36px 16px;
-  }
-
+.fc-disabled-btn {
+  background: #9ca3af;
+  cursor: not-allowed;
 }
 
-/* ===== WHAT'S INCLUDED ===== */
+.fc-disabled-btn:hover {
+  background: #9ca3af;
+}
+
+.fc-feature-card {
+  border: 1px solid #d8c3c3;
+  background: #ffffff;
+}
+
+.fc-card-note {
+  font-size: 13px !important;
+  color: #2f3e5c !important;
+  background: #f7f3f0;
+  border-left: 3px solid #800020;
+  padding: 10px 12px;
+  margin-bottom: 18px !important;
+}
+
+/* ===== WHAT YOU CAN EXPECT ===== */
 
 .fc-included-section {
-  background: transparent;
-  padding: 48px 20px;
+  background: #ffffff;
+  padding: 52px 20px;
 }
 
 .fc-included-container {
@@ -1065,21 +1182,18 @@ h3 {
   margin: 0 auto;
 }
 
-/* TITLE */
 .fc-included-section h2 {
   font-size: 28px;
   color: #800020;
   margin-bottom: 30px;
 }
 
-/* GRID */
 .fc-included-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-/* CARD */
 .fc-included-card {
   border: 1px solid #eee;
   border-radius: 10px;
@@ -1093,7 +1207,6 @@ h3 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
-/* LEVEL TAG (slightly bigger as requested) */
 .fc-level {
   display: inline-block;
   font-size: 14px;
@@ -1102,7 +1215,6 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* TEXT */
 .fc-included-card h3 {
   font-size: 16px;
   color: #2f3e5c;
@@ -1115,17 +1227,11 @@ h3 {
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-  .fc-included-grid {
-    grid-template-columns: 1fr;
-     padding: 36px 16px;
-  }
-}
-
-/* ===== KEY ADVANTAGES (FINAL REFINED) ===== */
+/* ===== KEY ADVANTAGES ===== */
 
 .fc-diff-section {
-  padding: 48px 20px;
+  padding: 52px 20px;
+  background: #f7f3f0;
 }
 
 .fc-diff-container {
@@ -1133,14 +1239,20 @@ h3 {
   margin: 0 auto;
 }
 
-/* HEADING */
 .fc-diff-section h2 {
   font-size: 28px;
   color: #800020;
-  margin: 40px 0 24px;
+  margin: 0 0 14px;
 }
 
-/* GRID (NON-STRETCH) */
+.fc-section-lead {
+  font-size: 15px;
+  color: #4a5568;
+  line-height: 1.7;
+  max-width: 900px;
+  margin-bottom: 28px;
+}
+
 .fc-diff-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
@@ -1148,7 +1260,6 @@ h3 {
   gap: 16px;
 }
 
-/* CARD */
 .fc-diff-card {
   width: 100%;
   max-width: 260px;
@@ -1165,7 +1276,6 @@ h3 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
-/* ICON */
 .fc-diff-card img {
   width: 56px;
   height: 56px;
@@ -1173,7 +1283,6 @@ h3 {
   margin: 0 auto 10px;
 }
 
-/* TEXT */
 .fc-diff-card p {
   font-size: 14px;
   color: #2f3e5c;
@@ -1186,63 +1295,32 @@ h3 {
   font-weight: 600;
 }
 
-/* ===== TABLET ===== */
-@media (max-width: 900px) {
-  .fc-diff-grid {
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: stretch;
-  }
+/* ===== SEO SUPPORT ===== */
 
-  .fc-diff-card {
-    max-width: 100%;
-  }
+.fc-seo-support {
+  background: #ffffff;
+  padding: 32px 20px;
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
-
-  .fc-diff-section {
-    padding: 36px 16px;
-  }
-
-  .fc-diff-section h2 {
-    font-size: 24px;
-    margin: 30px 0 18px;
-  }
-
-  .fc-diff-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .fc-diff-card {
-    max-width: 100%;
-    padding: 14px 16px;
-  }
-
-  .fc-diff-card img {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 8px;
-  }
-
-  .fc-diff-card p {
-    font-size: 13.5px;
-    line-height: 1.4;
-  }
-
+.fc-seo-support p {
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.7;
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* ===== FINAL CTA ===== */
 
 .fc-final-cta {
   background: #800020;
-  padding: 50px 20px;
+  padding: 54px 20px;
   text-align: center;
 }
 
 .fc-final-cta-container {
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
@@ -1259,7 +1337,6 @@ h3 {
   line-height: 1.6;
 }
 
-/* BUTTONS */
 .fc-final-cta-buttons {
   display: flex;
   justify-content: center;
@@ -1267,7 +1344,6 @@ h3 {
   flex-wrap: wrap;
 }
 
-/* PRIMARY (matches your system) */
 .fc-final-cta .btn-primary {
   background: #ffffff;
   color: #800020;
@@ -1277,7 +1353,6 @@ h3 {
   background: #f3eaea;
 }
 
-/* SECONDARY */
 .btn-outline {
   background: transparent;
   color: #ffffff;
@@ -1288,8 +1363,106 @@ h3 {
   background: rgba(255,255,255,0.1);
 }
 
-/* MOBILE */
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+
+  .fc-trust-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fc-included-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fc-diff-grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: stretch;
+  }
+
+  .fc-diff-card {
+    max-width: 100%;
+  }
+
+}
+
 @media (max-width: 768px) {
+
+  .fc-templates-hero {
+    padding: 60px 16px 42px;
+  }
+
+  .fc-templates-hero h1 {
+    font-size: 26px;
+  }
+
+  .fc-templates-hero-sub,
+  .fc-templates-hero-note {
+    font-size: 14px;
+  }
+
+  .fc-trust-bar {
+    padding: 20px 16px;
+  }
+
+  .fc-trust-container {
+    grid-template-columns: 1fr;
+  }
+
+  .fc-templates-intro,
+  .fc-templates-section,
+  .fc-included-section,
+  .fc-diff-section {
+    padding: 40px 16px;
+  }
+
+  .fc-templates-intro h2,
+  .fc-category-header h2,
+  .fc-included-section h2,
+  .fc-diff-section h2 {
+    font-size: 24px;
+  }
+
+  .fc-templates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fc-template-card {
+    padding: 24px;
+  }
+
+  .fc-category-second {
+    margin-top: 46px;
+  }
+
+  .fc-included-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fc-diff-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .fc-diff-card {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .fc-diff-card img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+  }
+
+  .fc-diff-card p {
+    font-size: 13.5px;
+    line-height: 1.4;
+  }
+
+  .fc-seo-support {
+    padding: 30px 16px;
+  }
 
   .fc-final-cta {
     padding: 50px 16px;
