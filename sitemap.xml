@@ -157,5 +157,11 @@
     <loc>https://www.fionacarolina.com/privacy-policy.html</loc>
     <priority>0.4</priority>
   </url>
+
+  <!-- Request Access -->
+<url>
+  <loc>https://www.fionacarolina.com/request-access.html</loc>
+  <lastmod>2026-05-29</lastmod>
+</url>
   
 </urlset>
