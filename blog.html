@@ -484,6 +484,23 @@ document.querySelectorAll(".fc-filter-btn").forEach(btn => {
 });
 </script>
 
+  <script>
+const viewMoreBtn = document.getElementById("viewMoreBtn");
+const moreBlogs = document.getElementById("moreBlogs");
+
+viewMoreBtn.addEventListener("click", function () {
+
+  moreBlogs.classList.toggle("active");
+
+  if (moreBlogs.classList.contains("active")) {
+    viewMoreBtn.innerText = "Show Less";
+  } else {
+    viewMoreBtn.innerText = "View More Articles";
+  }
+
+});
+</script>
+  
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
