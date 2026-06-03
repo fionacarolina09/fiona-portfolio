@@ -6017,4 +6017,53 @@ h3 {
 
 }
 
+/* ====================================
+   BLOG - ISO 45001:2027 EXPECTED CHANGES
+==================================== */
 
+.fc-ohs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.fc-ohs-card {
+  background: #f7f3f0;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 22px;
+}
+
+.fc-ohs-card h3 {
+  font-size: 17px;
+  color: #800020;
+  margin-bottom: 12px;
+}
+
+.fc-ohs-card .fc-blog-list {
+  margin-bottom: 0;
+}
+
+.fc-ohs-card .fc-blog-list li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  .fc-ohs-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .fc-ohs-card {
+    padding: 18px;
+  }
+
+  .fc-ohs-card h3 {
+    font-size: 16px;
+  }
+
+}
