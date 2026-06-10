@@ -6640,4 +6640,9 @@ h3 {
   .svc-final-cta h2 {
     font-size: 24px;
   }
+
+  .svc-step-list {
+    grid-template-columns: 1fr;
+  }
+
 }
