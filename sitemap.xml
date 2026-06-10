@@ -214,5 +214,27 @@
   <loc>https://www.fionacarolina.com/request-access.html</loc>
   <lastmod>2026-05-29</lastmod>
 </url>
+
+    <!-- SEO Malaysia -->
+<url>
+  <loc>https://www.fionacarolina.com/iso-consultant-malaysia.html</loc>
+  <lastmod>2026-06-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://www.fionacarolina.com/iso-trainer-malaysia.html</loc>
+  <lastmod>2026-06-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://www.fionacarolina.com/iso-auditor-malaysia.html</loc>
+  <lastmod>2026-06-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
   
 </urlset>
