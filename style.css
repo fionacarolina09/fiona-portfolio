@@ -6647,3 +6647,40 @@ h3 {
 
 }
 
+/* =========================
+   ISO 19011 KIT
+========================= */
+
+/* ADDITIONAL CSS ONLY */
+
+/* Hero product badge */
+.dk-product-badge {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f7f3f0;
+  border: 1px solid #eadfdd;
+  color: #800020;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Allow 6 cards to display better under What You Get */
+.dk-included-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .dk-included-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .dk-included-grid {
+    grid-template-columns: 1fr;
+  }
+}
