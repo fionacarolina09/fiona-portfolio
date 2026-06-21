@@ -5,223 +5,183 @@
   <url>
     <loc>https://www.fionacarolina.com/</loc>
     <lastmod>2026-06-10</lastmod>
-    <priority>1.0</priority>
   </url>
 
   <!-- Core Pages -->
   <url>
     <loc>https://www.fionacarolina.com/resources.html</loc>
     <lastmod>2026-05-29</lastmod>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://www.fionacarolina.com/blog.html</loc>
     <lastmod>2026-05-21</lastmod>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.fionacarolina.com/templates.html</loc>
     <lastmod>2026-05-29</lastmod>
-    <priority>0.9</priority>
   </url>
 
   <!-- Resource Page -->
   <url>
     <loc>https://www.fionacarolina.com/resources/iso-9001-starter-pack.html</loc>
     <lastmod>2026-04-10</lastmod>
-    <priority>0.9</priority>
   </url>
 
     <url>
     <loc>https://www.fionacarolina.com/resources/iso-14001-starter-pack.html</loc>
     <lastmod>2026-05-21</lastmod>
-    <priority>0.9</priority>
   </url>
 
       <url>
     <loc>https://www.fionacarolina.com/resources/iso-21101-starter-pack.html</loc>
-    <priority>0.9</priority>
   </url>
 
         <url>
     <loc>https://www.fionacarolina.com/resources/iso-45001-starter-pack.html</loc>
-    <priority>0.9</priority>
   </url>
   
   <!-- Product Page -->
   <url>
     <loc>https://www.fionacarolina.com/templates/iso-9001-document-kit.html</loc>
     <lastmod>2026-05-18</lastmod>
-    <priority>0.9</priority>
   </url>
 
   <url>
   <loc>https://www.fionacarolina.com/templates/iso-14001-document-kit.html</loc>
   <lastmod>2026-04-15</lastmod>
-  <priority>0.9</priority>
 </url>
 
   <url>
   <loc>https://www.fionacarolina.com/templates/iso-21101-document-kit.html</loc>
-  <priority>0.9</priority>
 </url>
 
     <url>
   <loc>https://www.fionacarolina.com/templates/iso-19011-internal-auditor-training-kit.html</loc>
-  <priority>0.9</priority>
 </url>
 
       <url>
   <loc>https://www.fionacarolina.com/templates/iso-45001-document-kit.html</loc>
-  <priority>0.9</priority>
 </url>
   
   <!-- Blog Cluster -->
   <url>
     <loc>https://www.fionacarolina.com/blog/iso-9001-guide.html</loc>
     <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.fionacarolina.com/blog/iso-9001-clauses-explained.html</loc>
     <lastmod>2026-04-15</lastmod>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.fionacarolina.com/blog/iso-9001-implementation-guide.html</loc>
     <lastmod>2026-04-15</lastmod>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.fionacarolina.com/blog/iso-9001-2026-whats-changing.html</loc>
     <lastmod>2026-04-15</lastmod>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.fionacarolina.com/blog/iso-14001-2026-changes-explained.html</loc>
     <lastmod>2026-05-21</lastmod>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.fionacarolina.com/blog/iso-14001-2015-vs-2026.html</loc>
     <lastmod>2026-05-21</lastmod>
-    <priority>0.8</priority>
   </url>
 
     <url>
     <loc>https://www.fionacarolina.com/blog/climate-change-iso-14001-2026.html</loc>
     <lastmod>2026-05-21</lastmod>
-    <priority>0.8</priority>
   </url>
 
     <url>
     <loc>https://www.fionacarolina.com/blog/iso-14001-2026-transition-checklist.html</loc>
     <lastmod>2026-05-21</lastmod>
-    <priority>0.8</priority>
   </url>
 
     <url>
     <loc>https://www.fionacarolina.com/blog/lifecycle-perspective-iso-14001-2026.html</loc>
     <lastmod>2026-05-21</lastmod>
-    <priority>0.8</priority>
   </url>
 
     <url>
     <loc>https://www.fionacarolina.com/blog/iso-9001-documentation-requirements.html</loc>
-    <priority>0.8</priority>
   </url>
 
     <url>
     <loc>https://www.fionacarolina.com/blog/what-is-iso-21101.html</loc>
-    <priority>0.8</priority>
   </url>
 
     <url>
     <loc>https://www.fionacarolina.com/blog/iso-21101-clauses-explained.html</loc>
-    <priority>0.8</priority>
   </url>
 
     <url>
     <loc>https://www.fionacarolina.com/blog/adventure-tourism-risk-assessment-examples.html</loc>
-    <priority>0.8</priority>
   </url>
 
     <url>
     <loc>https://www.fionacarolina.com/blog/adventure-tourism-safety-checklist.html</loc>
-    <priority>0.8</priority>
   </url>
 
         <url>
     <loc>https://www.fionacarolina.com/blog/iso-21101-documentation-requirements.html</loc>
-    <priority>0.8</priority>
   </url>
   
     <url>
     <loc>https://www.fionacarolina.com/blog/iso-19011-2026-vs-2018.html</loc>
-    <priority>0.8</priority>
   </url>
 
       <url>
     <loc>https://www.fionacarolina.com/blog/hybrid-audits-iso-19011-2026.html</loc>
-    <priority>0.8</priority>
   </url>
 
       <url>
     <loc>https://www.fionacarolina.com/blog/digital-evidence-verification-iso-19011-2026.html</loc>
-    <priority>0.8</priority>
   </url>
 
       <url>
     <loc>https://www.fionacarolina.com/blog/risk-based-auditing-iso-19011-2026.html</loc>
-    <priority>0.8</priority>
   </url>
 
       <url>
     <loc>https://www.fionacarolina.com/blog/internal-audit-programme-iso-19011-2026.html</loc>
-    <priority>0.8</priority>
   </url>
 
         <url>
     <loc>https://www.fionacarolina.com/blog/iso-45001-2027-expected-changes.html</loc>
-    <priority>0.8</priority>
   </url>
 
         <url>
     <loc>https://www.fionacarolina.com/blog/iso-45001-iso-45003-psychosocial-risks.html</loc>
-    <priority>0.8</priority>
   </url>
 
         <url>
     <loc>https://www.fionacarolina.com/blog/iso-45001-risk-assessment-examples.html</loc>
-    <priority>0.8</priority>
   </url>
 
         <url>
     <loc>https://www.fionacarolina.com/blog/common-iso-45001-audit-findings.html</loc>
-    <priority>0.8</priority>
   </url>
 
         <url>
     <loc>https://www.fionacarolina.com/blog/contractor-safety-management-iso-45001.html</loc>
-    <priority>0.8</priority>
   </url>
   
   <!-- Legal Pages -->
   <url>
     <loc>https://www.fionacarolina.com/terms-and-conditions.html</loc>
-    <priority>0.4</priority>
   </url>
 
   <url>
     <loc>https://www.fionacarolina.com/privacy-policy.html</loc>
-    <priority>0.4</priority>
   </url>
 
   <!-- Request Access -->
@@ -234,19 +194,22 @@
 <url>
   <loc>https://www.fionacarolina.com/iso-consultant-malaysia.html</loc>
   <lastmod>2026-06-10</lastmod>
-  <priority>0.90</priority>
 </url>
 
 <url>
   <loc>https://www.fionacarolina.com/iso-trainer-malaysia.html</loc>
   <lastmod>2026-06-10</lastmod>
-  <priority>0.90</priority>
 </url>
 
 <url>
   <loc>https://www.fionacarolina.com/iso-auditor-malaysia.html</loc>
   <lastmod>2026-06-10</lastmod>
-  <priority>0.90</priority>
+</url>
+
+  <!-- Sustainable Tourism & GSTC -->
+<url>
+  <loc>https://www.fionacarolina.com/sustainable-tourism-consultant.html</loc>
+  <lastmod>2026-06-21</lastmod>
 </url>
   
 </urlset>
