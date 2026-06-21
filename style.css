@@ -6356,6 +6356,11 @@ h3 {
   max-width: 850px;
 }
 
+.svc-content-narrow{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .svc-hero {
   background: #800020;
   color: #ffffff;
