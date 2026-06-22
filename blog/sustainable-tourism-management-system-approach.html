@@ -1,1 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+<link rel="canonical" href="https://www.fionacarolina.com/blog/sustainable-tourism-management-system-approach.html">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sustainable Tourism Through a Management System Approach | Practical Guide for Tourism Businesses</title>
+<meta name="description" content="Learn how tourism businesses can implement sustainable tourism using a structured management system approach. Explore governance, objectives, KPIs, continual improvement and GSTC-aligned sustainability practices.">
+
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body data-page="blog">
+
+<!-- ===== NAVBAR ===== -->
+<nav class="fc-nav">
+  <div class="fc-nav-container">
+
+    <div class="fc-logo">
+      <a href="/">
+        <span class="fc-logo-name">Fiona Carolina</span>
+      </a>
+    </div>
+
+    <ul class="fc-nav-menu">
+      <li><a href="/templates.html">Templates</a></li>
+      <li><a href="/resources.html">Resources</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/index.html#contact">Contact</a></li>
+    </ul>
+
+    <a href="/index.html#contact" class="fc-nav-cta">Work With Me</a>
+
+    <div class="fc-nav-toggle" id="fcNavToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+
+  <div class="fc-mobile-menu" id="fcMobileMenu">
+    <a href="/">Home</a>
+    <a href="/templates.html">Templates</a>
+    <a href="/resources.html">Resources</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/index.html#contact">Contact</a>
+    <a href="/index.html#contact" class="fc-mobile-cta">Work With Me</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="fc-blog-hero-article">
+
+  <div class="fc-blog-container">
+
+    <span class="fc-blog-category">
+      Sustainable Tourism
+    </span>
+
+    <h1>
+      Sustainable Tourism Through a Management System Approach
+    </h1>
+
+    <p class="fc-blog-intro">
+      Sustainable tourism is no longer limited to environmental initiatives or community projects. Tourism businesses are increasingly expected to demonstrate structured governance, measurable sustainability objectives, stakeholder engagement and continual improvement. A management system approach provides a practical framework for turning sustainability commitments into sustainable results.
+    </p>
+
+  </div>
+
+</section>
+  
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-center">
+
+    <h3>Fiona Carolina Albert</h3>
+    <p class="footer-role">ISO Consultant, Auditor & Trainer</p>
+    <p class="footer-location">Cyberjaya, Selangor, Malaysia</p>
+
+    <p class="footer-links">
+
+      <a href="mailto:fiona.carolina09@gmail.com" class="footer-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M4 4H20V20H4V4Z" stroke="white" stroke-width="1.5"/>
+          <path d="M4 6L12 13L20 6" stroke="white" stroke-width="1.5"/>
+        </svg>
+        fiona.carolina09@gmail.com
+      </a>
+
+      <a href="https://wa.me/60178966959" target="_blank" class="footer-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M20 12C20 16.4 16.4 20 12 20C10.6 20 9.3 19.6 8.2 18.9L4 20L5.1 15.8C4.4 14.7 4 13.4 4 12C4 7.6 7.6 4 12 4C16.4 4 20 7.6 20 12Z" stroke="white" stroke-width="1.5"/>
+        </svg>
+        +60178966959
+      </a>
+
+      <a href="https://www.linkedin.com/in/fiona-carolina-43a294158/" target="_blank" class="footer-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M4 4H20V20H4V4Z" stroke="white" stroke-width="1.5"/>
+          <path d="M8 11V16" stroke="white" stroke-width="1.5"/>
+          <path d="M8 8H8.01" stroke="white" stroke-width="1.5"/>
+          <path d="M12 16V11C12 10 13 9 14 9C15 9 16 10 16 11V16" stroke="white" stroke-width="1.5"/>
+        </svg>
+        Fiona Carolina
+      </a>
+
+    </p>
+
+            <!-- LEGAL LINKS -->
+    <p class="footer-legal">
+      <a href="/terms-and-conditions.html">Terms & Conditions</a>
+      <span>|</span>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+    </p>
+    
+    <p class="footer-copy">© 2026 Fiona Carolina Albert. All rights reserved.</p>
+
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll(".fc-faq-question").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const item = btn.parentElement;
+    const answer = btn.nextElementSibling;
+
+    item.classList.toggle("active");
+
+    if (item.classList.contains("active")) {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    } else {
+      answer.style.maxHeight = null;
+    }
+  });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const toggle = document.getElementById('fcNavToggle');
+  const menu = document.getElementById('fcMobileMenu');
+  const nav = document.querySelector('.fc-nav');
+
+  if (toggle && menu) {
+    toggle.addEventListener('click', function () {
+      menu.classList.toggle('active');
+      toggle.classList.toggle('active');
+    });
+  }
+
+  document.querySelectorAll('.fc-mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!nav.contains(e.target)) {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    }
+  });
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 30) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  const page = document.body.getAttribute('data-page');
+  const links = document.querySelectorAll('.fc-nav-menu a');
+
+  links.forEach(link => {
+    const href = link.getAttribute('href');
+
+    if (page === "home" && href === "/") {
+      link.classList.add('active');
+    } else if (page && href.includes(page)) {
+      link.classList.add('active');
+    }
+  });
+
+});
+</script>
+
+  <!-- COOKIE BANNER -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-banner-content">
+    <p>
+      This website uses cookies and analytics technologies to improve website performance and user experience.
+      By clicking “Accept”, you consent to the use of cookies.
+      <a href="/privacy-policy.html">Privacy Policy</a>
+    </p>
+
+    <button id="accept-cookies" class="cookie-btn">
+      Accept
+    </button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const cookieBanner = document.getElementById("cookie-banner");
+    const acceptButton = document.getElementById("accept-cookies");
+
+    if (!localStorage.getItem("cookieConsent")) {
+      cookieBanner.style.display = "block";
+    }
+
+    acceptButton.addEventListener("click", function () {
+
+      localStorage.setItem("cookieConsent", "accepted");
+
+      cookieBanner.style.display = "none";
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "cookie_consent_accepted"
+      });
+
+    });
+
+  });
+</script>
+  
+</body>
+</html>
