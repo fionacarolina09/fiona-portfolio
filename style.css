@@ -6689,3 +6689,65 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+/* BLOG 6 - SUSTAINABLE TOURISM INITIATIVES */
+
+.fc-initiative-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 22px;
+}
+
+.fc-initiative-card {
+  background: #f7f3f0;
+  border: 1px solid #eee;
+  border-left: 4px solid #800020;
+  border-radius: 10px;
+  padding: 22px;
+  transition: 0.2s ease;
+}
+
+.fc-initiative-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.fc-initiative-card span {
+  display: inline-block;
+  background: #800020;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 9px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.fc-initiative-card h3 {
+  color: #800020;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.fc-initiative-card p {
+  font-size: 14px;
+  color: #2f3e5c;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .fc-initiative-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .fc-initiative-card {
+    padding: 18px;
+  }
+
+  .fc-initiative-card h3 {
+    font-size: 16px;
+  }
+}
