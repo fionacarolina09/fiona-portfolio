@@ -41,6 +41,14 @@
         <url>
     <loc>https://www.fionacarolina.com/resources/iso-45001-starter-pack.html</loc>
   </url>
+
+          <url>
+    <loc>https://www.fionacarolina.com/resources/iso-27001-starter-pack.html</loc>
+  </url>
+
+          <url>
+    <loc>https://www.fionacarolina.com/resources/iso-19011-starter-pack.html</loc>
+  </url>
   
   <!-- Product Page -->
   <url>
@@ -201,6 +209,26 @@
 
           <url>
     <loc>https://www.fionacarolina.com/blog/practical-sustainable-tourism-initiatives.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.fionacarolina.com/blog/iso-27001-mandatory-documents-and-records.html</loc>
+  </url>
+
+    <url>
+    <loc>https://www.fionacarolina.com/blog/iso-27001-implementation-guide.html</loc>
+  </url>
+
+    <url>
+    <loc>https://www.fionacarolina.com/blog/iso-27001-risk-assessment-explained.html</loc>
+  </url>
+
+    <url>
+    <loc>https://www.fionacarolina.com/blog/iso-27001-statement-of-applicability-explained.html</loc>
+  </url>
+
+    <url>
+    <loc>https://www.fionacarolina.com/blog/iso-27001-internal-audit-checklist.html</loc>
   </url>
   
   <!-- Legal Pages -->
