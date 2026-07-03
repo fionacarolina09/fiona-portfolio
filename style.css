@@ -3550,6 +3550,194 @@ h3 {
 }
 
 /* =========================
+   BLOG LANDING - NO IMAGE EDITORIAL STYLE
+========================= */
+
+.fc-blog-editorial,
+.fc-blog-library,
+.fc-blog-standards {
+  padding: 60px 20px;
+}
+
+.fc-blog-editorial {
+  background: #f7f3f0;
+}
+
+.fc-blog-library {
+  background: #ffffff;
+}
+
+.fc-blog-standards {
+  background: #f7f3f0;
+}
+
+.fc-blog-editorial-container,
+.fc-blog-library-container,
+.fc-blog-standards-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.fc-section-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 34px;
+}
+
+.fc-section-heading span {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #800020;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.fc-section-heading h2 {
+  font-size: 28px;
+  color: #800020;
+  margin-bottom: 10px;
+}
+
+.fc-section-heading p {
+  font-size: 15px;
+  color: #4a5568;
+  line-height: 1.7;
+}
+
+.fc-featured-article-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.fc-article-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.fc-article-card {
+  background: #ffffff;
+  border: 1px solid #eadfdd;
+  border-left: 4px solid #800020;
+  border-radius: 12px;
+  padding: 24px;
+  transition: 0.2s ease;
+}
+
+.fc-article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(47, 62, 92, 0.08);
+}
+
+.fc-article-featured {
+  padding: 28px;
+}
+
+.fc-article-card h3 {
+  font-size: 18px;
+  color: #2f3e5c;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.fc-article-featured h3 {
+  font-size: 20px;
+}
+
+.fc-article-card p {
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.fc-article-meta {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 14px;
+}
+
+.fc-standard-link-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.fc-standard-link-card {
+  background: #ffffff;
+  border: 1px solid #eadfdd;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.fc-standard-link-card h3 {
+  font-size: 17px;
+  color: #800020;
+  margin-bottom: 12px;
+}
+
+.fc-standard-link-card a {
+  display: block;
+  font-size: 13.5px;
+  color: #2f3e5c;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0e6e8;
+  text-decoration: none;
+}
+
+.fc-standard-link-card a:last-child {
+  border-bottom: none;
+}
+
+.fc-standard-link-card a:hover {
+  color: #800020;
+  text-decoration: underline;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .fc-standard-link-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .fc-blog-editorial,
+  .fc-blog-library,
+  .fc-blog-standards {
+    padding: 45px 15px;
+  }
+
+  .fc-featured-article-grid,
+  .fc-article-grid,
+  .fc-standard-link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fc-section-heading h2 {
+    font-size: 24px;
+  }
+
+  .fc-article-card,
+  .fc-article-featured,
+  .fc-standard-link-card {
+    padding: 20px;
+  }
+
+  .fc-article-card h3,
+  .fc-article-featured h3 {
+    font-size: 16px;
+  }
+
+  .fc-article-card p {
+    font-size: 14px;
+  }
+}
+/* =========================
    BLOG - ISO 9001 GUIDE
 ========================= */
 
