@@ -1,1 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+<link rel="canonical" href="https://www.fionacarolina.com/blog/iso-27001-implementation-guide.html">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ISO 27001 Implementation Guide | Step-by-Step ISMS Setup for First-Time Implementation</title>
+<meta name="description" content="A practical ISO/IEC 27001:2022 implementation guide covering ISMS scope, context, risk assessment, Statement of Applicability, controls, internal audit and management review.">
+
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body data-page="blog">
+
+<!-- ===== NAVBAR ===== -->
+<nav class="fc-nav">
+  <div class="fc-nav-container">
+
+    <div class="fc-logo">
+      <a href="/">
+        <span class="fc-logo-name">Fiona Carolina</span>
+      </a>
+    </div>
+
+    <ul class="fc-nav-menu">
+      <li><a href="/templates.html">Templates</a></li>
+      <li><a href="/resources.html">Resources</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/index.html#contact">Contact</a></li>
+    </ul>
+
+    <a href="/index.html#contact" class="fc-nav-cta">Work With Me</a>
+
+    <div class="fc-nav-toggle" id="fcNavToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+
+  <div class="fc-mobile-menu" id="fcMobileMenu">
+    <a href="/">Home</a>
+    <a href="/templates.html">Templates</a>
+    <a href="/resources.html">Resources</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/index.html#contact">Contact</a>
+    <a href="/index.html#contact" class="fc-mobile-cta">Work With Me</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="fc-blog-hero-article">
+  <div class="fc-blog-hero-article-container">
+
+    <span class="fc-blog-category">ISO/IEC 27001:2022</span>
+
+    <h1>ISO 27001 Implementation Guide: Step-by-Step for First-Time ISMS Implementation</h1>
+
+    <p class="fc-blog-intro">
+      Implementing ISO 27001 for the first time can feel overwhelming, especially when the standard expects organizations to define scope, assess risks, determine applicable controls and retain evidence of implementation.
+    </p>
+
+    <p class="fc-blog-intro">
+      This guide breaks the process into a practical step-by-step implementation roadmap, aligned with ISO/IEC 27001:2022 and focused on what organizations actually need to do to establish an effective Information Security Management System (ISMS).
+    </p>
+
+    <div class="fc-blog-meta">
+      <span>12 min read</span>
+      <span>Practical ISMS Roadmap</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- KEY TAKEAWAYS -->
+<section class="fc-blog-section">
+  <div class="fc-blog-container">
+
+    <div class="fc-key-takeaways">
+      <h2>Key Takeaways</h2>
+      <ul class="fc-blog-list">
+        <li>ISO 27001 implementation is easier when approached as a phased management system project rather than a documentation exercise.</li>
+        <li>The core implementation flow is: define scope → understand context → identify assets → assess risks → treat risks → implement controls → audit → review → improve.</li>
+        <li>The risk assessment, Risk Treatment Plan and Statement of Applicability are the backbone of the ISMS.</li>
+        <li>Organizations should keep the ISMS practical and proportionate to their size, complexity and information security risks.</li>
+        <li>Internal audit, management review and corrective action are essential before certification.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- TOC -->
+<section class="fc-blog-section fc-compact-section">
+  <div class="fc-blog-container">
+
+    <div class="fc-article-toc">
+      <h2>In This Article</h2>
+      <a href="#what-iso27001-implementation-means">What ISO 27001 Implementation Really Means</a>
+      <a href="#implementation-roadmap">Recommended ISO 27001 Implementation Roadmap</a>
+      <a href="#step1-scope">Step 1 – Define the ISMS Scope</a>
+      <a href="#step2-context">Step 2 – Understand Context and Interested Parties</a>
+      <a href="#step3-governance">Step 3 – Establish Governance and Responsibilities</a>
+      <a href="#step4-assets">Step 4 – Identify Information Assets</a>
+      <a href="#step5-risk">Step 5 – Conduct Risk Assessment and Risk Treatment</a>
+      <a href="#step6-controls">Step 6 – Implement Controls and Operational Processes</a>
+      <a href="#step7-awareness">Step 7 – Build Awareness and Competence</a>
+      <a href="#step8-evaluation">Step 8 – Monitor, Audit and Review the ISMS</a>
+      <a href="#step9-improvement">Step 9 – Improve and Prepare for Certification</a>
+      <a href="#common-pitfalls">Common ISO 27001 Implementation Pitfalls</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHAT IMPLEMENTATION MEANS -->
+<section class="fc-blog-section" id="what-iso27001-implementation-means">
+  <div class="fc-blog-container">
+
+    <h2>What ISO 27001 Implementation Really Means</h2>
+
+    <p>
+      ISO 27001 implementation is not just about writing documents. It is the process of establishing a management system that enables the organization to identify information security risks, determine appropriate controls, operate those controls consistently and improve them over time.
+    </p>
+
+    <p>
+      In practice, implementation means translating business, legal, contractual and operational information security requirements into a functioning ISMS supported by leadership, resources, documented information, operational controls and evidence.
+    </p>
+
+    <div class="fc-impact-grid">
+
+      <div class="fc-impact-card">
+        <h3>Not Just Documentation</h3>
+        <p>The ISMS should be embedded into business operations, not treated as a one-time paperwork project.</p>
+      </div>
+
+      <div class="fc-impact-card">
+        <h3>Risk-Driven System</h3>
+        <p>Controls, priorities and improvement actions should be based on information security risk and business needs.</p>
+      </div>
+
+      <div class="fc-impact-card">
+        <h3>Management System Discipline</h3>
+        <p>Scope, objectives, monitoring, audit, management review and continual improvement all matter—not only Annex A controls.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="fc-blog-section" id="implementation-roadmap">
+  <div class="fc-blog-container">
+
+    <h2>Recommended ISO 27001 Implementation Roadmap</h2>
+
+    <p>
+      A practical first-time implementation can be broken into nine steps.
+    </p>
+
+    <div class="fc-doc-level-grid">
+
+      <div class="fc-doc-level">
+        <span>Step 1</span>
+        <h3>Define Scope</h3>
+        <p>Determine what parts of the organization, activities, systems, locations and services will be covered by the ISMS.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Step 2</span>
+        <h3>Understand Context</h3>
+        <p>Identify internal and external issues, interested parties and relevant information security requirements.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Step 3</span>
+        <h3>Establish Governance</h3>
+        <p>Assign responsibilities, approve policy, define objectives and ensure top management involvement.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Step 4</span>
+        <h3>Identify Assets</h3>
+        <p>List information assets, assign owners and determine information classification and handling requirements.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Step 5</span>
+        <h3>Assess and Treat Risk</h3>
+        <p>Evaluate information security risks, determine treatment actions and complete the Statement of Applicability.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Step 6</span>
+        <h3>Implement Controls</h3>
+        <p>Put operational controls, procedures and records in place to address identified risks and applicable controls.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Step 7</span>
+        <h3>Build Awareness</h3>
+        <p>Ensure personnel understand their information security responsibilities and applicable rules.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Step 8</span>
+        <h3>Evaluate Performance</h3>
+        <p>Monitor objectives, conduct internal audit and hold management review.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Step 9</span>
+        <h3>Improve and Prepare</h3>
+        <p>Address nonconformities, update documents and prepare the ISMS for certification audit.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- STEP 1 -->
+<section class="fc-blog-section" id="step1-scope">
+  <div class="fc-blog-container">
+
+    <h2>Step 1 – Define the ISMS Scope</h2>
+
+    <p>
+      The scope defines the boundaries and applicability of the ISMS. It should clearly state what business units, locations, products, services, technologies and information assets are covered.
+    </p>
+
+    <p>
+      A weak scope causes implementation problems later because risks, controls, audits and certification activities all depend on it.
+    </p>
+
+    <div class="fc-warning-box">
+      <p><strong>At minimum, the scope should consider:</strong></p>
+      <ul class="fc-blog-list">
+        <li>Business activities and services to be included</li>
+        <li>Physical locations and infrastructure</li>
+        <li>Processes, departments and supporting functions</li>
+        <li>Information systems, applications and data repositories</li>
+        <li>Relevant interested parties and external interfaces</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- STEP 2 -->
+<section class="fc-blog-section" id="step2-context">
+  <div class="fc-blog-container">
+
+    <h2>Step 2 – Understand Context and Interested Parties</h2>
+
+    <p>
+      Clause 4 of ISO 27001 requires organizations to determine internal and external issues relevant to the ISMS, as well as the needs and expectations of interested parties.
+    </p>
+
+    <div class="fc-impact-grid">
+
+      <div class="fc-impact-card">
+        <h3>Internal & External Issues</h3>
+        <p>Examples include digital transformation, regulatory change, outsourced services, legacy systems, skills gaps, cloud adoption or business growth.</p>
+      </div>
+
+      <div class="fc-impact-card">
+        <h3>Interested Parties</h3>
+        <p>Examples include customers, regulators, employees, suppliers, shareholders, data subjects and certification bodies.</p>
+      </div>
+
+      <div class="fc-impact-card">
+        <h3>Why It Matters</h3>
+        <p>Context and interested parties influence scope, risks, objectives, control decisions and audit evidence.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- STEP 3 -->
+<section class="fc-blog-section" id="step3-governance">
+  <div class="fc-blog-container">
+
+    <h2>Step 3 – Establish Governance, Policy and Responsibilities</h2>
+
+    <p>
+      Top management should not be treated as a passive approver of documents. ISO 27001 expects leadership to support the ISMS, ensure integration with business processes, provide resources and assign responsibilities.
+    </p>
+
+    <div class="fc-table-wrapper">
+      <table class="fc-blog-table">
+        <thead>
+          <tr>
+            <th>Governance Element</th>
+            <th>What Should Be Established</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Information Security Policy</td>
+            <td>Approved policy setting the direction and commitment for information security.</td>
+          </tr>
+          <tr>
+            <td>Roles & Responsibilities</td>
+            <td>Clear assignment of ISMS responsibilities, including risk assessment, access approval, incident reporting and monitoring.</td>
+          </tr>
+          <tr>
+            <td>ISMS Objectives</td>
+            <td>Measurable information security objectives aligned with business needs.</td>
+          </tr>
+          <tr>
+            <td>Resources</td>
+            <td>People, technology, time and budget necessary to operate the ISMS.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<!-- STEP 4 -->
+<section class="fc-blog-section" id="step4-assets">
+  <div class="fc-blog-container">
+
+    <h2>Step 4 – Identify Information Assets</h2>
+
+    <p>
+      Before risks can be assessed, the organization needs visibility over the information assets that support its business activities. This does not only mean hardware or software. Information assets can also include databases, customer records, contracts, credentials, source code, intellectual property, network infrastructure and cloud platforms.
+    </p>
+
+    <p>
+      Each relevant asset should normally have an owner, classification and basic control expectations.
+    </p>
+
+    <div class="fc-warning-box">
+      <p><strong>Typical asset register fields include:</strong></p>
+      <ul class="fc-blog-list">
+        <li>Asset name and description</li>
+        <li>Asset owner</li>
+        <li>Location / system / repository</li>
+        <li>Information classification</li>
+        <li>Business process / department</li>
+        <li>Confidentiality, integrity and availability considerations</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- MID CTA -->
+<section class="fc-blog-cta-primary">
+  <div class="fc-blog-container">
+
+    <div class="fc-cta-box">
+      <h3>Download the Free ISO 27001 Starter Pack</h3>
+      <p>
+        Get an ISO 27001 implementation checklist, documented information list, information asset register sample and risk assessment sample.
+      </p>
+      <a href="/resources/iso-27001-starter-pack.html" class="fc-btn-primary">
+        Download Starter Pack
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- STEP 5 -->
+<section class="fc-blog-section" id="step5-risk">
+  <div class="fc-blog-container">
+
+    <h2>Step 5 – Conduct Risk Assessment and Risk Treatment</h2>
+
+    <p>
+      This is the core of ISO 27001 implementation. The organization should define a risk assessment methodology, identify threats and vulnerabilities affecting information assets, assess risk and determine treatment actions.
+    </p>
+
+    <p>
+      The outputs of this stage typically include:
+    </p>
+
+    <div class="fc-doc-level-grid">
+
+      <div class="fc-doc-level">
+        <span>Output 1</span>
+        <h3>Risk Assessment Register</h3>
+        <p>Identifies assets, risks, impact, likelihood and existing controls.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Output 2</span>
+        <h3>Risk Treatment Plan</h3>
+        <p>Defines what actions will be taken, who is responsible and by when.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Output 3</span>
+        <h3>Statement of Applicability</h3>
+        <p>Determines which Annex A controls are applicable and how they are addressed.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Output 4</span>
+        <h3>Risk Acceptance</h3>
+        <p>Documents approval of residual risks where treatment is not further required.</p>
+      </div>
+
+    </div>
+
+    <div class="fc-warning-box">
+      <p><strong>Important:</strong> the risk assessment, Risk Treatment Plan and Statement of Applicability should align with one another. A common implementation failure is treating them as separate documents rather than connected ISMS outputs.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- STEP 6 -->
+<section class="fc-blog-section" id="step6-controls">
+  <div class="fc-blog-container">
+
+    <h2>Step 6 – Implement Controls and Operational Processes</h2>
+
+    <p>
+      Once risks and applicable controls are determined, the organization should implement the operational processes and controls needed to manage them. This includes both Annex A controls and broader Clause 8 operational arrangements.
+    </p>
+
+    <div class="fc-impact-grid">
+
+      <div class="fc-impact-card">
+        <h3>Access & Asset Control</h3>
+        <p>User access approval, privileged access, asset ownership, information classification and acceptable use.</p>
+      </div>
+
+      <div class="fc-impact-card">
+        <h3>Operational Security</h3>
+        <p>Backup, vulnerability management, patching, event logging, media disposal and endpoint control.</p>
+      </div>
+
+      <div class="fc-impact-card">
+        <h3>Supplier & Cloud Security</h3>
+        <p>Security requirements for outsourced providers, third parties and cloud services.</p>
+      </div>
+
+      <div class="fc-impact-card">
+        <h3>Incident & Continuity</h3>
+        <p>Incident response, reporting, business continuity and disaster recovery arrangements.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- STEP 7 -->
+<section class="fc-blog-section" id="step7-awareness">
+  <div class="fc-blog-container">
+
+    <h2>Step 7 – Build Awareness and Competence</h2>
+
+    <p>
+      ISO 27001 implementation is weakened quickly if personnel do not understand their responsibilities. Employees, contractors and relevant external parties should be aware of the policy, applicable controls, reporting expectations and secure working practices relevant to their role.
+    </p>
+
+    <div class="fc-warning-box">
+      <p><strong>Awareness topics often include:</strong></p>
+      <ul class="fc-blog-list">
+        <li>Password and authentication practices</li>
+        <li>Phishing and social engineering awareness</li>
+        <li>Acceptable use of devices and systems</li>
+        <li>Remote working and BYOD expectations</li>
+        <li>Incident reporting and escalation</li>
+        <li>Confidentiality and information handling requirements</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- STEP 8 -->
+<section class="fc-blog-section" id="step8-evaluation">
+  <div class="fc-blog-container">
+
+    <h2>Step 8 – Monitor, Audit and Review the ISMS</h2>
+
+    <p>
+      The ISMS should not stop once controls are implemented. Organizations need to monitor objectives and control performance, conduct internal audits and hold management reviews to evaluate the suitability, adequacy and effectiveness of the ISMS.
+    </p>
+
+    <div class="fc-table-wrapper">
+      <table class="fc-blog-table">
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monitoring & Measurement</td>
+            <td>Track objectives, incidents, vulnerabilities, training completion, backup performance and other relevant ISMS indicators.</td>
+          </tr>
+          <tr>
+            <td>Internal Audit</td>
+            <td>Verify whether the ISMS conforms to ISO 27001 and is effectively implemented and maintained.</td>
+          </tr>
+          <tr>
+            <td>Management Review</td>
+            <td>Enable top management to review ISMS performance, risks, incidents, audit results, opportunities and resource needs.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<!-- STEP 9 -->
+<section class="fc-blog-section" id="step9-improvement">
+  <div class="fc-blog-container">
+
+    <h2>Step 9 – Improve and Prepare for Certification</h2>
+
+    <p>
+      Before certification, the organization should review internal audit findings, close corrective actions, update risks and confirm that the ISMS is operating with sufficient evidence. Certification readiness is not only about documents existing—it is about whether the system is functioning and records are available to support it.
+    </p>
+
+    <div class="fc-audit-focus-list">
+      <div>Scope, context and interested parties are defined and current.</div>
+      <div>Information security policy and objectives are approved and communicated.</div>
+      <div>Risk assessment, risk treatment and SoA are aligned and updated.</div>
+      <div>Operational controls have been implemented and records are available.</div>
+      <div>Internal audit and management review have been completed.</div>
+      <div>Nonconformities and corrective actions have been addressed.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMMON PITFALLS -->
+<section class="fc-blog-section" id="common-pitfalls">
+  <div class="fc-blog-container">
+
+    <h2>Common ISO 27001 Implementation Pitfalls</h2>
+
+    <div class="fc-warning-box">
+      <ul class="fc-blog-list">
+        <li>Defining a scope that is unclear or disconnected from actual business operations.</li>
+        <li>Using a generic risk assessment without meaningful asset and risk identification.</li>
+        <li>Treating the Statement of Applicability as a template exercise rather than a control decision document.</li>
+        <li>Implementing controls on paper only, without supporting evidence.</li>
+        <li>Delaying internal audit until just before certification without enough operating history.</li>
+        <li>Failing to involve top management beyond document approval.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="fc-blog-section" id="faq">
+  <div class="fc-blog-container">
+
+    <h2>Frequently Asked Questions (FAQ)</h2>
+
+    <div class="fc-faq">
+
+      <div class="fc-faq-item">
+        <button class="fc-faq-question">
+          How long does ISO 27001 implementation take?
+        </button>
+        <div class="fc-faq-answer">
+          <p>
+            It depends on the size, complexity and maturity of the organization. For smaller organizations with focused scope and committed leadership, implementation may take a few months. More complex environments may take longer.
+          </p>
+        </div>
+      </div>
+
+      <div class="fc-faq-item">
+        <button class="fc-faq-question">
+          What is the most difficult part of ISO 27001 implementation?
+        </button>
+        <div class="fc-faq-answer">
+          <p>
+            For many organizations, the most challenging areas are defining a meaningful risk assessment methodology, aligning the Risk Treatment Plan with the Statement of Applicability, and turning documented controls into actual operational practice.
+          </p>
+        </div>
+      </div>
+
+      <div class="fc-faq-item">
+        <button class="fc-faq-question">
+          Can a small company implement ISO 27001?
+        </button>
+        <div class="fc-faq-answer">
+          <p>
+            Yes. ISO 27001 is scalable. The ISMS should be proportionate to the organization’s context, risks, services and complexity rather than unnecessarily bureaucratic.
+          </p>
+        </div>
+      </div>
+
+      <div class="fc-faq-item">
+        <button class="fc-faq-question">
+          Do I need all Annex A controls to implement ISO 27001?
+        </button>
+        <div class="fc-faq-answer">
+          <p>
+            No. Controls should be selected based on risk assessment and organizational needs. Controls that are not applicable should be justified in the Statement of Applicability.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="fc-blog-cta-secondary">
+  <div class="fc-blog-container">
+
+    <div class="fc-cta-box-secondary">
+      <h3>Need a Complete ISO 27001 Document Kit?</h3>
+      <p>
+        Access a complete ISO/IEC 27001:2022 document kit with ISMS manual, policy, procedures, operational guides, risk assessment templates, Statement of Applicability, audit templates and management review records.
+      </p>
+      <a href="/templates/iso-27001-document-kit.html" class="fc-btn-secondary-cta">
+        View ISO 27001 Document Kit
+      </a>
+    </div>
+
+  </div>
+</section>
+  
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-center">
+
+    <h3>Fiona Carolina Albert</h3>
+    <p class="footer-role">ISO Consultant, Auditor & Trainer</p>
+    <p class="footer-location">Cyberjaya, Selangor, Malaysia</p>
+
+    <p class="footer-links">
+
+      <a href="mailto:fiona.carolina09@gmail.com" class="footer-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M4 4H20V20H4V4Z" stroke="white" stroke-width="1.5"/>
+          <path d="M4 6L12 13L20 6" stroke="white" stroke-width="1.5"/>
+        </svg>
+        fiona.carolina09@gmail.com
+      </a>
+
+      <a href="https://wa.me/60178966959" target="_blank" class="footer-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M20 12C20 16.4 16.4 20 12 20C10.6 20 9.3 19.6 8.2 18.9L4 20L5.1 15.8C4.4 14.7 4 13.4 4 12C4 7.6 7.6 4 12 4C16.4 4 20 7.6 20 12Z" stroke="white" stroke-width="1.5"/>
+        </svg>
+        +60178966959
+      </a>
+
+      <a href="https://www.linkedin.com/in/fiona-carolina-43a294158/" target="_blank" class="footer-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M4 4H20V20H4V4Z" stroke="white" stroke-width="1.5"/>
+          <path d="M8 11V16" stroke="white" stroke-width="1.5"/>
+          <path d="M8 8H8.01" stroke="white" stroke-width="1.5"/>
+          <path d="M12 16V11C12 10 13 9 14 9C15 9 16 10 16 11V16" stroke="white" stroke-width="1.5"/>
+        </svg>
+        Fiona Carolina
+      </a>
+
+    </p>
+
+            <!-- LEGAL LINKS -->
+    <p class="footer-legal">
+      <a href="/terms-and-conditions.html">Terms & Conditions</a>
+      <span>|</span>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+    </p>
+    
+    <p class="footer-copy">© 2026 Fiona Carolina Albert. All rights reserved.</p>
+
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll(".fc-faq-question").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const item = btn.parentElement;
+    const answer = btn.nextElementSibling;
+
+    item.classList.toggle("active");
+
+    if (item.classList.contains("active")) {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    } else {
+      answer.style.maxHeight = null;
+    }
+  });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const toggle = document.getElementById('fcNavToggle');
+  const menu = document.getElementById('fcMobileMenu');
+  const nav = document.querySelector('.fc-nav');
+
+  if (toggle && menu) {
+    toggle.addEventListener('click', function () {
+      menu.classList.toggle('active');
+      toggle.classList.toggle('active');
+    });
+  }
+
+  document.querySelectorAll('.fc-mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!nav.contains(e.target)) {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    }
+  });
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 30) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  const page = document.body.getAttribute('data-page');
+  const links = document.querySelectorAll('.fc-nav-menu a');
+
+  links.forEach(link => {
+    const href = link.getAttribute('href');
+
+    if (page === "home" && href === "/") {
+      link.classList.add('active');
+    } else if (page && href.includes(page)) {
+      link.classList.add('active');
+    }
+  });
+
+});
+</script>
+
+  <!-- COOKIE BANNER -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-banner-content">
+    <p>
+      This website uses cookies and analytics technologies to improve website performance and user experience.
+      By clicking “Accept”, you consent to the use of cookies.
+      <a href="/privacy-policy.html">Privacy Policy</a>
+    </p>
+
+    <button id="accept-cookies" class="cookie-btn">
+      Accept
+    </button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const cookieBanner = document.getElementById("cookie-banner");
+    const acceptButton = document.getElementById("accept-cookies");
+
+    if (!localStorage.getItem("cookieConsent")) {
+      cookieBanner.style.display = "block";
+    }
+
+    acceptButton.addEventListener("click", function () {
+
+      localStorage.setItem("cookieConsent", "accepted");
+
+      cookieBanner.style.display = "none";
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "cookie_consent_accepted"
+      });
+
+    });
+
+  });
+</script>
+  
+</body>
+</html>
