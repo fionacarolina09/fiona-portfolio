@@ -56,21 +56,21 @@
 <section class="fc-blog-hero-article">
   <div class="fc-blog-hero-article-container">
 
-    <span class="fc-blog-category">ISO 21101:2014</span>
+    <span class="fc-blog-category">ISO/IEC 27001:2022</span>
 
-    <h1>Adventure Tourism Risk Assessment Examples</h1>
+    <h1>ISO 27001 Statement of Applicability Explained</h1>
 
     <p class="fc-blog-intro">
-      Risk assessment is one of the most critical components of Adventure Tourism Safety Management Systems. Adventure tourism activities often involve changing environments, participant variability, weather exposure, remote operations, and operational hazards that require systematic risk management.
+      The Statement of Applicability, commonly called the SoA, is one of the most important mandatory documents in ISO 27001 implementation.
     </p>
 
     <p class="fc-blog-intro">
-      This guide provides practical adventure tourism risk assessment examples aligned with ISO 21101 implementation, including trekking activities, canopy walkways, water activities, camping operations, and outdoor recreation controls.
+      This guide explains what the SoA is, what it should include, how it links to risk assessment and Annex A controls, and what auditors typically look for during certification audits.
     </p>
 
     <div class="fc-blog-meta">
-      <span>11 min read</span>
-      <span>Practical ATSMS Guide</span>
+      <span>10 min read</span>
+      <span>SoA Implementation Guide</span>
     </div>
 
   </div>
@@ -83,11 +83,11 @@
     <div class="fc-key-takeaways">
       <h2>Key Takeaways</h2>
       <ul class="fc-blog-list">
-        <li>Risk assessment is a core requirement of ISO 21101.</li>
-        <li>Adventure tourism risks should consider participants, environment, equipment, weather, and operational conditions.</li>
-        <li>Risk controls should focus on prevention, operational control, and emergency preparedness.</li>
-        <li>Risk assessments should be reviewed periodically and after incidents or operational changes.</li>
-        <li>Practical implementation is more important than complex documentation.</li>
+        <li>The Statement of Applicability is mandatory under ISO/IEC 27001:2022.</li>
+        <li>The SoA identifies which Annex A controls are applicable or not applicable.</li>
+        <li>Each control decision should include justification.</li>
+        <li>The SoA should align with risk assessment and risk treatment results.</li>
+        <li>Auditors will check whether the SoA reflects actual implementation, not only document completion.</li>
       </ul>
     </div>
 
@@ -100,13 +100,14 @@
 
     <div class="fc-article-toc">
       <h2>In This Article</h2>
-      <a href="#what-is-risk-assessment">What is Adventure Tourism Risk Assessment?</a>
-      <a href="#risk-principles">Key Risk Assessment Principles</a>
-      <a href="#trekking-risk">Trekking Risk Assessment Example</a>
-      <a href="#canopy-risk">Canopy Walkway Risk Assessment Example</a>
-      <a href="#water-risk">Water Activity Risk Assessment Example</a>
-      <a href="#camping-risk">Camping Activity Risk Assessment Example</a>
-      <a href="#common-mistakes">Common Risk Assessment Mistakes</a>
+      <a href="#what-is-soa">What is a Statement of Applicability?</a>
+      <a href="#why-soa-required">Why ISO 27001 Requires the SoA</a>
+      <a href="#soa-content">What the SoA Should Include</a>
+      <a href="#soa-example">Statement of Applicability Example Structure</a>
+      <a href="#applicable-controls">Applicable vs Not Applicable Controls</a>
+      <a href="#risk-link">Link Between SoA and Risk Assessment</a>
+      <a href="#implementation-status">Control Implementation Status</a>
+      <a href="#common-mistakes">Common SoA Mistakes</a>
       <a href="#auditor-focus">What Auditors Look For</a>
       <a href="#faq">FAQ</a>
     </div>
@@ -114,63 +115,35 @@
   </div>
 </section>
 
-<!-- WHAT IS RISK ASSESSMENT -->
-<section class="fc-blog-section" id="what-is-risk-assessment">
+<!-- WHAT IS SOA -->
+<section class="fc-blog-section" id="what-is-soa">
   <div class="fc-blog-container">
 
-    <h2>What is Adventure Tourism Risk Assessment?</h2>
+    <h2>What is a Statement of Applicability?</h2>
 
     <p>
-      Adventure tourism risk assessment is the systematic process of identifying hazards, evaluating risks, and establishing operational controls to reduce safety risks associated with adventure tourism activities.
+      The Statement of Applicability is a controlled ISMS document that identifies the organization’s decision on each ISO 27001 Annex A control.
     </p>
 
     <p>
-      Within ISO 21101 implementation, risk assessments should consider participant safety, environmental conditions, equipment suitability, operational controls, guide competency, emergency preparedness, weather conditions, communication capability, and remoteness of activities.
+      It explains which controls are applicable, which controls are not applicable, the justification for those decisions, and the implementation status of the selected controls.
     </p>
-
-    <p>
-      Risk assessments should be practical, activity-specific, and regularly reviewed.
-    </p>
-
-  </div>
-</section>
-
-<!-- RISK PRINCIPLES -->
-<section class="fc-blog-section" id="risk-principles">
-  <div class="fc-blog-container">
-
-    <h2>Key Risk Assessment Principles</h2>
 
     <div class="fc-impact-grid">
 
       <div class="fc-impact-card">
-        <h3>Hazard Identification</h3>
-        <p>Identify hazards associated with activities, terrain, weather, participants, equipment, and operational conditions.</p>
+        <h3>Control Selection</h3>
+        <p>Identifies which Annex A controls are applicable to the organization’s ISMS.</p>
       </div>
 
       <div class="fc-impact-card">
-        <h3>Risk Evaluation</h3>
-        <p>Assess likelihood, severity, participant exposure, and operational impact.</p>
+        <h3>Justification</h3>
+        <p>Explains why each control is included or excluded.</p>
       </div>
 
       <div class="fc-impact-card">
-        <h3>Operational Controls</h3>
-        <p>Establish preventive and operational safety controls.</p>
-      </div>
-
-      <div class="fc-impact-card">
-        <h3>Emergency Preparedness</h3>
-        <p>Prepare rescue coordination, communication, evacuation, and emergency response arrangements.</p>
-      </div>
-
-      <div class="fc-impact-card">
-        <h3>Monitoring & Review</h3>
-        <p>Review risks periodically and after incidents, near misses, or operational changes.</p>
-      </div>
-
-      <div class="fc-impact-card">
-        <h3>Competency</h3>
-        <p>Ensure guides and operational personnel are competent to manage activity risks.</p>
+        <h3>Implementation Evidence</h3>
+        <p>Shows whether selected controls have been implemented, planned or require further action.</p>
       </div>
 
     </div>
@@ -178,112 +151,129 @@
   </div>
 </section>
 
-<!-- TREKKING RISK -->
-<section class="fc-blog-section" id="trekking-risk">
+<!-- WHY SOA REQUIRED -->
+<section class="fc-blog-section" id="why-soa-required">
   <div class="fc-blog-container">
 
-    <h2>Trekking Risk Assessment Example</h2>
+    <h2>Why ISO 27001 Requires the SoA</h2>
 
     <p>
-      Trekking activities involve environmental exposure, physical exertion, terrain variability, and weather-related risks.
+      ISO 27001 is risk-based. The organization is expected to determine information security risks and decide which controls are necessary to treat those risks.
     </p>
 
-    <div class="fc-table-wrapper">
-      <table class="fc-blog-table">
-        <thead>
-          <tr>
-            <th>Hazard</th>
-            <th>Possible Risks</th>
-            <th>Example Controls</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Slippery trails</td>
-            <td>Slips and falls</td>
-            <td>Route inspection, briefing, supervision</td>
-          </tr>
-          <tr>
-            <td>Heat exposure</td>
-            <td>Dehydration, heat exhaustion</td>
-            <td>Hydration control, weather monitoring</td>
-          </tr>
-          <tr>
-            <td>Wildlife</td>
-            <td>Injury or panic</td>
-            <td>Guide briefing and awareness</td>
-          </tr>
-          <tr>
-            <td>Remote location</td>
-            <td>Delayed emergency response</td>
-            <td>Communication systems, emergency plan</td>
-          </tr>
-          <tr>
-            <td>Participant fitness</td>
-            <td>Fatigue or medical emergency</td>
-            <td>Participant screening</td>
-          </tr>
-          <tr>
-            <td>Heavy rain</td>
-            <td>Flash floods, unsafe trails</td>
-            <td>Activity postponement criteria</td>
-          </tr>
-        </tbody>
-      </table>
+    <p>
+      The SoA provides a structured record of these control decisions. It prevents organizations from treating Annex A as a simple checklist and instead requires them to justify control applicability based on risk, legal requirements, contractual obligations, business needs and operational context.
+    </p>
+
+    <div class="fc-warning-box">
+      <p><strong>The SoA helps demonstrate:</strong></p>
+      <ul class="fc-blog-list">
+        <li>Which Annex A controls are applicable to the ISMS.</li>
+        <li>Why controls are applicable or not applicable.</li>
+        <li>Whether selected controls have been implemented.</li>
+        <li>How control selection relates to risk treatment.</li>
+        <li>How the organization has considered all Annex A controls.</li>
+      </ul>
     </div>
 
   </div>
 </section>
 
-<!-- CANOPY RISK -->
-<section class="fc-blog-section" id="canopy-risk">
+<!-- SOA CONTENT -->
+<section class="fc-blog-section" id="soa-content">
   <div class="fc-blog-container">
 
-    <h2>Canopy Walkway Risk Assessment Example</h2>
+    <h2>What the Statement of Applicability Should Include</h2>
 
     <p>
-      Canopy walkway activities involve height exposure, environmental conditions, and structural safety considerations.
+      A practical SoA should be clear, complete and easy to audit. It should include enough information to explain the organization’s control decisions without becoming overly complex.
+    </p>
+
+    <div class="fc-doc-level-grid">
+
+      <div class="fc-doc-level">
+        <span>Control Reference</span>
+        <h3>Annex A Control</h3>
+        <p>Control number and control title from ISO/IEC 27001:2022 Annex A.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Applicability</span>
+        <h3>Applicable / Not Applicable</h3>
+        <p>Clear decision on whether the control applies to the organization.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Justification</span>
+        <h3>Reason for Decision</h3>
+        <p>Business, legal, contractual, risk-based or operational reason for inclusion or exclusion.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Status</span>
+        <h3>Implementation Status</h3>
+        <p>Indicates whether the control is implemented, planned, partially implemented or not applicable.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SOA EXAMPLE STRUCTURE -->
+<section class="fc-blog-section" id="soa-example">
+  <div class="fc-blog-container">
+
+    <h2>Statement of Applicability Example Structure</h2>
+
+    <p>
+      The table below shows a simplified SoA structure that organizations can use as a starting point.
     </p>
 
     <div class="fc-table-wrapper">
       <table class="fc-blog-table">
         <thead>
           <tr>
-            <th>Hazard</th>
-            <th>Possible Risks</th>
-            <th>Example Controls</th>
+            <th>Control Ref.</th>
+            <th>Control Title</th>
+            <th>Applicable?</th>
+            <th>Justification</th>
+            <th>Implementation Status</th>
+            <th>Related Document / Evidence</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Structural failure</td>
-            <td>Fall hazards</td>
-            <td>Scheduled inspection and maintenance</td>
+            <td>A.5.1</td>
+            <td>Policies for information security</td>
+            <td>Yes</td>
+            <td>Required to establish information security direction and governance.</td>
+            <td>Implemented</td>
+            <td>Information Security Policy</td>
           </tr>
           <tr>
-            <td>Wet surfaces</td>
-            <td>Slips and falls</td>
-            <td>Weather monitoring and temporary closure</td>
+            <td>A.5.9</td>
+            <td>Inventory of information and other associated assets</td>
+            <td>Yes</td>
+            <td>Required to identify and protect information assets within the ISMS scope.</td>
+            <td>Implemented</td>
+            <td>Information Asset Register</td>
           </tr>
           <tr>
-            <td>Overcapacity</td>
-            <td>Structural overload</td>
-            <td>Visitor control and monitoring</td>
+            <td>A.5.19</td>
+            <td>Information security in supplier relationships</td>
+            <td>Yes</td>
+            <td>Applicable due to outsourced IT and cloud services.</td>
+            <td>Partially Implemented</td>
+            <td>Supplier Security Evaluation</td>
           </tr>
           <tr>
-            <td>Strong winds</td>
-            <td>Participant instability</td>
-            <td>Weather restrictions</td>
-          </tr>
-          <tr>
-            <td>Inadequate briefing</td>
-            <td>Unsafe participant behaviour</td>
-            <td>Safety briefing and supervision</td>
-          </tr>
-          <tr>
-            <td>Emergency evacuation</td>
-            <td>Delayed rescue response</td>
-            <td>Rescue planning and drills</td>
+            <td>A.8.25</td>
+            <td>Secure development life cycle</td>
+            <td>No</td>
+            <td>Organization does not develop software internally or outsource software development.</td>
+            <td>Not Applicable</td>
+            <td>Justification recorded in SoA</td>
           </tr>
         </tbody>
       </table>
@@ -297,11 +287,11 @@
   <div class="fc-blog-container">
 
     <div class="fc-cta-box">
-      <h3>Download Free ISO 21101 Starter Pack</h3>
+      <h3>Download the Free ISO 27001 Starter Pack</h3>
       <p>
-        Access practical ATSMS templates, operational controls, risk assessment guidance, and adventure tourism safety implementation resources.
+        Includes implementation checklist, documented information list, information asset register sample and risk assessment sample.
       </p>
-      <a href="/resources/iso-21101-starter-pack.html" class="fc-btn-primary">
+      <a href="/resources/iso-27001-starter-pack.html" class="fc-btn-primary">
         Download Starter Pack
       </a>
     </div>
@@ -309,55 +299,79 @@
   </div>
 </section>
 
-<!-- WATER RISK -->
-<section class="fc-blog-section" id="water-risk">
+<!-- APPLICABLE CONTROLS -->
+<section class="fc-blog-section" id="applicable-controls">
   <div class="fc-blog-container">
 
-    <h2>Water Activity Risk Assessment Example</h2>
+    <h2>Applicable vs Not Applicable Controls</h2>
 
     <p>
-      Water-based activities often involve rapidly changing environmental conditions and increased emergency response challenges.
+      Not every Annex A control will necessarily apply to every organization. However, every control should be considered and the decision should be justified.
+    </p>
+
+    <div class="fc-impact-grid">
+
+      <div class="fc-impact-card">
+        <h3>Applicable Control</h3>
+        <p>A control is applicable when it is needed due to risk assessment results, legal requirements, contractual obligations, business needs or operational activities.</p>
+      </div>
+
+      <div class="fc-impact-card">
+        <h3>Not Applicable Control</h3>
+        <p>A control may be excluded where it is genuinely not relevant to the organization’s scope, activities, information assets or risk environment.</p>
+      </div>
+
+    </div>
+
+    <div class="fc-warning-box">
+      <p><strong>Example:</strong></p>
+      <p>
+        If an organization does not develop or outsource software development, secure development controls may be not applicable. However, the reason must be documented clearly in the SoA.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- RISK LINK -->
+<section class="fc-blog-section" id="risk-link">
+  <div class="fc-blog-container">
+
+    <h2>Link Between SoA and Risk Assessment</h2>
+
+    <p>
+      The SoA should not be prepared separately from the risk assessment. It should be developed after the organization has assessed information security risks and determined risk treatment options.
     </p>
 
     <div class="fc-table-wrapper">
       <table class="fc-blog-table">
         <thead>
           <tr>
-            <th>Hazard</th>
-            <th>Possible Risks</th>
-            <th>Example Controls</th>
+            <th>Risk Identified</th>
+            <th>Possible Treatment</th>
+            <th>Relevant SoA Control Decision</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Strong currents</td>
-            <td>Drowning</td>
-            <td>Weather and water condition monitoring</td>
+            <td>Unauthorized access to customer database</td>
+            <td>Strengthen access control and authentication</td>
+            <td>Access control and identity management controls marked applicable</td>
           </tr>
           <tr>
-            <td>Equipment failure</td>
-            <td>Injury or capsizing</td>
-            <td>Equipment inspection</td>
+            <td>Ransomware affecting file server</td>
+            <td>Improve backup, malware protection and incident response</td>
+            <td>Backup, malware protection and incident management controls marked applicable</td>
           </tr>
           <tr>
-            <td>Poor swimming ability</td>
-            <td>Participant distress</td>
-            <td>Participant screening</td>
+            <td>Cloud storage misconfiguration</td>
+            <td>Review supplier and cloud service controls</td>
+            <td>Supplier and cloud security controls marked applicable</td>
           </tr>
           <tr>
-            <td>Sudden weather changes</td>
-            <td>Operational hazards</td>
-            <td>Weather monitoring</td>
-          </tr>
-          <tr>
-            <td>Communication failure</td>
-            <td>Delayed emergency response</td>
-            <td>Communication systems</td>
-          </tr>
-          <tr>
-            <td>Inadequate supervision</td>
-            <td>Unsafe participant actions</td>
-            <td>Guide-to-participant ratio control</td>
+            <td>Loss of laptop with confidential information</td>
+            <td>Implement endpoint security and encryption</td>
+            <td>User endpoint device and information protection controls marked applicable</td>
           </tr>
         </tbody>
       </table>
@@ -366,54 +380,42 @@
   </div>
 </section>
 
-<!-- CAMPING RISK -->
-<section class="fc-blog-section" id="camping-risk">
+<!-- IMPLEMENTATION STATUS -->
+<section class="fc-blog-section" id="implementation-status">
   <div class="fc-blog-container">
 
-    <h2>Camping Activity Risk Assessment Example</h2>
+    <h2>Control Implementation Status</h2>
 
-    <div class="fc-table-wrapper">
-      <table class="fc-blog-table">
-        <thead>
-          <tr>
-            <th>Hazard</th>
-            <th>Possible Risks</th>
-            <th>Example Controls</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Campfire activities</td>
-            <td>Fire hazards</td>
-            <td>Fire control procedures</td>
-          </tr>
-          <tr>
-            <td>Wildlife exposure</td>
-            <td>Injury or panic</td>
-            <td>Safety briefing</td>
-          </tr>
-          <tr>
-            <td>Food handling</td>
-            <td>Food poisoning</td>
-            <td>Hygiene and food safety controls</td>
-          </tr>
-          <tr>
-            <td>Weather exposure</td>
-            <td>Heat stress or storms</td>
-            <td>Weather monitoring</td>
-          </tr>
-          <tr>
-            <td>Poor lighting</td>
-            <td>Trips and falls</td>
-            <td>Lighting arrangements</td>
-          </tr>
-          <tr>
-            <td>Remote location</td>
-            <td>Emergency delays</td>
-            <td>Emergency communication plan</td>
-          </tr>
-        </tbody>
-      </table>
+    <p>
+      The SoA should indicate the implementation status of applicable controls. This helps the organization track progress and helps auditors understand whether selected controls are already implemented or still planned.
+    </p>
+
+    <div class="fc-doc-level-grid">
+
+      <div class="fc-doc-level">
+        <span>Status</span>
+        <h3>Implemented</h3>
+        <p>The control has been established and evidence is available.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Status</span>
+        <h3>Partially Implemented</h3>
+        <p>The control has been started but still requires further action.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Status</span>
+        <h3>Planned</h3>
+        <p>The control has been selected but implementation is not yet completed.</p>
+      </div>
+
+      <div class="fc-doc-level">
+        <span>Status</span>
+        <h3>Not Applicable</h3>
+        <p>The control is excluded with documented justification.</p>
+      </div>
+
     </div>
 
   </div>
@@ -423,47 +425,19 @@
 <section class="fc-blog-section" id="common-mistakes">
   <div class="fc-blog-container">
 
-    <h2>Common Adventure Tourism Risk Assessment Mistakes</h2>
+    <h2>Common SoA Mistakes</h2>
 
     <div class="fc-warning-box">
       <ul class="fc-blog-list">
-        <li>Generic risk assessments not linked to actual activities.</li>
-        <li>Outdated risk assessments.</li>
-        <li>Failure to consider weather conditions.</li>
-        <li>Weak emergency preparedness planning.</li>
-        <li>Insufficient participant screening.</li>
-        <li>Inadequate guide competency evaluation.</li>
-        <li>Lack of operational monitoring.</li>
-        <li>Failure to review risks after incidents.</li>
-        <li>Poor communication arrangements.</li>
+        <li>Marking all controls as applicable without proper review.</li>
+        <li>Excluding controls without clear justification.</li>
+        <li>Preparing the SoA before completing risk assessment.</li>
+        <li>Using generic justification copied from templates.</li>
+        <li>Not updating the SoA after risk assessment changes.</li>
+        <li>Claiming controls are implemented without objective evidence.</li>
+        <li>Not linking the SoA to the Risk Treatment Plan.</li>
       </ul>
     </div>
-
-  </div>
-</section>
-
-<!-- REVIEW FREQUENCY -->
-<section class="fc-blog-section">
-  <div class="fc-blog-container">
-
-    <h2>How Often Should Adventure Tourism Risk Assessments Be Reviewed?</h2>
-
-    <p>
-      Risk assessments should be reviewed periodically and whenever there are changes that may affect activity safety.
-    </p>
-
-    <ul class="fc-blog-list">
-      <li>After incidents or near misses.</li>
-      <li>After operational changes.</li>
-      <li>After equipment changes.</li>
-      <li>After environmental changes.</li>
-      <li>After introduction of new activities.</li>
-      <li>After significant weather events.</li>
-    </ul>
-
-    <p>
-      Organizations should ensure risk assessments remain relevant to actual operational conditions.
-    </p>
 
   </div>
 </section>
@@ -472,18 +446,18 @@
 <section class="fc-blog-section" id="auditor-focus">
   <div class="fc-blog-container">
 
-    <h2>What Auditors Look for in Adventure Tourism Risk Assessments</h2>
+    <h2>What Auditors Look For</h2>
 
     <div class="fc-audit-focus-list">
 
-      <div>Are hazards activity-specific?</div>
-      <div>Are risks linked to operational controls?</div>
-      <div>Is emergency preparedness integrated?</div>
-      <div>Are participant-related risks considered?</div>
-      <div>Are weather-related operational controls defined?</div>
-      <div>Is there evidence of implementation?</div>
-      <div>Are review and update processes established?</div>
-      <div>Are operational competency controls addressed?</div>
+      <div>Does the SoA cover all Annex A controls?</div>
+      <div>Is applicability clearly stated for each control?</div>
+      <div>Is justification provided for inclusion and exclusion?</div>
+      <div>Does the SoA align with risk assessment results?</div>
+      <div>Does the SoA align with the Risk Treatment Plan?</div>
+      <div>Is implementation status accurate and supported by evidence?</div>
+      <div>Are excluded controls genuinely not applicable?</div>
+      <div>Has the SoA been reviewed and updated when risks or controls changed?</div>
 
     </div>
 
@@ -500,44 +474,44 @@
 
       <div class="fc-faq-item">
         <button class="fc-faq-question">
-          Does ISO 21101 require documented risk assessments?
+          Is the Statement of Applicability mandatory in ISO 27001?
         </button>
         <div class="fc-faq-answer">
           <p>
-            Yes. Organizations should establish and maintain risk assessments relevant to adventure tourism activities and operational risks.
+            Yes. The Statement of Applicability is mandatory under ISO/IEC 27001:2022 and is one of the key documents reviewed during certification audits.
           </p>
         </div>
       </div>
 
       <div class="fc-faq-item">
         <button class="fc-faq-question">
-          Should weather conditions be included in risk assessments?
+          Can Annex A controls be excluded?
         </button>
         <div class="fc-faq-answer">
           <p>
-            Yes. Weather exposure is a critical factor in many adventure tourism activities and should be considered within operational risk controls.
+            Yes. Controls may be excluded if they are genuinely not applicable to the organization. However, the exclusion must be justified in the SoA.
           </p>
         </div>
       </div>
 
       <div class="fc-faq-item">
         <button class="fc-faq-question">
-          Who should conduct adventure tourism risk assessments?
+          Should the SoA be linked to risk assessment?
         </button>
         <div class="fc-faq-answer">
           <p>
-            Risk assessments should involve competent personnel familiar with the activity, operational environment, hazards, and emergency response considerations.
+            Yes. The SoA should reflect control decisions arising from risk assessment, risk treatment, legal requirements, contractual obligations and business needs.
           </p>
         </div>
       </div>
 
       <div class="fc-faq-item">
         <button class="fc-faq-question">
-          How detailed should adventure tourism risk assessments be?
+          How often should the SoA be updated?
         </button>
         <div class="fc-faq-answer">
           <p>
-            Risk assessments should be practical, activity-specific, understandable, and sufficient to support operational safety management.
+            The SoA should be reviewed when there are changes to risks, systems, business activities, legal requirements, supplier arrangements or control implementation status.
           </p>
         </div>
       </div>
@@ -552,12 +526,12 @@
   <div class="fc-blog-container">
 
     <div class="fc-cta-box-secondary">
-      <h3>Need Practical ISO 21101 Risk Assessment Templates?</h3>
+      <h3>Need a Practical ISO 27001 SoA Template?</h3>
       <p>
-        Access structured ATSMS templates, operational risk assessments, SOPs, emergency response procedures, inspection checklists, and implementation resources for adventure tourism organizations.
+        Access the complete ISO 27001 Document Kit with Statement of Applicability, risk assessment register, risk treatment plan, risk acceptance record and related ISMS templates.
       </p>
-      <a href="/templates/iso-21101-document-kit.html" class="fc-btn-secondary-cta">
-        View ISO 21101 Templates
+      <a href="/templates/iso-27001-document-kit.html" class="fc-btn-secondary-cta">
+        View ISO 27001 Document Kit
       </a>
     </div>
 
