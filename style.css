@@ -7528,3 +7528,183 @@ h3 {
   }
 
 }
+/* =========================================
+   BLOG – INTERNAL AUDIT DASHBOARD CTA
+========================================= */
+
+.fc-dashboard-blog-cta {
+  max-width: 1050px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* ===== TITLE ===== */
+
+.fc-dashboard-blog-cta h3 {
+  max-width: 850px;
+  margin: 14px auto 16px;
+  color: #800020;
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+
+/* ===== INTRO ===== */
+
+.fc-dashboard-blog-intro {
+  max-width: 780px;
+  margin: 0 auto 28px;
+  color: #2f3e5c;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* ===== DASHBOARD IMAGE ===== */
+
+.fc-dashboard-blog-preview {
+  max-width: 950px;
+  margin: 30px auto 0;
+  padding: 10px;
+
+  background: #ffffff;
+  border: 1px solid #eadfdd;
+  border-radius: 14px;
+
+  box-shadow:
+    0 12px 30px rgba(47, 62, 92, 0.10);
+}
+
+.fc-dashboard-blog-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/* ===== IMAGE CAPTION ===== */
+
+.fc-dashboard-blog-caption {
+  margin: 10px 0 28px;
+  color: #6b7280;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/* ===== FEATURE GRID ===== */
+
+.fc-dashboard-blog-features {
+  max-width: 820px;
+  margin: 0 auto 28px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px 14px;
+
+  text-align: left;
+}
+
+.fc-dashboard-blog-features span {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  min-height: 48px;
+
+  padding: 10px 14px 10px 36px;
+
+  background: #ffffff;
+
+  border: 1px solid #eadfdd;
+  border-radius: 8px;
+
+  color: #2f3e5c;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.fc-dashboard-blog-features span::before {
+  content: "✓";
+
+  position: absolute;
+  left: 14px;
+
+  color: #800020;
+
+  font-weight: 700;
+}
+
+
+/* ===== PRICE ===== */
+
+.fc-dashboard-blog-price {
+  margin: 28px auto 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+}
+
+.fc-dashboard-blog-price strong {
+  color: #800020;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.fc-dashboard-blog-price span {
+  color: #4b5563;
+
+  font-size: 14px;
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  .fc-dashboard-blog-cta h3 {
+    font-size: 23px;
+  }
+
+  .fc-dashboard-blog-intro {
+    font-size: 15px;
+  }
+
+  .fc-dashboard-blog-preview {
+    margin-top: 24px;
+    padding: 6px;
+    border-radius: 10px;
+  }
+
+  .fc-dashboard-blog-preview img {
+    border-radius: 6px;
+  }
+
+  .fc-dashboard-blog-features {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+  }
+
+  .fc-dashboard-blog-price {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .fc-dashboard-blog-price strong {
+    font-size: 23px;
+  }
+
+}
