@@ -7708,3 +7708,312 @@ h3 {
   }
 
 }
+
+/* =========================================
+   ISO 19011 INTERNAL AUDIT DASHBOARD PAGE
+========================================= */
+
+/* ===== PREVIEW ===== */
+
+.iad-preview {
+  padding: 70px 20px;
+  background: #ffffff;
+}
+
+.iad-preview-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.iad-preview-header {
+  max-width: 760px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.iad-preview-header h2 {
+  margin-bottom: 12px;
+  color: #800020;
+  font-size: 30px;
+}
+
+.iad-preview-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #4a5568;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.iad-preview-block {
+  margin-bottom: 55px;
+}
+
+.iad-preview-block:last-child {
+  margin-bottom: 0;
+}
+
+.iad-preview-copy {
+  max-width: 780px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.iad-preview-number {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: #800020;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.iad-preview-copy h3 {
+  color: #2f3e5c;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.iad-preview-copy p {
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.iad-image-frame {
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(47, 62, 92, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(47, 62, 92, 0.09);
+}
+
+.iad-image-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 9px;
+}
+
+
+/* ===== FEATURE GRID ===== */
+
+.iad-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+
+/* ===== STANDARDS ===== */
+
+.iad-standards {
+  padding: 65px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.iad-standards h2 {
+  color: #800020;
+  margin-bottom: 12px;
+}
+
+.iad-standards-intro {
+  max-width: 760px;
+  margin: 0 auto 25px;
+  line-height: 1.7;
+}
+
+.iad-standard-pills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.iad-standard-pills span {
+  padding: 8px 14px;
+  border: 1px solid #eadfdd;
+  background: #f7f3f0;
+  border-radius: 999px;
+  color: #2f3e5c;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* ===== INCLUDED LIST ===== */
+
+.iad-included-list {
+  max-width: 800px;
+  margin: 30px auto 0;
+  background: #ffffff;
+  border: 1px solid rgba(47, 62, 92, 0.12);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.iad-included-list div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 18px;
+  border-bottom: 1px solid #eee;
+  color: #2f3e5c;
+  font-size: 14px;
+}
+
+.iad-included-list div:last-child {
+  border-bottom: none;
+}
+
+.iad-included-list span {
+  color: #800020;
+  font-weight: 700;
+}
+
+
+/* ===== PURCHASE ===== */
+
+.iad-purchase {
+  padding: 70px 20px;
+  background: #800020;
+  text-align: center;
+}
+
+.iad-purchase-container {
+  max-width: 760px;
+}
+
+.iad-purchase .section-kicker {
+  color: #f7f3f0;
+}
+
+.iad-purchase h2 {
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.iad-purchase p {
+  color: #f7f3f0;
+  max-width: 650px;
+  margin: 0 auto 20px;
+}
+
+.iad-purchase-price {
+  margin: 20px 0 3px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.iad-purchase-note {
+  margin-bottom: 25px;
+  color: #f0dede;
+  font-size: 13px;
+}
+
+.iad-purchase .btn-accent {
+  background: #ffffff;
+  color: #800020;
+}
+
+.iad-purchase .btn-accent:hover {
+  background: #f7f3f0;
+}
+
+
+/* ===== CROSS SELL ===== */
+
+.iad-cross-sell {
+  padding: 65px 20px;
+  background: #f7f3f0;
+  text-align: center;
+}
+
+.iad-cross-sell-container {
+  max-width: 760px;
+}
+
+.iad-cross-sell h2 {
+  margin-bottom: 8px;
+  color: #800020;
+}
+
+.iad-cross-sell h3 {
+  margin-bottom: 12px;
+  font-size: 19px;
+}
+
+.iad-cross-sell p {
+  max-width: 650px;
+  margin: 0 auto 15px;
+  line-height: 1.7;
+}
+
+.iad-cross-price {
+  margin-bottom: 18px;
+  color: #800020;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+/* ===== TABLET ===== */
+
+@media (max-width: 1024px) {
+
+  .iad-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  .iad-preview,
+  .iad-standards,
+  .iad-purchase,
+  .iad-cross-sell {
+    padding: 48px 16px;
+  }
+
+  .iad-preview-header {
+    margin-bottom: 30px;
+  }
+
+  .iad-preview-header h2 {
+    font-size: 24px;
+  }
+
+  .iad-preview-block {
+    margin-bottom: 40px;
+  }
+
+  .iad-preview-copy h3 {
+    font-size: 18px;
+  }
+
+  .iad-image-frame {
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .iad-feature-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .iad-included-list div {
+    align-items: flex-start;
+    padding: 13px 14px;
+    font-size: 13px;
+  }
+
+  .iad-purchase-price {
+    font-size: 27px;
+  }
+
+}
